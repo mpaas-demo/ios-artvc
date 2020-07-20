@@ -1,0 +1,6 @@
+framework module ARTVC {
+  umbrella header "ARTVC.h"
+
+  export *
+  module * { export * }
+}

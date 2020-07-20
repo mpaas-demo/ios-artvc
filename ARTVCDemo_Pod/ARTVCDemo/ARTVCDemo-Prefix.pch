@@ -1,0 +1,20 @@
+//
+//  ARTVCDemo-Prefix.pch
+//  ARTVCDemo
+//
+//  Created by kuoxuan on 2020/07/17.
+
+// MPAAS HEADERS BEGIN
+// This part is maintained by MPaaS plugin automatically. 
+#ifdef __OBJC__
+
+#import "ARTVCDemo-mPaaS-Headers.h"
+
+#import <APMobileFramework/APMobileFramework.h>
+//#import <APCommonUI/APCommonUI.h>
+#define ARTVC_ENABLE_LOCAL_DEMO_TEST
+#define ARTVCShowImageResource(imgName) \
+[UIImage imageNamed:[NSString stringWithFormat:@"MPARTVCDemo.bundle/image/%@", imgName]]
+#endif 
+
+// MPAAS HEADERS END

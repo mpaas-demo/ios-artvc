@@ -1,0 +1,88 @@
+PODS:
+  - APLog (3.0.2.200619152113)
+  - APMLogging (1.0.0.200716133857):
+    - APLog
+    - APMUtils
+    - APRemoteLogging
+  - APMobileFramework (1.0.0.200612164733):
+    - APLog
+    - APRemoteLogging
+    - mPaas
+  - APMobileNetwork (1.0.0.200525171627):
+    - APOpenSSL
+    - APSecurityUtility
+    - mPaas
+    - SecurityGuardSDK
+  - APMUtils (1.0.0.200617195627)
+  - APOpenSSL (1.0.0.200228175209)
+  - APProtocolBuffers (1.0.1.200228175209)
+  - APRemoteLogging (1.0.0.200716144718):
+    - APProtocolBuffers
+    - mPaas
+    - UTDID
+  - APSecurityUtility (1.2.0.171012202618)
+  - ARTVC (1.0.0.200716203628):
+    - APMLogging
+    - APMUtils
+    - mPaas
+    - SocketRocket
+  - mPaas (1.0.0.200702162413):
+    - APLog
+  - SecurityGuardSDK (2.2.3.190326110928)
+  - SocketRocket (1.0.0.200714161608):
+    - APMobileFramework
+    - APMobileNetwork
+  - UTDID (1.0.2.190226130141)
+
+DEPENDENCIES:
+  - APLog (= 3.0.2.200619152113)
+  - APMLogging (= 1.0.0.200716133857)
+  - APMobileFramework (= 1.0.0.200612164733)
+  - APMobileNetwork (= 1.0.0.200525171627)
+  - APMUtils (= 1.0.0.200617195627)
+  - APOpenSSL (= 1.0.0.200228175209)
+  - APProtocolBuffers (= 1.0.1.200228175209)
+  - APRemoteLogging (= 1.0.0.200716144718)
+  - APSecurityUtility (= 1.2.0.171012202618)
+  - ARTVC (= 1.0.0.200716203628)
+  - mPaas (= 1.0.0.200702162413)
+  - SecurityGuardSDK (= 2.2.3.190326110928)
+  - SocketRocket (= 1.0.0.200714161608)
+  - UTDID (= 1.0.2.190226130141)
+
+SPEC REPOS:
+  https://code.aliyun.com/mpaas-public/podspecs.git:
+    - APLog
+    - APMLogging
+    - APMobileFramework
+    - APMobileNetwork
+    - APMUtils
+    - APOpenSSL
+    - APProtocolBuffers
+    - APRemoteLogging
+    - APSecurityUtility
+    - ARTVC
+    - mPaas
+    - SecurityGuardSDK
+    - SocketRocket
+    - UTDID
+
+SPEC CHECKSUMS:
+  APLog: 1571dfd1629f69ea9b80b3fbc9cf90343cadeb8e
+  APMLogging: 96fbc4d77e26d279d2e888665e4154697ec83495
+  APMobileFramework: 794c0bf09638d14655d517845c49a1b775f65420
+  APMobileNetwork: b43ca0abe3f117548b66d51b4825144e85774695
+  APMUtils: 5adb725b9603704d1c9ad452080c67b5d410d4e4
+  APOpenSSL: 7d57eb90bf69fc8ec68b02e20083e0567e3d9ae6
+  APProtocolBuffers: 0d1f69755d848b3be45e8af56a27017aa27853a2
+  APRemoteLogging: 14647b0f2ff637b79364c9bd1e96e207b76f9ed6
+  APSecurityUtility: cae80d8bb130d0aa5c447c944218f280fde84efc
+  ARTVC: 2f5f037d9f09bbfb8fdb1b76d29a2b32de42257c
+  mPaas: 077522bde7ddb8bd0d749f4002f7b5d2173e1001
+  SecurityGuardSDK: 8e41a1e06e55e4a8092f4dd792329a71c25bee00
+  SocketRocket: 954f05bc0f9084a9e91c2de8e862d95821a4eba5
+  UTDID: 2c9434763223c4c7eed0ba36d8af4fe3a664eda7
+
+PODFILE CHECKSUM: de15efe0555d5594b8a5ac95154a59e446820aa7
+
+COCOAPODS: 1.7.5

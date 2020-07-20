@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CA6F4DE2FBDA53D96933134 /* MPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B46D39FC1DE2C7F833529241 /* MPTabBarController.m */; };
+		39775D6A24C14DBC003E7D0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D6924C14DBC003E7D0E /* AppDelegate.m */; };
+		39775D6D24C14DBC003E7D0E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D6C24C14DBC003E7D0E /* SceneDelegate.m */; };
+		39775D7024C14DBC003E7D0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D6F24C14DBC003E7D0E /* ViewController.m */; };
+		39775D7324C14DBC003E7D0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39775D7124C14DBC003E7D0E /* Main.storyboard */; };
+		39775D7524C14DBF003E7D0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39775D7424C14DBF003E7D0E /* Assets.xcassets */; };
+		39775D7824C14DBF003E7D0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39775D7624C14DBF003E7D0E /* LaunchScreen.storyboard */; };
+		39775D7B24C14DBF003E7D0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D7A24C14DBF003E7D0E /* main.m */; };
+		39775D9824C153C9003E7D0E /* ARTVCDemoSettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D8724C153C9003E7D0E /* ARTVCDemoSettingsVC.m */; };
+		39775D9924C153CA003E7D0E /* ARTVCDemoSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D8824C153C9003E7D0E /* ARTVCDemoSettingsStore.m */; };
+		39775D9A24C153CA003E7D0E /* ARTVCDemoSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D8924C153C9003E7D0E /* ARTVCDemoSettingsModel.m */; };
+		39775D9B24C153CA003E7D0E /* AMImageSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D8C24C153C9003E7D0E /* AMImageSaver.m */; };
+		39775D9C24C153CA003E7D0E /* ARTVCDemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D8D24C153C9003E7D0E /* ARTVCDemoCollectionViewCell.m */; };
+		39775D9D24C153CA003E7D0E /* ARTVCDemoConferenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D8E24C153C9003E7D0E /* ARTVCDemoConferenceVC.m */; };
+		39775D9E24C153CA003E7D0E /* ARTVCDemoControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D9024C153C9003E7D0E /* ARTVCDemoControlView.m */; };
+		39775D9F24C153CA003E7D0E /* UIView+ARTVCToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D9524C153C9003E7D0E /* UIView+ARTVCToast.m */; };
+		39775DA024C153CA003E7D0E /* ARTVCDemoMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D9724C153C9003E7D0E /* ARTVCDemoMainVC.m */; };
+		39C49B1C24C156FA0098C35F /* MPARTVCDemo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 39C49B1B24C156FA0098C35F /* MPARTVCDemo.bundle */; };
+		39C49B1D24C16A980098C35F /* libPods-ARTVCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 270C04827E2BF9EA10B6FF97 /* libPods-ARTVCDemo.a */; };
+		3BE93255E23B95E1D28B23DE /* Images_mPaaS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3969742FF47D4A09A48164A /* Images_mPaaS.xcassets */; };
+		504BC4E71482DAC97AD81986 /* DTRpcInterface+ARTVCDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 874490B9286DBD8343ACED90 /* DTRpcInterface+ARTVCDemo.m */; };
+		56D1046647212507C687B00C /* MobileRuntime.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AD541FA7E3C260872C0F14E /* MobileRuntime.plist */; };
+		594478D154749ACDD46587EC /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA58EEC21A8926BD0FC15AF9 /* yw_1222.jpg */; };
+		6B4F04BAAEA16E555D927D0C /* meta.config in Resources */ = {isa = PBXBuildFile; fileRef = DE9D0A2B7BD1EF7D71A5AAB4 /* meta.config */; };
+		8021A8597968F5ACFAB15623 /* MPaaSInterface+ARTVCDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA93884C4D6C6D18830969D /* MPaaSInterface+ARTVCDemo.m */; };
+		AE589A3B92A5F99EFF262FAF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892348442D54E35340FC5D57 /* CoreTelephony.framework */; };
+		B90DE77584FC86DF88091B59 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46F6D1030F7D25104A0D06C /* SystemConfiguration.framework */; };
+		BA48DC184DDE5E2F92FFAA3D /* DTFrameworkInterface+ARTVCDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFE6A159A5709D70AE8FB8C /* DTFrameworkInterface+ARTVCDemo.m */; };
+		BE2C69DE51C38606A57583BA /* MPLauncherAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F5B4C22BB4C6EA147650B /* MPLauncherAppDelegate.m */; };
+		F112617FE0500E346C821DC4 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180FD5A06FE258FA7CB28B86 /* DemoViewController.m */; };
+		F7208B30D09193AF0D2DE17D /* APLogAdditions+ARTVCDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D4DA2403491A5EBDA413F /* APLogAdditions+ARTVCDemo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B4F5B4C22BB4C6EA147650B /* MPLauncherAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MPLauncherAppDelegate.m; sourceTree = "<group>"; };
+		1608C84E04AC859897527850 /* Pods-ARTVCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTVCDemo.release.xcconfig"; path = "Target Support Files/Pods-ARTVCDemo/Pods-ARTVCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		180FD5A06FE258FA7CB28B86 /* DemoViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		1AD541FA7E3C260872C0F14E /* MobileRuntime.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = MobileRuntime.plist; sourceTree = "<group>"; };
+		1B3E4002F586FCB5BAAACD00 /* DemoViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		23E37BD88F1BD9EF72141102 /* Pods-ARTVCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTVCDemo.debug.xcconfig"; path = "Target Support Files/Pods-ARTVCDemo/Pods-ARTVCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		23E4064E50E316F0244941B2 /* DTFrameworkInterface+ARTVCDemo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DTFrameworkInterface+ARTVCDemo.h"; sourceTree = "<group>"; };
+		270C04827E2BF9EA10B6FF97 /* libPods-ARTVCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ARTVCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		318C48BC8FBEC3D15F25A7F4 /* MPTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MPTabBarController.h; sourceTree = "<group>"; };
+		39775D6524C14DBC003E7D0E /* ARTVCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARTVCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39775D6824C14DBC003E7D0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		39775D6924C14DBC003E7D0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		39775D6B24C14DBC003E7D0E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		39775D6C24C14DBC003E7D0E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		39775D6E24C14DBC003E7D0E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		39775D6F24C14DBC003E7D0E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		39775D7224C14DBC003E7D0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39775D7424C14DBF003E7D0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39775D7724C14DBF003E7D0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39775D7924C14DBF003E7D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39775D7A24C14DBF003E7D0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		39775D8324C153C9003E7D0E /* ARTVCDemoSettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoSettingsVC.h; sourceTree = "<group>"; };
+		39775D8424C153C9003E7D0E /* ARTVCDemoSettingsModel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARTVCDemoSettingsModel+Private.h"; sourceTree = "<group>"; };
+		39775D8524C153C9003E7D0E /* ARTVCDemoSettingsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoSettingsStore.h; sourceTree = "<group>"; };
+		39775D8624C153C9003E7D0E /* ARTVCDemoSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoSettingsModel.h; sourceTree = "<group>"; };
+		39775D8724C153C9003E7D0E /* ARTVCDemoSettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoSettingsVC.m; sourceTree = "<group>"; };
+		39775D8824C153C9003E7D0E /* ARTVCDemoSettingsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoSettingsStore.m; sourceTree = "<group>"; };
+		39775D8924C153C9003E7D0E /* ARTVCDemoSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoSettingsModel.m; sourceTree = "<group>"; };
+		39775D8B24C153C9003E7D0E /* ARTVCDemoControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoControlView.h; sourceTree = "<group>"; };
+		39775D8C24C153C9003E7D0E /* AMImageSaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMImageSaver.m; sourceTree = "<group>"; };
+		39775D8D24C153C9003E7D0E /* ARTVCDemoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoCollectionViewCell.m; sourceTree = "<group>"; };
+		39775D8E24C153C9003E7D0E /* ARTVCDemoConferenceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoConferenceVC.m; sourceTree = "<group>"; };
+		39775D8F24C153C9003E7D0E /* AMImageSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMImageSaver.h; sourceTree = "<group>"; };
+		39775D9024C153C9003E7D0E /* ARTVCDemoControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoControlView.m; sourceTree = "<group>"; };
+		39775D9124C153C9003E7D0E /* ARTVCDemoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoCollectionViewCell.h; sourceTree = "<group>"; };
+		39775D9224C153C9003E7D0E /* ARTVCDemoConferenceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoConferenceVC.h; sourceTree = "<group>"; };
+		39775D9324C153C9003E7D0E /* ARTVCDemoMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoMainVC.h; sourceTree = "<group>"; };
+		39775D9524C153C9003E7D0E /* UIView+ARTVCToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ARTVCToast.m"; sourceTree = "<group>"; };
+		39775D9624C153C9003E7D0E /* UIView+ARTVCToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ARTVCToast.h"; sourceTree = "<group>"; };
+		39775D9724C153C9003E7D0E /* ARTVCDemoMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoMainVC.m; sourceTree = "<group>"; };
+		39C49B1B24C156FA0098C35F /* MPARTVCDemo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MPARTVCDemo.bundle; sourceTree = "<group>"; };
+		40DFF6CF4AB71D152920E7E2 /* ARTVCDemo-mPaaS-Headers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARTVCDemo-mPaaS-Headers.h"; sourceTree = "<group>"; };
+		4F7C9C56B5386183568D6AFF /* MPLauncherAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MPLauncherAppDelegate.h; sourceTree = "<group>"; };
+		5784D940A801CA6C87A73210 /* ARTVCDemo-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTVCDemo-Prefix.pch"; path = "../../../ARTVCDemo/ARTVCDemo-Prefix.pch"; sourceTree = "<group>"; };
+		6FCC5BF185C3823490E4D68C /* APLogAdditions+ARTVCDemo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APLogAdditions+ARTVCDemo.h"; sourceTree = "<group>"; };
+		874490B9286DBD8343ACED90 /* DTRpcInterface+ARTVCDemo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DTRpcInterface+ARTVCDemo.m"; sourceTree = "<group>"; };
+		892348442D54E35340FC5D57 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		9A9983E54714D71D9AC8921A /* DTRpcInterface+ARTVCDemo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DTRpcInterface+ARTVCDemo.h"; sourceTree = "<group>"; };
+		A3969742FF47D4A09A48164A /* Images_mPaaS.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images_mPaaS.xcassets; sourceTree = "<group>"; };
+		B46D39FC1DE2C7F833529241 /* MPTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MPTabBarController.m; sourceTree = "<group>"; };
+		B69D4DA2403491A5EBDA413F /* APLogAdditions+ARTVCDemo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "APLogAdditions+ARTVCDemo.m"; sourceTree = "<group>"; };
+		BA58EEC21A8926BD0FC15AF9 /* yw_1222.jpg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
+		BBA93884C4D6C6D18830969D /* MPaaSInterface+ARTVCDemo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MPaaSInterface+ARTVCDemo.m"; sourceTree = "<group>"; };
+		C52D13B503CF31EDAC29666C /* MPaaSInterface+ARTVCDemo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPaaSInterface+ARTVCDemo.h"; sourceTree = "<group>"; };
+		DCFE6A159A5709D70AE8FB8C /* DTFrameworkInterface+ARTVCDemo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DTFrameworkInterface+ARTVCDemo.m"; sourceTree = "<group>"; };
+		DE9D0A2B7BD1EF7D71A5AAB4 /* meta.config */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = meta.config; sourceTree = "<group>"; };
+		F46F6D1030F7D25104A0D06C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39775D6224C14DBC003E7D0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C49B1D24C16A980098C35F /* libPods-ARTVCDemo.a in Frameworks */,
+				AE589A3B92A5F99EFF262FAF /* CoreTelephony.framework in Frameworks */,
+				B90DE77584FC86DF88091B59 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		165F38F04DF2C957BF346A78 /* MPaaS */ = {
+			isa = PBXGroup;
+			children = (
+				1885491AF72BFD8563AF4E56 /* Targets */,
+			);
+			path = MPaaS;
+			sourceTree = "<group>";
+		};
+		1885491AF72BFD8563AF4E56 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				6096D270F9E4A23AEE55A569 /* ARTVCDemo */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		39775D5C24C14DBC003E7D0E = {
+			isa = PBXGroup;
+			children = (
+				39775D6724C14DBC003E7D0E /* ARTVCDemo */,
+				39775D6624C14DBC003E7D0E /* Products */,
+				9CF4A2861F89A0EA338E9AAF /* Pods */,
+				A9D866ACC539176B3EE55C39 /* Frameworks */,
+				165F38F04DF2C957BF346A78 /* MPaaS */,
+			);
+			sourceTree = "<group>";
+		};
+		39775D6624C14DBC003E7D0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39775D6524C14DBC003E7D0E /* ARTVCDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39775D6724C14DBC003E7D0E /* ARTVCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				39775D8124C153C9003E7D0E /* mcu */,
+				39775D6824C14DBC003E7D0E /* AppDelegate.h */,
+				39775D6924C14DBC003E7D0E /* AppDelegate.m */,
+				39775D6B24C14DBC003E7D0E /* SceneDelegate.h */,
+				39775D6C24C14DBC003E7D0E /* SceneDelegate.m */,
+				39775D6E24C14DBC003E7D0E /* ViewController.h */,
+				39775D6F24C14DBC003E7D0E /* ViewController.m */,
+				39775D7124C14DBC003E7D0E /* Main.storyboard */,
+				39775D7424C14DBF003E7D0E /* Assets.xcassets */,
+				39775D7624C14DBF003E7D0E /* LaunchScreen.storyboard */,
+				39775D7924C14DBF003E7D0E /* Info.plist */,
+				39775D7A24C14DBF003E7D0E /* main.m */,
+			);
+			path = ARTVCDemo;
+			sourceTree = "<group>";
+		};
+		39775D8124C153C9003E7D0E /* mcu */ = {
+			isa = PBXGroup;
+			children = (
+				39C49B1B24C156FA0098C35F /* MPARTVCDemo.bundle */,
+				39775D8224C153C9003E7D0E /* settings */,
+				39775D8A24C153C9003E7D0E /* conference */,
+				39775D9324C153C9003E7D0E /* ARTVCDemoMainVC.h */,
+				39775D9424C153C9003E7D0E /* Toast */,
+				39775D9724C153C9003E7D0E /* ARTVCDemoMainVC.m */,
+			);
+			path = mcu;
+			sourceTree = "<group>";
+		};
+		39775D8224C153C9003E7D0E /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				39775D8324C153C9003E7D0E /* ARTVCDemoSettingsVC.h */,
+				39775D8424C153C9003E7D0E /* ARTVCDemoSettingsModel+Private.h */,
+				39775D8524C153C9003E7D0E /* ARTVCDemoSettingsStore.h */,
+				39775D8624C153C9003E7D0E /* ARTVCDemoSettingsModel.h */,
+				39775D8724C153C9003E7D0E /* ARTVCDemoSettingsVC.m */,
+				39775D8824C153C9003E7D0E /* ARTVCDemoSettingsStore.m */,
+				39775D8924C153C9003E7D0E /* ARTVCDemoSettingsModel.m */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		39775D8A24C153C9003E7D0E /* conference */ = {
+			isa = PBXGroup;
+			children = (
+				39775D8B24C153C9003E7D0E /* ARTVCDemoControlView.h */,
+				39775D8C24C153C9003E7D0E /* AMImageSaver.m */,
+				39775D8D24C153C9003E7D0E /* ARTVCDemoCollectionViewCell.m */,
+				39775D8E24C153C9003E7D0E /* ARTVCDemoConferenceVC.m */,
+				39775D8F24C153C9003E7D0E /* AMImageSaver.h */,
+				39775D9024C153C9003E7D0E /* ARTVCDemoControlView.m */,
+				39775D9124C153C9003E7D0E /* ARTVCDemoCollectionViewCell.h */,
+				39775D9224C153C9003E7D0E /* ARTVCDemoConferenceVC.h */,
+			);
+			path = conference;
+			sourceTree = "<group>";
+		};
+		39775D9424C153C9003E7D0E /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				39775D9524C153C9003E7D0E /* UIView+ARTVCToast.m */,
+				39775D9624C153C9003E7D0E /* UIView+ARTVCToast.h */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		6096D270F9E4A23AEE55A569 /* ARTVCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DE9D0A2B7BD1EF7D71A5AAB4 /* meta.config */,
+				BA58EEC21A8926BD0FC15AF9 /* yw_1222.jpg */,
+				40DFF6CF4AB71D152920E7E2 /* ARTVCDemo-mPaaS-Headers.h */,
+				5784D940A801CA6C87A73210 /* ARTVCDemo-Prefix.pch */,
+				976CE11DB2BA19EE6C625F27 /* APMobileNetwork */,
+				C13FDD1EFFD1C37C300F7C15 /* mPaas */,
+				CC2A0BF9E0FBCC4109372CC1 /* APMobileFramework */,
+				6E6361707F4D13CA45471AB2 /* APRemoteLogging */,
+			);
+			path = ARTVCDemo;
+			sourceTree = "<group>";
+		};
+		6E6361707F4D13CA45471AB2 /* APRemoteLogging */ = {
+			isa = PBXGroup;
+			children = (
+				6FCC5BF185C3823490E4D68C /* APLogAdditions+ARTVCDemo.h */,
+				B69D4DA2403491A5EBDA413F /* APLogAdditions+ARTVCDemo.m */,
+			);
+			path = APRemoteLogging;
+			sourceTree = "<group>";
+		};
+		7099627E0D4CF3A693B11580 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				892348442D54E35340FC5D57 /* CoreTelephony.framework */,
+				F46F6D1030F7D25104A0D06C /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		976CE11DB2BA19EE6C625F27 /* APMobileNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				9A9983E54714D71D9AC8921A /* DTRpcInterface+ARTVCDemo.h */,
+				874490B9286DBD8343ACED90 /* DTRpcInterface+ARTVCDemo.m */,
+			);
+			path = APMobileNetwork;
+			sourceTree = "<group>";
+		};
+		9CF4A2861F89A0EA338E9AAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23E37BD88F1BD9EF72141102 /* Pods-ARTVCDemo.debug.xcconfig */,
+				1608C84E04AC859897527850 /* Pods-ARTVCDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A9D866ACC539176B3EE55C39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				270C04827E2BF9EA10B6FF97 /* libPods-ARTVCDemo.a */,
+				7099627E0D4CF3A693B11580 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C13FDD1EFFD1C37C300F7C15 /* mPaas */ = {
+			isa = PBXGroup;
+			children = (
+				C52D13B503CF31EDAC29666C /* MPaaSInterface+ARTVCDemo.h */,
+				BBA93884C4D6C6D18830969D /* MPaaSInterface+ARTVCDemo.m */,
+			);
+			path = mPaas;
+			sourceTree = "<group>";
+		};
+		CC2A0BF9E0FBCC4109372CC1 /* APMobileFramework */ = {
+			isa = PBXGroup;
+			children = (
+				23E4064E50E316F0244941B2 /* DTFrameworkInterface+ARTVCDemo.h */,
+				DCFE6A159A5709D70AE8FB8C /* DTFrameworkInterface+ARTVCDemo.m */,
+				1AD541FA7E3C260872C0F14E /* MobileRuntime.plist */,
+				A3969742FF47D4A09A48164A /* Images_mPaaS.xcassets */,
+				4F7C9C56B5386183568D6AFF /* MPLauncherAppDelegate.h */,
+				0B4F5B4C22BB4C6EA147650B /* MPLauncherAppDelegate.m */,
+				318C48BC8FBEC3D15F25A7F4 /* MPTabBarController.h */,
+				B46D39FC1DE2C7F833529241 /* MPTabBarController.m */,
+				1B3E4002F586FCB5BAAACD00 /* DemoViewController.h */,
+				180FD5A06FE258FA7CB28B86 /* DemoViewController.m */,
+			);
+			path = APMobileFramework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39775D6424C14DBC003E7D0E /* ARTVCDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39775D7E24C14DBF003E7D0E /* Build configuration list for PBXNativeTarget "ARTVCDemo" */;
+			buildPhases = (
+				2A1B8A3EE2CB50E325BBF7E0 /* [CP] Check Pods Manifest.lock */,
+				39775D6124C14DBC003E7D0E /* Sources */,
+				39775D6224C14DBC003E7D0E /* Frameworks */,
+				39775D6324C14DBC003E7D0E /* Resources */,
+				A0C5D2C1830EF0C79CA1B5DF /* [CP] Embed Pods Frameworks */,
+				77A3C5F34372AE56B7C15EE8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARTVCDemo;
+			productName = ARTVCDemo;
+			productReference = 39775D6524C14DBC003E7D0E /* ARTVCDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39775D5D24C14DBC003E7D0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = mPaaS;
+				TargetAttributes = {
+					39775D6424C14DBC003E7D0E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 39775D6024C14DBC003E7D0E /* Build configuration list for PBXProject "ARTVCDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39775D5C24C14DBC003E7D0E;
+			productRefGroup = 39775D6624C14DBC003E7D0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39775D6424C14DBC003E7D0E /* ARTVCDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39775D6324C14DBC003E7D0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39775D7824C14DBF003E7D0E /* LaunchScreen.storyboard in Resources */,
+				39775D7524C14DBF003E7D0E /* Assets.xcassets in Resources */,
+				39775D7324C14DBC003E7D0E /* Main.storyboard in Resources */,
+				6B4F04BAAEA16E555D927D0C /* meta.config in Resources */,
+				39C49B1C24C156FA0098C35F /* MPARTVCDemo.bundle in Resources */,
+				594478D154749ACDD46587EC /* yw_1222.jpg in Resources */,
+				56D1046647212507C687B00C /* MobileRuntime.plist in Resources */,
+				3BE93255E23B95E1D28B23DE /* Images_mPaaS.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A1B8A3EE2CB50E325BBF7E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARTVCDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77A3C5F34372AE56B7C15EE8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARTVCDemo/Pods-ARTVCDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARTVCDemo/Pods-ARTVCDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARTVCDemo/Pods-ARTVCDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0C5D2C1830EF0C79CA1B5DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARTVCDemo/Pods-ARTVCDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARTVCDemo/Pods-ARTVCDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARTVCDemo/Pods-ARTVCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39775D6124C14DBC003E7D0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39775D9A24C153CA003E7D0E /* ARTVCDemoSettingsModel.m in Sources */,
+				39775D9B24C153CA003E7D0E /* AMImageSaver.m in Sources */,
+				39775D7024C14DBC003E7D0E /* ViewController.m in Sources */,
+				39775D6A24C14DBC003E7D0E /* AppDelegate.m in Sources */,
+				39775D9C24C153CA003E7D0E /* ARTVCDemoCollectionViewCell.m in Sources */,
+				39775D7B24C14DBF003E7D0E /* main.m in Sources */,
+				39775D9824C153C9003E7D0E /* ARTVCDemoSettingsVC.m in Sources */,
+				39775DA024C153CA003E7D0E /* ARTVCDemoMainVC.m in Sources */,
+				39775D6D24C14DBC003E7D0E /* SceneDelegate.m in Sources */,
+				504BC4E71482DAC97AD81986 /* DTRpcInterface+ARTVCDemo.m in Sources */,
+				39775D9F24C153CA003E7D0E /* UIView+ARTVCToast.m in Sources */,
+				39775D9D24C153CA003E7D0E /* ARTVCDemoConferenceVC.m in Sources */,
+				8021A8597968F5ACFAB15623 /* MPaaSInterface+ARTVCDemo.m in Sources */,
+				BA48DC184DDE5E2F92FFAA3D /* DTFrameworkInterface+ARTVCDemo.m in Sources */,
+				39775D9E24C153CA003E7D0E /* ARTVCDemoControlView.m in Sources */,
+				BE2C69DE51C38606A57583BA /* MPLauncherAppDelegate.m in Sources */,
+				0CA6F4DE2FBDA53D96933134 /* MPTabBarController.m in Sources */,
+				F112617FE0500E346C821DC4 /* DemoViewController.m in Sources */,
+				39775D9924C153CA003E7D0E /* ARTVCDemoSettingsStore.m in Sources */,
+				F7208B30D09193AF0D2DE17D /* APLogAdditions+ARTVCDemo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		39775D7124C14DBC003E7D0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39775D7224C14DBC003E7D0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39775D7624C14DBF003E7D0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39775D7724C14DBF003E7D0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39775D7C24C14DBF003E7D0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		39775D7D24C14DBF003E7D0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39775D7F24C14DBF003E7D0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23E37BD88F1BD9EF72141102 /* Pods-ARTVCDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWNC46252S;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARTVCDemo/ARTVCDemo-Prefix.pch";
+				INFOPLIST_FILE = ARTVCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mpaas.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39775D8024C14DBF003E7D0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1608C84E04AC859897527850 /* Pods-ARTVCDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWNC46252S;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARTVCDemo/ARTVCDemo-Prefix.pch";
+				INFOPLIST_FILE = ARTVCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mpaas.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39775D6024C14DBC003E7D0E /* Build configuration list for PBXProject "ARTVCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39775D7C24C14DBF003E7D0E /* Debug */,
+				39775D7D24C14DBF003E7D0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39775D7E24C14DBF003E7D0E /* Build configuration list for PBXNativeTarget "ARTVCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39775D7F24C14DBF003E7D0E /* Debug */,
+				39775D8024C14DBF003E7D0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39775D5D24C14DBC003E7D0E /* Project object */;
+}

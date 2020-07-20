@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-ARTVCDemo/Pods-ARTVCDemo-resources.sh
+${PODS_ROOT}/APMUtils/APMUtils.framework/APMUtils.bundle
+${PODS_ROOT}/APMobileFramework/APMobileFramework.framework/APMobileFramework.bundle
+${PODS_ROOT}/APMobileNetwork/APMobileNetwork.framework/APMobileNetwork.bundle
+${PODS_ROOT}/APRemoteLogging/APRemoteLogging.framework/APRemoteLogging.bundle
