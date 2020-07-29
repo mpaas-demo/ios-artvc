@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		066B8BFE5E35D03F1BB96CD5 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC158F38DCF292E95860EF1 /* VideoToolbox.framework */; };
+		096F1DDFC7C3D42871AF8515 /* APOpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F4201F5B98AF7E136FC85F /* APOpenSSL.framework */; };
+		0B1544DA31BE51C64E3E0DC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DF0B2532426CC8E3B50668 /* UIKit.framework */; };
+		0C1B107AC9B1161440CB9A16 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34094BD1DF8DAA13C6A620A /* UserNotifications.framework */; };
+		0EBBB5802DED62B66793302B /* APMobileNetwork.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 59609B102716FBB817B00526 /* APMobileNetwork.bundle */; };
+		306353C9F98783FE84A5D637 /* APRemoteLogging.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 996529189AC6A3C1081278FF /* APRemoteLogging.bundle */; };
+		30DE93CA3B7278591C0596E8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F983B15FA37D83CEA0F0DEF /* AudioToolbox.framework */; };
+		3805B76282744F5659ECE399 /* APMobileNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9980A04D5444068283CAF26C /* APMobileNetwork.framework */; };
+		39EEDE4C24D1766900BF4F18 /* ARTVCDemoSettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EEDE3A24D1766900BF4F18 /* ARTVCDemoSettingsVC.m */; };
+		39EEDE4D24D1766900BF4F18 /* ARTVCDemoSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EEDE3B24D1766900BF4F18 /* ARTVCDemoSettingsStore.m */; };
+		39EEDE4E24D1766900BF4F18 /* ARTVCDemoSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EEDE3C24D1766900BF4F18 /* ARTVCDemoSettingsModel.m */; };
+		39EEDE4F24D1766900BF4F18 /* AMImageSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EEDE3F24D1766900BF4F18 /* AMImageSaver.m */; };
+		39EEDE5024D1766900BF4F18 /* ARTVCDemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EEDE4024D1766900BF4F18 /* ARTVCDemoCollectionViewCell.m */; };
+		39EEDE5124D1766900BF4F18 /* ARTVCDemoConferenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EEDE4124D1766900BF4F18 /* ARTVCDemoConferenceVC.m */; };
+		39EEDE5224D1766900BF4F18 /* ARTVCDemoControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EEDE4324D1766900BF4F18 /* ARTVCDemoControlView.m */; };
+		39EEDE5324D1766900BF4F18 /* UIView+ARTVCToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EEDE4824D1766900BF4F18 /* UIView+ARTVCToast.m */; };
+		39EEDE5424D1766900BF4F18 /* ARTVCDemoMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EEDE4A24D1766900BF4F18 /* ARTVCDemoMainVC.m */; };
+		39EEDE5524D1766900BF4F18 /* MPARTVCDemo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 39EEDE4B24D1766900BF4F18 /* MPARTVCDemo.bundle */; };
+		39EEDE5624D1782200BF4F18 /* ARTVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A97286A7F31A6C7B7AB1225 /* ARTVC.framework */; };
+		39EEDE5724D1782200BF4F18 /* ARTVC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A97286A7F31A6C7B7AB1225 /* ARTVC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4B8292DE80AACC95BBAAD747 /* SGMain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041327FBE9EA1E4FEA22D19B /* SGMain.framework */; };
+		4E6EB8A6DD64612788912EB6 /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CEAC5599C7F3C9692F04EBE /* UTDID.framework */; };
+		552307F65F4D820EE041308B /* APRemoteLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36F131CAC7320BD888E5B47 /* APRemoteLogging.framework */; };
+		5ECF5A5CE9BB347331713F26 /* MobileRuntime.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC4C80D9E1F56A23854C98F6 /* MobileRuntime.plist */; };
+		66C7417ECA4CE46CBE44FEB3 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CC5F322CF786C25F4BA4CF /* SocketRocket.framework */; };
+		6DCF3B08516CD2380AE5EF10 /* SecurityGuardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9F5960E1DA58D0A8B6AC30 /* SecurityGuardSDK.framework */; };
+		7308881770061E193B58CD38 /* mPaas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61E1EC4F32EFF4A3FF28FF5 /* mPaas.framework */; };
+		7DFB05AA358C5A0FC6F83757 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8320399CF7A91A3947F33254 /* CoreMedia.framework */; };
+		81309EA34CBD4D2B50534F68 /* meta.config in Resources */ = {isa = PBXBuildFile; fileRef = 61F2F07C2E27319C7423B910 /* meta.config */; };
+		8BDF591C3C5A73EEAD543253 /* APMUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADECEAF32C88F7C65234470F /* APMUtils.framework */; };
+		9A21FE76E3B4CFE30948DD6E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C3AEA61C15E0DE107D3426 /* CoreTelephony.framework */; };
+		A1F12666344D6736CB70D60A /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20FABA1B8D3D621F47560077 /* yw_1222.jpg */; };
+		A5118F86D19F39FA3CA1FFEF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 898E4144F49151A5FE3F582F /* CoreMotion.framework */; };
+		A699662CD964ADEE1AAB042C /* MPaaSInterface+ARTVCDemo_Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 060C22C5CE111B1E623360D4 /* MPaaSInterface+ARTVCDemo_Plugin.m */; };
+		A7769D69A981EFC70E03A0EA /* APMLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E033C0B187E26D1AC26331 /* APMLogging.framework */; };
+		A8F97FF556E987170E1B4A7C /* DTFrameworkInterface+ARTVCDemo_Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E39E865114F0F49645687E /* DTFrameworkInterface+ARTVCDemo_Plugin.m */; };
+		C33C061C1E1F0688C3D229E0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E9915310921DF7F24A06D5 /* OpenGLES.framework */; };
+		C411F9296F5A4A17B6ACAA2F /* APProtocolBuffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1243E2F41362442017651655 /* APProtocolBuffers.framework */; };
+		D1768BC6F83A9D6DD84F4D14 /* APMobileFramework.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 245E6ADFFAD0E91EC07B376A /* APMobileFramework.bundle */; };
+		D1C0F0296CD80E6D0AB67415 /* MPTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ED6B580869CE261CFD15B7 /* MPTabBarViewController.m */; };
+		D66C33611695CFB0043623F7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6898704C0AE7789E690E5CF2 /* AVFoundation.framework */; };
+		DCD0A745544FC39716397384 /* APMobileFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C10B463431BB5051991709B /* APMobileFramework.framework */; };
+		E43E7C6E21D1077E00D9E31A /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43E7C6D21D1077E00D9E31A /* DemoViewController.m */; };
+		E43E7C7321D1077E00D9E31A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E43E7C7221D1077E00D9E31A /* Assets.xcassets */; };
+		E43E7C7621D1077E00D9E31A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43E7C7421D1077E00D9E31A /* LaunchScreen.storyboard */; };
+		E43E7C7921D1077E00D9E31A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E43E7C7821D1077E00D9E31A /* main.m */; };
+		F3C3A04442BE3EDF9C324608 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F66E5F85CB316DCC9309BCD9 /* SystemConfiguration.framework */; };
+		F3C65E183AADFF9C24ACE23B /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3B66EEF4AC0201B580F0C5 /* ReplayKit.framework */; };
+		F54592AA7766C49F548DF3B3 /* MPLauncherAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC99FBDE6E42C0CE9CB22F78 /* MPLauncherAppDelegate.m */; };
+		F7D291660550E1662AF84797 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBCC40DA95D9DD40DF20E908 /* GLKit.framework */; };
+		F82D18BE6533494A4B140149 /* APLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D55AF5705BD8518A9A378A4A /* APLog.framework */; };
+		FD3C45CCBBA4EBFB814D3D2B /* APSecurityUtility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60C007C020CA910397C72DD /* APSecurityUtility.framework */; };
+		FEA933DCEBF6B00C33769374 /* APMUtils.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96277E68B8F3B6DB93E6532C /* APMUtils.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		39EEDE5824D1782200BF4F18 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				39EEDE5724D1782200BF4F18 /* ARTVC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		041327FBE9EA1E4FEA22D19B /* SGMain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SGMain.framework; path = /Users/Shared/.mpaaskit_sdk/repo/frameworks/SecurityGuardSDK/2.2.3.190326110928/SGMain.framework; sourceTree = "<absolute>"; };
+		060C22C5CE111B1E623360D4 /* MPaaSInterface+ARTVCDemo_Plugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MPaaSInterface+ARTVCDemo_Plugin.m"; sourceTree = "<group>"; };
+		0A97286A7F31A6C7B7AB1225 /* ARTVC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARTVC.framework; path = /Users/Shared/.mpaaskit_sdk/repo/frameworks/ARTVC/1.0.0.200721201508/ARTVC.framework; sourceTree = "<absolute>"; };
+		0E9F5960E1DA58D0A8B6AC30 /* SecurityGuardSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityGuardSDK.framework; path = /Users/Shared/.mpaaskit_sdk/repo/frameworks/SecurityGuardSDK/2.2.3.190326110928/SecurityGuardSDK.framework; sourceTree = "<absolute>"; };
+		1243E2F41362442017651655 /* APProtocolBuffers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APProtocolBuffers.framework; path = /Users/Shared/.mpaaskit_sdk/repo/frameworks/APProtocolBuffers/1.0.1.200228175209/APProtocolBuffers.framework; sourceTree = "<absolute>"; };
+		1CEAC5599C7F3C9692F04EBE /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UTDID.framework; path = /Users/Shared/.mpaaskit_sdk/repo/frameworks/UTDID/1.0.2.190226130141/UTDID.framework; sourceTree = "<absolute>"; };
+		20FABA1B8D3D621F47560077 /* yw_1222.jpg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
+		245E6ADFFAD0E91EC07B376A /* APMobileFramework.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = APMobileFramework.bundle; sourceTree = "<group>"; };
+		25CC5F322CF786C25F4BA4CF /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketRocket.framework; path = /Users/Shared/.mpaaskit_sdk/repo/frameworks/SocketRocket/1.0.0.200714161608/SocketRocket.framework; sourceTree = "<absolute>"; };
+		25E3138354007CB81C5A7F95 /* DTFrameworkInterface+ARTVCDemo_Plugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DTFrameworkInterface+ARTVCDemo_Plugin.h"; sourceTree = "<group>"; };
+		2E6B8E004EA2B5383421880C /* mpaas_sdk.config */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = mpaas_sdk.config; sourceTree = "<group>"; };
+		2F983B15FA37D83CEA0F0DEF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		39EEDE3624D1766900BF4F18 /* ARTVCDemoSettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoSettingsVC.h; sourceTree = "<group>"; };
+		39EEDE3724D1766900BF4F18 /* ARTVCDemoSettingsModel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARTVCDemoSettingsModel+Private.h"; sourceTree = "<group>"; };
+		39EEDE3824D1766900BF4F18 /* ARTVCDemoSettingsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoSettingsStore.h; sourceTree = "<group>"; };
+		39EEDE3924D1766900BF4F18 /* ARTVCDemoSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoSettingsModel.h; sourceTree = "<group>"; };
+		39EEDE3A24D1766900BF4F18 /* ARTVCDemoSettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoSettingsVC.m; sourceTree = "<group>"; };
+		39EEDE3B24D1766900BF4F18 /* ARTVCDemoSettingsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoSettingsStore.m; sourceTree = "<group>"; };
+		39EEDE3C24D1766900BF4F18 /* ARTVCDemoSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoSettingsModel.m; sourceTree = "<group>"; };
+		39EEDE3E24D1766900BF4F18 /* ARTVCDemoControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoControlView.h; sourceTree = "<group>"; };
+		39EEDE3F24D1766900BF4F18 /* AMImageSaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMImageSaver.m; sourceTree = "<group>"; };
+		39EEDE4024D1766900BF4F18 /* ARTVCDemoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoCollectionViewCell.m; sourceTree = "<group>"; };
+		39EEDE4124D1766900BF4F18 /* ARTVCDemoConferenceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoConferenceVC.m; sourceTree = "<group>"; };
+		39EEDE4224D1766900BF4F18 /* AMImageSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMImageSaver.h; sourceTree = "<group>"; };
+		39EEDE4324D1766900BF4F18 /* ARTVCDemoControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoControlView.m; sourceTree = "<group>"; };
+		39EEDE4424D1766900BF4F18 /* ARTVCDemoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoCollectionViewCell.h; sourceTree = "<group>"; };
+		39EEDE4524D1766900BF4F18 /* ARTVCDemoConferenceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoConferenceVC.h; sourceTree = "<group>"; };
+		39EEDE4624D1766900BF4F18 /* ARTVCDemoMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoMainVC.h; sourceTree = "<group>"; };
+		39EEDE4824D1766900BF4F18 /* UIView+ARTVCToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ARTVCToast.m"; sourceTree = "<group>"; };
+		39EEDE4924D1766900BF4F18 /* UIView+ARTVCToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ARTVCToast.h"; sourceTree = "<group>"; };
+		39EEDE4A24D1766900BF4F18 /* ARTVCDemoMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoMainVC.m; sourceTree = "<group>"; };
+		39EEDE4B24D1766900BF4F18 /* MPARTVCDemo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MPARTVCDemo.bundle; sourceTree = "<group>"; };
+		44E033C0B187E26D1AC26331 /* APMLogging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APMLogging.framework; path = /Users/Shared/.mpaaskit_sdk/repo/frameworks/APMLogging/1.0.0.200716133857/APMLogging.framework; sourceTree = "<absolute>"; };
+		4AC158F38DCF292E95860EF1 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		59609B102716FBB817B00526 /* APMobileNetwork.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = APMobileNetwork.bundle; sourceTree = "<group>"; };
+		61F2F07C2E27319C7423B910 /* meta.config */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = meta.config; sourceTree = "<group>"; };
+		6898704C0AE7789E690E5CF2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		68ED6C2286918AAEAED590CB /* ARTVCDemo_Plugin-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTVCDemo_Plugin-Prefix.pch"; path = "../../../ARTVCDemo_Plugin/ARTVCDemo_Plugin-Prefix.pch"; sourceTree = "<group>"; };
+		69E9915310921DF7F24A06D5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		71A3710CAA0CB48FA8B38E06 /* MPTabBarViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MPTabBarViewController.h; sourceTree = "<group>"; };
+		7C10B463431BB5051991709B /* APMobileFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APMobileFramework.framework; path = /Users/Shared/.mpaaskit_sdk/repo/frameworks/APMobileFramework/1.0.0.200612164733/APMobileFramework.framework; sourceTree = "<absolute>"; };
+		8320399CF7A91A3947F33254 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		898E4144F49151A5FE3F582F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		92E39E865114F0F49645687E /* DTFrameworkInterface+ARTVCDemo_Plugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DTFrameworkInterface+ARTVCDemo_Plugin.m"; sourceTree = "<group>"; };
+		96277E68B8F3B6DB93E6532C /* APMUtils.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = APMUtils.bundle; sourceTree = "<group>"; };
+		996529189AC6A3C1081278FF /* APRemoteLogging.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = APRemoteLogging.bundle; sourceTree = "<group>"; };
+		9980A04D5444068283CAF26C /* APMobileNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APMobileNetwork.framework; path = /Users/Shared/.mpaaskit_sdk/repo/frameworks/APMobileNetwork/1.0.0.200525171627/APMobileNetwork.framework; sourceTree = "<absolute>"; };
+		AC99FBDE6E42C0CE9CB22F78 /* MPLauncherAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MPLauncherAppDelegate.m; sourceTree = "<group>"; };
+		ADECEAF32C88F7C65234470F /* APMUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APMUtils.framework; path = /Users/Shared/.mpaaskit_sdk/repo/frameworks/APMUtils/1.0.0.200617195627/APMUtils.framework; sourceTree = "<absolute>"; };
+		B60C007C020CA910397C72DD /* APSecurityUtility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APSecurityUtility.framework; path = /Users/Shared/.mpaaskit_sdk/repo/frameworks/APSecurityUtility/1.2.0.171012202618/APSecurityUtility.framework; sourceTree = "<absolute>"; };
+		BBCC40DA95D9DD40DF20E908 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		BDD6794B2D8FC76FBD3E75D4 /* MPLauncherAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MPLauncherAppDelegate.h; sourceTree = "<group>"; };
+		C8DF0B2532426CC8E3B50668 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D36F131CAC7320BD888E5B47 /* APRemoteLogging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APRemoteLogging.framework; path = /Users/Shared/.mpaaskit_sdk/repo/frameworks/APRemoteLogging/1.0.0.200716144718/APRemoteLogging.framework; sourceTree = "<absolute>"; };
+		D55AF5705BD8518A9A378A4A /* APLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APLog.framework; path = /Users/Shared/.mpaaskit_sdk/repo/frameworks/APLog/3.0.2.200619152113/APLog.framework; sourceTree = "<absolute>"; };
+		DD4A8723599ECCE847A9A667 /* ARTVCDemo_Plugin-mPaaS-Headers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARTVCDemo_Plugin-mPaaS-Headers.h"; sourceTree = "<group>"; };
+		DE77C46A222F8BE57773B409 /* MPaaSInterface+ARTVCDemo_Plugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPaaSInterface+ARTVCDemo_Plugin.h"; sourceTree = "<group>"; };
+		E1C3AEA61C15E0DE107D3426 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		E34094BD1DF8DAA13C6A620A /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		E43E7C6621D1077E00D9E31A /* ARTVCDemo_Plugin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARTVCDemo_Plugin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43E7C6C21D1077E00D9E31A /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		E43E7C6D21D1077E00D9E31A /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		E43E7C7221D1077E00D9E31A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E43E7C7521D1077E00D9E31A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E43E7C7721D1077E00D9E31A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43E7C7821D1077E00D9E31A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E43E7C8221D1095B00D9E31A /* ARTVCDemo_Plugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARTVCDemo_Plugin-Prefix.pch"; sourceTree = "<group>"; };
+		E43E7C8621D1446400D9E31A /* ARTVCDemo_Plugin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ARTVCDemo_Plugin.entitlements; sourceTree = "<group>"; };
+		E61E1EC4F32EFF4A3FF28FF5 /* mPaas.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mPaas.framework; path = /Users/Shared/.mpaaskit_sdk/repo/frameworks/mPaas/1.0.0.200702162413/mPaas.framework; sourceTree = "<absolute>"; };
+		E9F4201F5B98AF7E136FC85F /* APOpenSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APOpenSSL.framework; path = /Users/Shared/.mpaaskit_sdk/repo/frameworks/APOpenSSL/1.0.0.200228175209/APOpenSSL.framework; sourceTree = "<absolute>"; };
+		EA3B66EEF4AC0201B580F0C5 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		EC4C80D9E1F56A23854C98F6 /* MobileRuntime.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = MobileRuntime.plist; sourceTree = "<group>"; };
+		F66E5F85CB316DCC9309BCD9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F9ED6B580869CE261CFD15B7 /* MPTabBarViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MPTabBarViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E43E7C6321D1077E00D9E31A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82D18BE6533494A4B140149 /* APLog.framework in Frameworks */,
+				DCD0A745544FC39716397384 /* APMobileFramework.framework in Frameworks */,
+				7308881770061E193B58CD38 /* mPaas.framework in Frameworks */,
+				552307F65F4D820EE041308B /* APRemoteLogging.framework in Frameworks */,
+				4E6EB8A6DD64612788912EB6 /* UTDID.framework in Frameworks */,
+				C411F9296F5A4A17B6ACAA2F /* APProtocolBuffers.framework in Frameworks */,
+				096F1DDFC7C3D42871AF8515 /* APOpenSSL.framework in Frameworks */,
+				39EEDE5624D1782200BF4F18 /* ARTVC.framework in Frameworks */,
+				8BDF591C3C5A73EEAD543253 /* APMUtils.framework in Frameworks */,
+				66C7417ECA4CE46CBE44FEB3 /* SocketRocket.framework in Frameworks */,
+				3805B76282744F5659ECE399 /* APMobileNetwork.framework in Frameworks */,
+				6DCF3B08516CD2380AE5EF10 /* SecurityGuardSDK.framework in Frameworks */,
+				4B8292DE80AACC95BBAAD747 /* SGMain.framework in Frameworks */,
+				FD3C45CCBBA4EBFB814D3D2B /* APSecurityUtility.framework in Frameworks */,
+				A7769D69A981EFC70E03A0EA /* APMLogging.framework in Frameworks */,
+				F3C3A04442BE3EDF9C324608 /* SystemConfiguration.framework in Frameworks */,
+				0C1B107AC9B1161440CB9A16 /* UserNotifications.framework in Frameworks */,
+				9A21FE76E3B4CFE30948DD6E /* CoreTelephony.framework in Frameworks */,
+				A5118F86D19F39FA3CA1FFEF /* CoreMotion.framework in Frameworks */,
+				F3C65E183AADFF9C24ACE23B /* ReplayKit.framework in Frameworks */,
+				0B1544DA31BE51C64E3E0DC7 /* UIKit.framework in Frameworks */,
+				F7D291660550E1662AF84797 /* GLKit.framework in Frameworks */,
+				C33C061C1E1F0688C3D229E0 /* OpenGLES.framework in Frameworks */,
+				7DFB05AA358C5A0FC6F83757 /* CoreMedia.framework in Frameworks */,
+				D66C33611695CFB0043623F7 /* AVFoundation.framework in Frameworks */,
+				066B8BFE5E35D03F1BB96CD5 /* VideoToolbox.framework in Frameworks */,
+				30DE93CA3B7278591C0596E8 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1634ED55231ED9CB54C8F9BB /* MPaaS */ = {
+			isa = PBXGroup;
+			children = (
+				2E6B8E004EA2B5383421880C /* mpaas_sdk.config */,
+				D1A7EE177F3A94B2DB1B740F /* Targets */,
+				5A78C048A8F8ED6EF400C384 /* Resources */,
+				B4500B8B9560923C33C9D771 /* Frameworks */,
+			);
+			path = MPaaS;
+			sourceTree = "<group>";
+		};
+		39EEDE3424D1766900BF4F18 /* mcu */ = {
+			isa = PBXGroup;
+			children = (
+				39EEDE3524D1766900BF4F18 /* settings */,
+				39EEDE3D24D1766900BF4F18 /* conference */,
+				39EEDE4624D1766900BF4F18 /* ARTVCDemoMainVC.h */,
+				39EEDE4724D1766900BF4F18 /* Toast */,
+				39EEDE4A24D1766900BF4F18 /* ARTVCDemoMainVC.m */,
+				39EEDE4B24D1766900BF4F18 /* MPARTVCDemo.bundle */,
+			);
+			path = mcu;
+			sourceTree = "<group>";
+		};
+		39EEDE3524D1766900BF4F18 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				39EEDE3624D1766900BF4F18 /* ARTVCDemoSettingsVC.h */,
+				39EEDE3724D1766900BF4F18 /* ARTVCDemoSettingsModel+Private.h */,
+				39EEDE3824D1766900BF4F18 /* ARTVCDemoSettingsStore.h */,
+				39EEDE3924D1766900BF4F18 /* ARTVCDemoSettingsModel.h */,
+				39EEDE3A24D1766900BF4F18 /* ARTVCDemoSettingsVC.m */,
+				39EEDE3B24D1766900BF4F18 /* ARTVCDemoSettingsStore.m */,
+				39EEDE3C24D1766900BF4F18 /* ARTVCDemoSettingsModel.m */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		39EEDE3D24D1766900BF4F18 /* conference */ = {
+			isa = PBXGroup;
+			children = (
+				39EEDE3E24D1766900BF4F18 /* ARTVCDemoControlView.h */,
+				39EEDE3F24D1766900BF4F18 /* AMImageSaver.m */,
+				39EEDE4024D1766900BF4F18 /* ARTVCDemoCollectionViewCell.m */,
+				39EEDE4124D1766900BF4F18 /* ARTVCDemoConferenceVC.m */,
+				39EEDE4224D1766900BF4F18 /* AMImageSaver.h */,
+				39EEDE4324D1766900BF4F18 /* ARTVCDemoControlView.m */,
+				39EEDE4424D1766900BF4F18 /* ARTVCDemoCollectionViewCell.h */,
+				39EEDE4524D1766900BF4F18 /* ARTVCDemoConferenceVC.h */,
+			);
+			path = conference;
+			sourceTree = "<group>";
+		};
+		39EEDE4724D1766900BF4F18 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				39EEDE4824D1766900BF4F18 /* UIView+ARTVCToast.m */,
+				39EEDE4924D1766900BF4F18 /* UIView+ARTVCToast.h */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		3C0D560AEAE8CCCD7C56E22A /* APMobileFramework */ = {
+			isa = PBXGroup;
+			children = (
+				25E3138354007CB81C5A7F95 /* DTFrameworkInterface+ARTVCDemo_Plugin.h */,
+				92E39E865114F0F49645687E /* DTFrameworkInterface+ARTVCDemo_Plugin.m */,
+			);
+			path = APMobileFramework;
+			sourceTree = "<group>";
+		};
+		5A78C048A8F8ED6EF400C384 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				245E6ADFFAD0E91EC07B376A /* APMobileFramework.bundle */,
+				996529189AC6A3C1081278FF /* APRemoteLogging.bundle */,
+				96277E68B8F3B6DB93E6532C /* APMUtils.bundle */,
+				59609B102716FBB817B00526 /* APMobileNetwork.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		70BA36FBA7008FB52B5AE7C4 /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				BDD6794B2D8FC76FBD3E75D4 /* MPLauncherAppDelegate.h */,
+				AC99FBDE6E42C0CE9CB22F78 /* MPLauncherAppDelegate.m */,
+				71A3710CAA0CB48FA8B38E06 /* MPTabBarViewController.h */,
+				F9ED6B580869CE261CFD15B7 /* MPTabBarViewController.m */,
+				EC4C80D9E1F56A23854C98F6 /* MobileRuntime.plist */,
+			);
+			path = Launcher;
+			sourceTree = "<group>";
+		};
+		957F4A2CC59BAAA1EE47DE7F /* mPaas */ = {
+			isa = PBXGroup;
+			children = (
+				DE77C46A222F8BE57773B409 /* MPaaSInterface+ARTVCDemo_Plugin.h */,
+				060C22C5CE111B1E623360D4 /* MPaaSInterface+ARTVCDemo_Plugin.m */,
+			);
+			path = mPaas;
+			sourceTree = "<group>";
+		};
+		B4500B8B9560923C33C9D771 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D55AF5705BD8518A9A378A4A /* APLog.framework */,
+				7C10B463431BB5051991709B /* APMobileFramework.framework */,
+				E61E1EC4F32EFF4A3FF28FF5 /* mPaas.framework */,
+				D36F131CAC7320BD888E5B47 /* APRemoteLogging.framework */,
+				1CEAC5599C7F3C9692F04EBE /* UTDID.framework */,
+				1243E2F41362442017651655 /* APProtocolBuffers.framework */,
+				E9F4201F5B98AF7E136FC85F /* APOpenSSL.framework */,
+				0A97286A7F31A6C7B7AB1225 /* ARTVC.framework */,
+				ADECEAF32C88F7C65234470F /* APMUtils.framework */,
+				25CC5F322CF786C25F4BA4CF /* SocketRocket.framework */,
+				9980A04D5444068283CAF26C /* APMobileNetwork.framework */,
+				0E9F5960E1DA58D0A8B6AC30 /* SecurityGuardSDK.framework */,
+				041327FBE9EA1E4FEA22D19B /* SGMain.framework */,
+				B60C007C020CA910397C72DD /* APSecurityUtility.framework */,
+				44E033C0B187E26D1AC26331 /* APMLogging.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		C32CB19795E27561B3A7B56A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F66E5F85CB316DCC9309BCD9 /* SystemConfiguration.framework */,
+				E34094BD1DF8DAA13C6A620A /* UserNotifications.framework */,
+				E1C3AEA61C15E0DE107D3426 /* CoreTelephony.framework */,
+				898E4144F49151A5FE3F582F /* CoreMotion.framework */,
+				EA3B66EEF4AC0201B580F0C5 /* ReplayKit.framework */,
+				C8DF0B2532426CC8E3B50668 /* UIKit.framework */,
+				BBCC40DA95D9DD40DF20E908 /* GLKit.framework */,
+				69E9915310921DF7F24A06D5 /* OpenGLES.framework */,
+				8320399CF7A91A3947F33254 /* CoreMedia.framework */,
+				6898704C0AE7789E690E5CF2 /* AVFoundation.framework */,
+				4AC158F38DCF292E95860EF1 /* VideoToolbox.framework */,
+				2F983B15FA37D83CEA0F0DEF /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1A7EE177F3A94B2DB1B740F /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				F2FEB19821AC8DF3259D837F /* ARTVCDemo_Plugin */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		E43E7C5D21D1077E00D9E31A = {
+			isa = PBXGroup;
+			children = (
+				E43E7C6821D1077E00D9E31A /* ARTVCDemo_Plugin */,
+				E43E7C6721D1077E00D9E31A /* Products */,
+				1634ED55231ED9CB54C8F9BB /* MPaaS */,
+				C32CB19795E27561B3A7B56A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E43E7C6721D1077E00D9E31A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E43E7C6621D1077E00D9E31A /* ARTVCDemo_Plugin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E43E7C6821D1077E00D9E31A /* ARTVCDemo_Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				39EEDE3424D1766900BF4F18 /* mcu */,
+				E43E7C8621D1446400D9E31A /* ARTVCDemo_Plugin.entitlements */,
+				E43E7C7F21D108B900D9E31A /* Sources */,
+				E43E7C8021D108C100D9E31A /* Resources */,
+				E43E7C8321D109ED00D9E31A /* Supporting Files */,
+			);
+			path = ARTVCDemo_Plugin;
+			sourceTree = "<group>";
+		};
+		E43E7C7F21D108B900D9E31A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E43E7C6C21D1077E00D9E31A /* DemoViewController.h */,
+				E43E7C6D21D1077E00D9E31A /* DemoViewController.m */,
+				70BA36FBA7008FB52B5AE7C4 /* Launcher */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E43E7C8021D108C100D9E31A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E43E7C7221D1077E00D9E31A /* Assets.xcassets */,
+				E43E7C7421D1077E00D9E31A /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E43E7C8321D109ED00D9E31A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E43E7C7721D1077E00D9E31A /* Info.plist */,
+				E43E7C7821D1077E00D9E31A /* main.m */,
+				E43E7C8221D1095B00D9E31A /* ARTVCDemo_Plugin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2FEB19821AC8DF3259D837F /* ARTVCDemo_Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				61F2F07C2E27319C7423B910 /* meta.config */,
+				20FABA1B8D3D621F47560077 /* yw_1222.jpg */,
+				DD4A8723599ECCE847A9A667 /* ARTVCDemo_Plugin-mPaaS-Headers.h */,
+				68ED6C2286918AAEAED590CB /* ARTVCDemo_Plugin-Prefix.pch */,
+				3C0D560AEAE8CCCD7C56E22A /* APMobileFramework */,
+				957F4A2CC59BAAA1EE47DE7F /* mPaas */,
+			);
+			path = ARTVCDemo_Plugin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E43E7C6521D1077E00D9E31A /* ARTVCDemo_Plugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43E7C7C21D1077E00D9E31A /* Build configuration list for PBXNativeTarget "ARTVCDemo_Plugin" */;
+			buildPhases = (
+				E43E7C6221D1077E00D9E31A /* Sources */,
+				E43E7C6321D1077E00D9E31A /* Frameworks */,
+				E43E7C6421D1077E00D9E31A /* Resources */,
+				39EEDE5824D1782200BF4F18 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARTVCDemo_Plugin;
+			productName = ARTVCDemo_Plugin;
+			productReference = E43E7C6621D1077E00D9E31A /* ARTVCDemo_Plugin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E43E7C5E21D1077E00D9E31A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Alibaba;
+				TargetAttributes = {
+					E43E7C6521D1077E00D9E31A = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = NWNC46252S;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E43E7C6121D1077E00D9E31A /* Build configuration list for PBXProject "ARTVCDemo_Plugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E43E7C5D21D1077E00D9E31A;
+			productRefGroup = E43E7C6721D1077E00D9E31A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E43E7C6521D1077E00D9E31A /* ARTVCDemo_Plugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E43E7C6421D1077E00D9E31A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43E7C7621D1077E00D9E31A /* LaunchScreen.storyboard in Resources */,
+				E43E7C7321D1077E00D9E31A /* Assets.xcassets in Resources */,
+				5ECF5A5CE9BB347331713F26 /* MobileRuntime.plist in Resources */,
+				81309EA34CBD4D2B50534F68 /* meta.config in Resources */,
+				39EEDE5524D1766900BF4F18 /* MPARTVCDemo.bundle in Resources */,
+				A1F12666344D6736CB70D60A /* yw_1222.jpg in Resources */,
+				D1768BC6F83A9D6DD84F4D14 /* APMobileFramework.bundle in Resources */,
+				306353C9F98783FE84A5D637 /* APRemoteLogging.bundle in Resources */,
+				FEA933DCEBF6B00C33769374 /* APMUtils.bundle in Resources */,
+				0EBBB5802DED62B66793302B /* APMobileNetwork.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E43E7C6221D1077E00D9E31A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39EEDE5224D1766900BF4F18 /* ARTVCDemoControlView.m in Sources */,
+				39EEDE5124D1766900BF4F18 /* ARTVCDemoConferenceVC.m in Sources */,
+				39EEDE5024D1766900BF4F18 /* ARTVCDemoCollectionViewCell.m in Sources */,
+				E43E7C6E21D1077E00D9E31A /* DemoViewController.m in Sources */,
+				39EEDE4F24D1766900BF4F18 /* AMImageSaver.m in Sources */,
+				39EEDE5324D1766900BF4F18 /* UIView+ARTVCToast.m in Sources */,
+				39EEDE4E24D1766900BF4F18 /* ARTVCDemoSettingsModel.m in Sources */,
+				39EEDE5424D1766900BF4F18 /* ARTVCDemoMainVC.m in Sources */,
+				E43E7C7921D1077E00D9E31A /* main.m in Sources */,
+				F54592AA7766C49F548DF3B3 /* MPLauncherAppDelegate.m in Sources */,
+				D1C0F0296CD80E6D0AB67415 /* MPTabBarViewController.m in Sources */,
+				A8F97FF556E987170E1B4A7C /* DTFrameworkInterface+ARTVCDemo_Plugin.m in Sources */,
+				A699662CD964ADEE1AAB042C /* MPaaSInterface+ARTVCDemo_Plugin.m in Sources */,
+				39EEDE4D24D1766900BF4F18 /* ARTVCDemoSettingsStore.m in Sources */,
+				39EEDE4C24D1766900BF4F18 /* ARTVCDemoSettingsVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E43E7C7421D1077E00D9E31A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43E7C7521D1077E00D9E31A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E43E7C7A21D1077E00D9E31A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_ARTVCDemo_PluginS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E43E7C7B21D1077E00D9E31A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_ARTVCDemo_PluginS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E43E7C7D21D1077E00D9E31A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ARTVCDemo_Plugin/ARTVCDemo_Plugin.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWNC46252S;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/APLog/3.0.2.200619152113/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/APMobileFramework/1.0.0.200612164733/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/mPaas/1.0.0.200702162413/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/APRemoteLogging/1.0.0.200716144718/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/UTDID/1.0.2.190226130141/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/APProtocolBuffers/1.0.1.200228175209/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/APOpenSSL/1.0.0.200228175209/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/ARTVC/1.0.0.200721201508/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/APMUtils/1.0.0.200617195627/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/SocketRocket/1.0.0.200714161608/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/APMobileNetwork/1.0.0.200525171627/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/SecurityGuardSDK/2.2.3.190326110928/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/APSecurityUtility/1.2.0.171012202618/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/APMLogging/1.0.0.200716133857/**",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARTVCDemo_Plugin/ARTVCDemo_Plugin-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/ARTVCDemo_Plugin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lz",
+					"-lsqlite3",
+					"-lxml2",
+					"-lc++",
+					"-lbz2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mpaas.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WARNING_CFLAGS = "-Wno-objc-protocol-method-implementation";
+			};
+			name = Debug;
+		};
+		E43E7C7E21D1077E00D9E31A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ARTVCDemo_Plugin/ARTVCDemo_Plugin.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWNC46252S;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/APLog/3.0.2.200619152113/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/APMobileFramework/1.0.0.200612164733/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/mPaas/1.0.0.200702162413/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/APRemoteLogging/1.0.0.200716144718/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/UTDID/1.0.2.190226130141/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/APProtocolBuffers/1.0.1.200228175209/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/APOpenSSL/1.0.0.200228175209/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/ARTVC/1.0.0.200721201508/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/APMUtils/1.0.0.200617195627/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/SocketRocket/1.0.0.200714161608/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/APMobileNetwork/1.0.0.200525171627/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/SecurityGuardSDK/2.2.3.190326110928/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/APSecurityUtility/1.2.0.171012202618/**",
+					"/Users/Shared/.mpaaskit_sdk/repo/frameworks/APMLogging/1.0.0.200716133857/**",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARTVCDemo_Plugin/ARTVCDemo_Plugin-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/ARTVCDemo_Plugin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lz",
+					"-lsqlite3",
+					"-lxml2",
+					"-lc++",
+					"-lbz2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mpaas.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WARNING_CFLAGS = "-Wno-objc-protocol-method-implementation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E43E7C6121D1077E00D9E31A /* Build configuration list for PBXProject "ARTVCDemo_Plugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43E7C7A21D1077E00D9E31A /* Debug */,
+				E43E7C7B21D1077E00D9E31A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E43E7C7C21D1077E00D9E31A /* Build configuration list for PBXNativeTarget "ARTVCDemo_Plugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43E7C7D21D1077E00D9E31A /* Debug */,
+				E43E7C7E21D1077E00D9E31A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E43E7C5E21D1077E00D9E31A /* Project object */;
+}
