@@ -70,13 +70,13 @@ typedef enum
 
 @class DTNetReachability;
 
-typedef void (^NetworkReachable)(DTNetReachability * reachability);
-typedef void (^NetworkUnreachable)(DTNetReachability * reachability);
+typedef void (^MPAASNetworkReachable)(DTNetReachability * reachability);
+typedef void (^MPAASNetworkUnreachable)(DTNetReachability * reachability);
 
 @interface DTNetReachability : NSObject
 
-@property (nonatomic, copy) NetworkReachable    reachableBlock;
-@property (nonatomic, copy) NetworkUnreachable  unreachableBlock;
+@property (nonatomic, copy) MPAASNetworkReachable    reachableBlock;
+@property (nonatomic, copy) MPAASNetworkUnreachable  unreachableBlock;
 
 
 @property (nonatomic, assign) BOOL reachableOnWWAN;

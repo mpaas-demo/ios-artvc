@@ -6,9 +6,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 #import "RTCMacros.h"
 NS_ASSUME_NONNULL_BEGIN
 typedef void (^ARTVCErrorCallback)(NSError*_Nullable error);
+typedef void (^ARTVCEventCallback)(void);
+
+extern NSString *const kARTVCBizName;
+extern NSString *const kARTVCSubbiz;
 
 #ifndef ARTVC_BUILD_FOR_MPAAS
 typedef NS_ENUM(int,ARTVCRoomServerType){
@@ -49,6 +54,14 @@ typedef NS_ENUM(int,ARTVCVideoSourceType){
 };
 typedef NS_ENUM(int,ARTVCVideoProfileType){
     /**
+     encoded video resolution is 640x480,fps is 15
+     */
+    ARTVCVideoProfileType_640x480_15Fps   = 0,
+    /**
+    encoded video resolution is 640x480,fps is 30
+    */
+    ARTVCVideoProfileType_640x480_30Fps   = 1,
+    /**
      encoded video resolution is 640x360,fps is 15
      */
     ARTVCVideoProfileType_640x360_15Fps   = 2,
@@ -73,6 +86,14 @@ typedef NS_ENUM(int,ARTVCVideoProfileType){
     */
     ARTVCVideoProfileType_1280x720_30Fps  = 7,
 //    ARTVCVideoProfileType_1920x1080_30Fps = 10,
+    /**
+     encoded video resolution is 320x180,fps is 15
+     */
+    ARTVCVideoProfileType_320x180_15Fps   = 12,
+    /**
+     encoded video resolution is 160x90,fps is 15
+     */
+    ARTVCVideoProfileType_160x90_15Fps   = 13,
     /**
     custom the resolution and fps yourself.
     */
@@ -140,21 +161,36 @@ typedef NS_ENUM(int,ARTVCErrorCode){
     */
     ARTVCErrorCodeInvalidServerAddress           = -1005,
     /**
+     start audio device failed,eg.we cann't get the priority to use microphone,or we init microphne failed.
+     
+     receive this callback under these scenarios:
+     1.first we need make a audio-included call
+     2. cellular call incoming/dialing/connected. and then you try to make a audio-included call. as Phone's priority is high than RTC app,so we cann't active audio session successfully,which makes the established call  silent.
+      
+     when this callbacked,leaveRoom is suggested to be called.
+     */
+    ARTVCErrorCodeStartAudioDeviceFailed                  = -1008,
+    /**
      screen capture only support iOS11 and above
      */
-    ARTVCErrorCodeScreenCaptureNotSupported = -1010,
+    ARTVCErrorCodeScreenCaptureNotSupported               = -1010,
     /**
     screen capture alrady under running,you cann't start it again before you call stop
     */
-    ARTVCErrorCodeScreenCapturerAlreadyUnderRunning              = -1011,
+    ARTVCErrorCodeScreenCapturerAlreadyUnderRunning       = -1011,
     /**
     starting screen capture failed
     */
-    ARTVCErrorCodeStartScreenCaptureFailed              = -1012,
+    ARTVCErrorCodeStartScreenCaptureFailed                = -1012,
     /**
     start screen capture success,but may be encounter errors during the processing of the capure operation.
     */
-    ARTVCErrorCodeScreenCaptureFailedInProcessing              = -1013,
+    ARTVCErrorCodeScreenCaptureFailedInProcessing         = -1013,
+    
+    /**
+    make a rtc call under cellular call is not allowed.
+    */
+    ARTVCErrorCodeMakeRtcCallUnderCellularCallNotAllowed  = -1014,
 };
 //keep the same with  ARTVCWebrtcConnectionState 
 typedef NS_ENUM(int,ARTVCConnectionStatus){
@@ -201,6 +237,96 @@ typedef NS_ENUM(int,ARTVCFeedType){
     //2.use screen capture and auido disabled.
     ARTVCFeedTypeLocalFeedScreenCapture   = 4,
 };
+/**
+ degradation_preference options
+ */
+typedef NS_ENUM (int,ARTVCDegradationPreference) {
+    ARTVCDegradationPreferenceMAINTAIN_RESOLUTION = 0,
+    ARTVCDegradationPreferenceMAINTAIN_FRAMERATE  = 1,
+    ARTVCDegradationPreferenceDISABLED            = 2,
+    ARTVCDegradationPreferenceBALANCED            = 3,
+};
+typedef NS_ENUM(int,ARTVCFeedStatus) {
+    ARTVCFeedStatusInit             = 0,
+    ARTVCFeedStatusReplyDone        = 1,
+    ARTVCFeedStatusPCDone           = 2,
+    ARTVCFeedStatusDestory          = 3,
+};
+typedef NS_ENUM(int,ARTVCClientEvent) {
+    // see the detail on link:( https://yuque.antfin-inc.com/amm/gokd44/ltmlrg )
+    /**
+     app event
+     */
+    ARTVCClientEvent_ACTIVITY_PAUSE                    = 301,
+    ARTVCClientEvent_ACTIVITY_RESUME                   = 302,
+    
+    /**
+     user event
+     */
+    ARTVCClientEvent_DISABLE_LOCAL_VIDEO               = 321,
+    ARTVCClientEvent_ENABLE_LOCAL_VIDEO                = 322,
+    ARTVCClientEvent_DISABLE_LOCAL_AUDIO               = 323,
+    ARTVCClientEvent_ENABLE_LOCAL_AUDIO                = 324,
+    ARTVCClientEvent_DISABLE_OTHERS_VIDEO              = 325,
+    ARTVCClientEvent_ENABLE_OTHERS_VIDEO               = 326,
+    ARTVCClientEvent_DISABLE_OTHERS_AUDIO              = 327,
+    ARTVCClientEvent_ENABLE_OTHERS_AUDIO               = 328,
+    ARTVCClientEvent_ON_CHANGE_TO_EARPIECE             = 329,
+    ARTVCClientEvent_CHANGE_TO_SPEAKER_PHONE           = 330,
+    
+    /**
+     errer event
+     */
+    ARTVCClientEvent_ERROR_CAMERA_PERMISSION           = 363,
+    ARTVCClientEvent_ERROR_MIC_PERMISSION              = 364,
+    ARTVCClientEvent_ERROR_READ_PHONE_STATE_PERMISSION = 365,
+    ARTVCClientEvent_ERROR_OPEN_CAMER                  = 366,
+    ARTVCClientEvent_ERROR_OPEN_MIC                    = 367,
+    ARTVCClientEvent_ERROR_OPEN_TRACK                  = 368,
+    ARTVCClientEvent_ON_ERROR_DEFAULT                  = 369,
+    
+    /**
+     call event
+     */
+    ARTVCClientEvent_PHONE_CALL_PUBLISH                = 371,
+    ARTVCClientEvent_PHONE_CALL_SUBSCRIBE              = 372,
+    ARTVCClientEvent_PHONE_CALL_ON                     = 373,
+    ARTVCClientEvent_PHONE_CALL_OFF                    = 374,
+    
+    /**
+     network event
+     */
+    ARTVCClientEvent_LowBand_Begin                     = 381,
+    ARTVCClientEvent_LowBand_End                       = 382,
+    ARTVCClientEvent_Network_Changed                   = 383,
+};
+
+extern NSString *const kACTIVITY_RESUME;
+extern NSString *const kACTIVITY_PAUSE;
+extern NSString *const kDISABLE_LOCAL_VIDEO;
+extern NSString *const kENABLE_LOCAL_VIDEO;
+extern NSString *const kDISABLE_LOCAL_AUDIO;
+extern NSString *const kENABLE_LOCAL_AUDIO;
+extern NSString *const kENABLE_OTHERS_VIDEO;
+extern NSString *const kDISABLE_OTHERS_VIDEO;
+extern NSString *const kENABLE_OTHERS_AUDIO;
+extern NSString *const kDISABLE_OTHERS_AUDIO;
+extern NSString *const kCHANGE_TO_EARPIECE;
+extern NSString *const kCHANGE_TO_SPEAKER_PHONE;
+extern NSString *const kERROR_CAMERA_PERMISSION;
+extern NSString *const kERROR_MIC_PERMISSION;
+extern NSString *const kERROR_READ_PHONE_STATE_PERMISSION;
+extern NSString *const kERROR_OPEN_CAMERA;
+extern NSString *const kERROR_OPEN_MIC;
+extern NSString *const kERROR_OPEN_TRACK;
+extern NSString *const kON_ERROR_DEFAULT;
+extern NSString *const kPHONE_CALL_PUBLISH;
+extern NSString *const kPHONE_CALL_SUBSCRIBE;
+extern NSString *const kPHONE_CALL_ON;
+extern NSString *const kPHONE_CALL_OFF;
+extern NSString *const kLowBand_Begin;
+extern NSString *const kLowBand_End;
+extern NSString *const kNetwork_Changed;
 XRTC_OBJC_EXPORT
 @protocol ARTVCParamsProtocol <NSObject>
 /**
@@ -278,5 +404,23 @@ add a given feed he subscribed
 remove a given feed he subscribed
 */
 -(void)removeSubscribeFeed:(ARTVCFeed*)subscriber;
+@end
+
+XRTC_OBJC_EXPORT
+@interface ARTVCAudioData : NSObject
+@property (nonatomic, assign) AudioUnitRenderActionFlags* flags;
+@property (nonatomic, assign) const AudioTimeStamp* timeStamp;
+@property (nonatomic, assign) int busNumber;
+@property (nonatomic, assign) int numFrames;
+@property (nonatomic, assign) double sampleRate;
+@property (nonatomic, assign) AudioBufferList *audioBufferList;
+/**
+ local or remote audio, only support local audio now
+ */
+@property (nonatomic, assign) BOOL localAudio;
+/**
+ extra params, it's useless now
+ */
+@property (nonatomic, strong) NSDictionary* _Nullable extra;
 @end
 NS_ASSUME_NONNULL_END

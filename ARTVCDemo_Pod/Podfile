@@ -1,8 +1,8 @@
 # mPaaS Pods Begin
 plugin "cocoapods-mPaaS"
 source "https://code.aliyun.com/mpaas-public/podspecs.git"
-mPaaS_baseline '10.1.68'  # 请将 x.x.x 替换成真实基线版本
-mPaaS_version_code 24   # This line is maintained by MPaaS plugin automatically. Please don't modify.
+mPaaS_baseline 'cp_change_26792'  # 请将 x.x.x 替换成真实基线版本
+mPaaS_version_code 6   # This line is maintained by MPaaS plugin automatically. Please don't modify.
 # mPaaS Pods End
 # ---------------------------------------------------------------------
 # Uncomment the next line to define a global platform for your project

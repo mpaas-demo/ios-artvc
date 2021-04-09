@@ -12,6 +12,7 @@
 #import "ARTVCDemoSettingsVC.h"
 #import "ARTVCDemoSettingsModel.h"
 #import <APMUtils/APMLog.h>
+#import <ARTVC/RTCMacros.h>
 #undef APM_LOG_TAG
 #define APM_LOG_TAG @"[ACDemo] "
 
@@ -20,35 +21,65 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(int, ARDSettingsSections) {
     ARDSettingsSectionUidConfig = 0,
     ARDSettingsSectionBiznameConfig,
-    
+    ARDSettingsSectionSubbizConfig,
+#ifdef ARTVC_BUILD_FOR_MPAAS
+    ARDSettingsSectionWorkspaceIdConfig,
+#endif
     ARDSettingsSectionSignatureConfig,
     ARDSettingsSectionMediaConstraints,
     ARDSettingsSectionBitRate,
     ARDSettingsSectionFrameRate,
+#ifndef ARTVC_BUILD_FOR_MPAAS
     ARDSettingsSectionServerConfig,
+#endif
+    ARDSettingsSectionCustomServerUrlConfig,
     ARDSettingsSectionDTLSConfig,
     ARDSettingsSectionRelayConfig,
     ARDSettingsSectionEnablePublishConfig,
     ARDSettingsSectionEnableSubscribeConfig,
+    ARDSettingsSectionEnableFlexFECConfig,
+    ARDSettingsSectionEnableBWEExperimentConfig,
     ARDSettingsSectionEnableInviteConfig,
     ARDSettingsSectionInviteeUidConfig,
     ARDSettingsSectionLiveUrlConfig,
+    ARDSettingsSectionUseBloxWay,
+    ARDSettingsSectionBeautyLevel,
+    ARDSettingsSectionEnableVirtualBackground,
+    ARDSettingsSectionPacingExperimentConfig,
+    ARDSettingsSectionNackExperimentConfig,
+    ARDSettingsSectionPlayoutDelayExperimentConfig,
+    ARDSettingsSectionJitterExperimentConfig,
+    ARDSettingsSectionMockedCloudConfigs,
+    ARDSettingsSectionVideoSmoothRenderingExperimentConfig,
+    ARDSettingsSectionLoopbackConfig,
     ARDSettingsSectionEnd
 };
 
-@interface ARTVCDemoSettingsVC () {
-  ARTVCDemoSettingsModel *_settingsModel;
-}
+@interface ARTVCDemoSettingsVC ()
 @property(nonatomic,strong) UITextField *framerateTF;
 @property(nonatomic,strong) UITextField *bitrateTF;
+@property(nonatomic,strong) UITextField *bweTF;
 @property(nonatomic,strong) UITextField *inviteeUidTF;
 @property(nonatomic,strong) UITextField *liveUrlTF;
 @property(nonatomic,strong) UITextField *uidTF;
 @property(nonatomic,strong) UITextField *biznameTF;
+@property(nonatomic,strong) UITextField *subbizTF;
+#ifdef ARTVC_BUILD_FOR_MPAAS
+@property(nonatomic,strong) UITextField *workspaceIdTF;
+#endif
 @property(nonatomic,strong) UITextField *signatureTF;
+@property(nonatomic,strong) UITextField *customServerUrlTF;
+@property(nonatomic,strong) UITextField *beautyLevelTF;
+@property(nonatomic,strong) UITextField *pacingExpeTF;
+@property(nonatomic,strong) UITextField *nackExpeTF;
+@property(nonatomic,strong) UITextField *playoutDelayExpeTF;
+@property(nonatomic,strong) UITextField *jitterExpeTF;
+@property(nonatomic,strong) UITextField *mockedConfigsTF;
 @end
 
-@implementation ARTVCDemoSettingsVC
+@implementation ARTVCDemoSettingsVC{
+    ARTVCDemoSettingsModel *_settingsModel;
+}
 
 - (instancetype)initWithStyle:(UITableViewStyle)style
                 settingsModel:(ARTVCDemoSettingsModel *)settingsModel {
@@ -137,6 +168,14 @@ typedef NS_ENUM(int, ARDSettingsSections) {
 - (BOOL)sectionIsBiznameConfig:(NSInteger)section {
   return section == ARDSettingsSectionBiznameConfig;
 }
+- (BOOL)sectionIsSubbizConfig:(NSInteger)section {
+  return section == ARDSettingsSectionSubbizConfig;
+}
+#ifdef ARTVC_BUILD_FOR_MPAAS
+- (BOOL)sectionIsWorkspaceIdConfig:(NSInteger)section {
+  return section == ARDSettingsSectionWorkspaceIdConfig;
+}
+#endif
 - (BOOL)sectionIsSignatureConfig:(NSInteger)section {
   return section == ARDSettingsSectionSignatureConfig;
 }
@@ -152,9 +191,13 @@ typedef NS_ENUM(int, ARDSettingsSections) {
 - (BOOL)sectionIsFrameRate:(NSInteger)section {
     return section == ARDSettingsSectionFrameRate;
 }
-
+#ifndef ARTVC_BUILD_FOR_MPAAS
 - (BOOL)sectionIsServerConfig:(NSInteger)section {
     return section == ARDSettingsSectionServerConfig;
+}
+#endif
+- (BOOL)sectionIsCustomServerUrlConfig:(NSInteger)section {
+    return section == ARDSettingsSectionCustomServerUrlConfig;
 }
 
 - (BOOL)sectionIsDtlsConfig:(NSInteger)section {
@@ -170,6 +213,12 @@ typedef NS_ENUM(int, ARDSettingsSections) {
 - (BOOL)sectionIsEnableSubscribeConfig:(NSInteger)section {
     return section == ARDSettingsSectionEnableSubscribeConfig;
 }
+- (BOOL)sectionIsEnableFlexFECConfig:(NSInteger)section {
+    return section == ARDSettingsSectionEnableFlexFECConfig;
+}
+- (BOOL)sectionIsBWEExperimentConfig:(NSInteger)section {
+    return section == ARDSettingsSectionEnableBWEExperimentConfig;
+}
 - (BOOL)sectionIsEnableInviteConfig:(NSInteger)section {
     return section == ARDSettingsSectionEnableInviteConfig;
 }
@@ -179,14 +228,50 @@ typedef NS_ENUM(int, ARDSettingsSections) {
 - (BOOL)sectionIsLiveUrlConfig:(NSInteger)section {
     return section == ARDSettingsSectionLiveUrlConfig;
 }
-
+- (BOOL)sectionIsUseBloxWay:(NSInteger)section {
+    return section == ARDSettingsSectionUseBloxWay;
+}
+- (BOOL)sectionIsBeautyLevel:(NSInteger)section {
+    return section == ARDSettingsSectionBeautyLevel;
+}
+- (BOOL)sectionIsVirtualBackground:(NSInteger)section {
+    return section == ARDSettingsSectionEnableVirtualBackground;
+}
+- (BOOL)sectionIsPacingExperimentConfig:(NSInteger)section {
+    return section == ARDSettingsSectionPacingExperimentConfig;
+}
+- (BOOL)sectionIsNackExperimentConfig:(NSInteger)section {
+    return section == ARDSettingsSectionNackExperimentConfig;
+}
+- (BOOL)sectionIsPlayoutDelayExperimentConfig:(NSInteger)section {
+    return section == ARDSettingsSectionPlayoutDelayExperimentConfig;
+}
+- (BOOL)sectionIsJitterExperimentConfig:(NSInteger)section {
+    return section == ARDSettingsSectionJitterExperimentConfig;
+}
+- (BOOL)sectionIsMockedCloudConfigs:(NSInteger)section {
+    return section == ARDSettingsSectionMockedCloudConfigs;
+}
+- (BOOL)sectionIsVideoSmoothRenderingExperimentConfig:(NSInteger)section {
+    return section == ARDSettingsSectionVideoSmoothRenderingExperimentConfig;
+}
+- (BOOL)sectionIsLoopbackConfig:(NSInteger)section {
+    return section == ARDSettingsSectionLoopbackConfig;
+}
 - (BOOL)indexPathIsUidConfig:(NSIndexPath *)indexPath {
   return [self sectionIsUidConfig:indexPath.section];
 }
 - (BOOL)indexPathIsBiznameConfig:(NSIndexPath *)indexPath {
   return [self sectionIsBiznameConfig:indexPath.section];
 }
-
+- (BOOL)indexPathIsSubbizConfig:(NSIndexPath *)indexPath {
+  return [self sectionIsSubbizConfig:indexPath.section];
+}
+#ifdef ARTVC_BUILD_FOR_MPAAS
+- (BOOL)indexPathIsWorkspaceIdConfig:(NSIndexPath *)indexPath {
+    return [self sectionIsWorkspaceIdConfig:indexPath.section];
+}
+#endif
 - (BOOL)indexPathIsSignatureConfig:(NSIndexPath *)indexPath {
   return [self sectionIsSignatureConfig:indexPath.section];
 }
@@ -202,9 +287,13 @@ typedef NS_ENUM(int, ARDSettingsSections) {
 - (BOOL)indexPathIsFrameRate:(NSIndexPath *)indexPath {
     return [self sectionIsFrameRate:indexPath.section];
 }
-
+#ifndef ARTVC_BUILD_FOR_MPAAS
 - (BOOL)indexPathIsServerConfig:(NSIndexPath *)indexPath {
     return [self sectionIsServerConfig:indexPath.section];
+}
+#endif
+- (BOOL)indexPathIsCustomServerUrlConfig:(NSIndexPath *)indexPath {
+    return [self sectionIsCustomServerUrlConfig:indexPath.section];
 }
 - (BOOL)indexPathIsDTLSConfig:(NSIndexPath *)indexPath {
     return [self sectionIsDtlsConfig:indexPath.section];
@@ -218,6 +307,12 @@ typedef NS_ENUM(int, ARDSettingsSections) {
 - (BOOL)indexPathIsEnableSubscribeConfig:(NSIndexPath *)indexPath {
     return [self sectionIsEnableSubscribeConfig:indexPath.section];
 }
+- (BOOL)indexPathIsEnableFlexFECConfig:(NSIndexPath *)indexPath {
+    return [self sectionIsEnableFlexFECConfig:indexPath.section];
+}
+- (BOOL)indexPathIsBWEExperimentConfig:(NSIndexPath *)indexPath {
+    return [self sectionIsBWEExperimentConfig:indexPath.section];
+}
 - (BOOL)indexPathIsEnableInviteConfig:(NSIndexPath *)indexPath {
     return [self sectionIsEnableInviteConfig:indexPath.section];
 }
@@ -226,6 +321,36 @@ typedef NS_ENUM(int, ARDSettingsSections) {
 }
 - (BOOL)indexPathIsLiveUrlConfig:(NSIndexPath *)indexPath {
     return [self sectionIsLiveUrlConfig:indexPath.section];
+}
+- (BOOL)indexPathIsUseBloxWay:(NSIndexPath *)indexPath {
+    return [self sectionIsUseBloxWay:indexPath.section];
+}
+- (BOOL)indexPathIsBeautyLevel:(NSIndexPath *)indexPath {
+    return [self sectionIsBeautyLevel:indexPath.section];
+}
+- (BOOL)indexPathIsVirtualBackground:(NSIndexPath *)indexPath {
+    return [self sectionIsVirtualBackground:indexPath.section];
+}
+- (BOOL)indexPathIsPacingExperimentConfig:(NSIndexPath *)indexPath {
+    return [self sectionIsPacingExperimentConfig:indexPath.section];
+}
+- (BOOL)indexPathIsNackExperimentConfig:(NSIndexPath *)indexPath {
+    return [self sectionIsNackExperimentConfig:indexPath.section];
+}
+- (BOOL)indexPathIsPlayoutDelayExperimentConfig:(NSIndexPath *)indexPath {
+    return [self sectionIsPlayoutDelayExperimentConfig:indexPath.section];
+}
+- (BOOL)indexPathIsJitterExperimentConfig:(NSIndexPath *)indexPath {
+    return [self sectionIsJitterExperimentConfig:indexPath.section];
+}
+- (BOOL)indexPathIsMockedCloudConfigs:(NSIndexPath *)indexPath {
+    return [self sectionIsMockedCloudConfigs:indexPath.section];
+}
+- (BOOL)indexPathIsVideoSmoothRenderingExperimentConfig:(NSIndexPath *)indexPath {
+    return [self sectionIsVideoSmoothRenderingExperimentConfig:indexPath.section];
+}
+- (BOOL)indexPathIsLoopbackConfig:(NSIndexPath *)indexPath {
+    return [self sectionIsLoopbackConfig:indexPath.section];
 }
 #pragma mark - Table view delegate
 
@@ -237,6 +362,20 @@ typedef NS_ENUM(int, ARDSettingsSections) {
     if ([self sectionIsBiznameConfig:section]) {
         return @"业务名称,该字段必须设置";
     }
+#if defined(ARTVC_BUILD_FOR_MPAAS)
+    if ([self sectionIsSubbizConfig:section]) {
+        return @"AppId名称,,该字段为空则从配置文件读取，非空则使用该字段";
+    }
+#else
+    if ([self sectionIsSubbizConfig:section]) {
+        return @"业务子名称,该字段必须设置";
+    }
+#endif
+#ifdef ARTVC_BUILD_FOR_MPAAS
+    if ([self sectionIsWorkspaceIdConfig:section]) {
+        return @"Workspace名称,该字段为空则从配置文件读取，非空则使用该字段";
+    }
+#endif
     if ([self sectionIsSignatureConfig:section]) {
         return @"签名信息,该字段必须设置";
     }
@@ -251,10 +390,18 @@ typedef NS_ENUM(int, ARDSettingsSections) {
     if ([self sectionIsFrameRate:section]) {
         return @"帧率,设置大于15FPS时当前使用30FPS";
     }
-    
+#if defined(ARTVC_BUILD_FOR_MPAAS)
+    if ([self sectionIsCustomServerUrlConfig:section]) {
+        return @"自定义信令服务器环境URL,该字段为空则从配置文件读取，非空则使用该字段";
+    }
+#else
     if ([self sectionIsServerConfig:section]) {
         return @"信令服务器环境（开发过程中建议使用测试环境）";
     }
+    if ([self sectionIsCustomServerUrlConfig:section]) {
+        return @"自定义信令服务器环境URL,如果设置了则上述开关会失效";
+    }
+#endif
     if ([self sectionIsDtlsConfig:section]) {
         return @"数据加密，默认启用DTLS";
     }
@@ -267,6 +414,12 @@ typedef NS_ENUM(int, ARDSettingsSections) {
     if ([self sectionIsEnableSubscribeConfig:section]) {
         return @"允许拉流，默认为YES";
     }
+    if ([self sectionIsEnableFlexFECConfig:section]) {
+        return @"开启FlecFEC-03，默认为NO,开启后video-timing功能会被关闭";
+    }
+    if ([self sectionIsBWEExperimentConfig:section]) {
+        return @"BWE实验参数(丢包率，最低评估带宽)\n开启(首字母大写，其他小写):Enabled-0.02,0.1,300\n关闭(首字母大写，其他小写):Disabled";
+    }
     if ([self sectionIsEnableInviteConfig:section]) {
         return @"允许CreateRoom后Invite对端";
     }
@@ -276,7 +429,37 @@ typedef NS_ENUM(int, ARDSettingsSections) {
     if ([self sectionIsLiveUrlConfig:section]) {
         return @"RTMP推流地址";
     }
-
+    
+    if ([self sectionIsUseBloxWay:section]) {
+        return @"使用智能音视频处理，默认为NO";
+    }
+    if ([self sectionIsBeautyLevel:section]) {
+        return @"设置美颜级别(0~1),默认关闭\n0:关闭美颜 / 0~1:美颜级别";
+    }
+    if ([self sectionIsVirtualBackground:section]) {
+        return @"开启虚拟背景,默认关闭";
+    }
+    if ([self sectionIsPacingExperimentConfig:section]) {
+        return @"Pacing实验";
+    }
+    if ([self sectionIsNackExperimentConfig:section]) {
+        return @"NACK实验参数\n开启(首字母大写，其他小写):Enabled-0.05,0.9,0.8,0.7,2,10\n关闭(首字母大写，其他小写):Disabled";
+    }
+    if ([self sectionIsPlayoutDelayExperimentConfig:section]) {
+        return @"PlayoutDelay实验参数\n开启(首字母大写，其他小写):Enabled-5,20\n关闭(首字母大写，其他小写):Disabled";
+    }
+    if ([self sectionIsJitterExperimentConfig:section]) {
+        return @"JitterEstimator实验参数\n开启(首字母大写，其他小写):Enabled-1.5,60,30,2.33,15,3,0,100\n关闭(首字母大写，其他小写):Disabled";
+    }
+    if ([self sectionIsMockedCloudConfigs:section]) {
+        return @"mock 云控";
+    }
+    if ([self sectionIsVideoSmoothRenderingExperimentConfig:section]) {
+        return @"视频平滑渲染";
+    }
+    if ([self sectionIsLoopbackConfig:section]) {
+        return @"loopback test,用于环回测试，自己订阅自己发布的流";
+    }
   return @"";
 }
 
@@ -288,6 +471,14 @@ typedef NS_ENUM(int, ARDSettingsSections) {
     if ([self indexPathIsBiznameConfig:indexPath]) {
         return [self biznameConfigTableViewCellForTableView:tableView atIndexPath:indexPath];
     }
+    if ([self indexPathIsSubbizConfig:indexPath]) {
+        return [self subbizConfigTableViewCellForTableView:tableView atIndexPath:indexPath];
+    }
+#ifdef ARTVC_BUILD_FOR_MPAAS
+    if ([self indexPathIsWorkspaceIdConfig:indexPath]) {
+        return [self workspaceIdConfigTableViewCellForTableView:tableView atIndexPath:indexPath];
+    }
+#endif
     if ([self indexPathIsSignatureConfig:indexPath]) {
         return [self signatureConfigTableViewCellForTableView:tableView atIndexPath:indexPath];
     }
@@ -302,9 +493,13 @@ typedef NS_ENUM(int, ARDSettingsSections) {
     if([self indexPathIsFrameRate:indexPath]){
         return [self framerateTableViewCellForTableView:tableView atIndexPath:indexPath];
     }
-    
+#ifndef ARTVC_BUILD_FOR_MPAAS
     if([self indexPathIsServerConfig:indexPath]){
         return [self serverConfigTableViewCellForTableView:tableView atIndexPath:indexPath];
+    }
+#endif
+    if([self indexPathIsCustomServerUrlConfig:indexPath]){
+        return [self customServerUrlConfigTableViewCellForTableView:tableView atIndexPath:indexPath];
     }
     if([self indexPathIsDTLSConfig:indexPath]){
         return [self dtlsConfigTableViewCellForTableView:tableView atIndexPath:indexPath];
@@ -318,6 +513,12 @@ typedef NS_ENUM(int, ARDSettingsSections) {
     if([self indexPathIsEnableSubscribeConfig:indexPath]){
         return [self enableSubscribeConfigTableViewCellForTableView:tableView atIndexPath:indexPath];
     }
+    if([self indexPathIsEnableFlexFECConfig:indexPath]){
+        return [self enableFlexFECConfigTableViewCellForTableView:tableView atIndexPath:indexPath];
+    }
+    if([self indexPathIsBWEExperimentConfig:indexPath]){
+        return [self enableBWEExperimentConfigTableViewCellForTableView:tableView atIndexPath:indexPath];
+    }
     if([self indexPathIsEnableInviteConfig:indexPath]){
         return [self enableInviteConfigTableViewCellForTableView:tableView atIndexPath:indexPath];
     }
@@ -327,7 +528,36 @@ typedef NS_ENUM(int, ARDSettingsSections) {
     if([self indexPathIsLiveUrlConfig:indexPath]){
         return [self liveUrlConfigTableViewCellForTableView:tableView atIndexPath:indexPath];
     }
-
+    if([self indexPathIsUseBloxWay:indexPath]){
+        return [self enableUseBloxWayTableViewCellForTableView:tableView atIndexPath:indexPath];
+    }
+    if([self indexPathIsBeautyLevel:indexPath]){
+        return [self beautyLevelTableViewCellForTableView:tableView atIndexPath:indexPath];
+    }
+    if([self indexPathIsVirtualBackground:indexPath]){
+        return [self virtualBGTableViewCellForTableView:tableView atIndexPath:indexPath];
+    }
+    if([self indexPathIsPacingExperimentConfig:indexPath]){
+        return [self pacingExperimentConfigTableViewCellForTableView:tableView atIndexPath:indexPath];
+    }
+    if([self indexPathIsNackExperimentConfig:indexPath]){
+        return [self nackExperimentConfigTableViewCellForTableView:tableView atIndexPath:indexPath];
+    }
+    if([self indexPathIsPlayoutDelayExperimentConfig:indexPath]){
+        return [self playoutDelayExperimentConfigTableViewCellForTableView:tableView atIndexPath:indexPath];
+    }
+    if([self indexPathIsJitterExperimentConfig:indexPath]){
+        return [self jitterExperimentConfigTableViewCellForTableView:tableView atIndexPath:indexPath];
+    }
+    if ([self indexPathIsMockedCloudConfigs:indexPath]) {
+        return [self mockedCloudConfigsTableViewCellForTableView:tableView atIndexPath:indexPath];
+    }
+    if([self indexPathIsVideoSmoothRenderingExperimentConfig:indexPath]){
+        return [self videoSmoothRenderingExperimentConfigTableViewCellForTableView:tableView atIndexPath:indexPath];
+    }
+    if([self indexPathIsLoopbackConfig:indexPath]){
+        return [self loopbackConfigTableViewCellForTableView:tableView atIndexPath:indexPath];
+    }
   return [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                 reuseIdentifier:@"identifier"];
 }
@@ -412,7 +642,7 @@ typedef NS_ENUM(int, ARDSettingsSections) {
     [numberToolbar sizeToFit];
 
     self.bitrateTF.inputAccessoryView = numberToolbar;
-    [cell addSubview:self.bitrateTF];
+    [cell.contentView addSubview:self.bitrateTF];
   }
   return cell;
 }
@@ -458,7 +688,7 @@ typedef NS_ENUM(int, ARDSettingsSections) {
         [numberToolbar sizeToFit];
         
         self.framerateTF.inputAccessoryView = numberToolbar;
-        [cell addSubview:self.framerateTF];
+        [cell.contentView addSubview:self.framerateTF];
     }
     return cell;
 }
@@ -469,6 +699,7 @@ typedef NS_ENUM(int, ARDSettingsSections) {
     }
     [self.view endEditing:YES];
 }
+#ifndef ARTVC_BUILD_FOR_MPAAS
 #pragma mark - Table view delegate(ServerConfig)
 - (UITableViewCell *)serverConfigTableViewCellForTableView:(UITableView *)tableView
                                             atIndexPath:(NSIndexPath *)indexPath {
@@ -497,6 +728,7 @@ typedef NS_ENUM(int, ARDSettingsSections) {
         [_settingsModel storeServerconfig:NO];
     }
 }
+#endif
 #pragma mark - Table view delegate(dtls)
 - (UITableViewCell *)dtlsConfigTableViewCellForTableView:(UITableView *)tableView
                                                atIndexPath:(NSIndexPath *)indexPath {
@@ -610,7 +842,74 @@ typedef NS_ENUM(int, ARDSettingsSections) {
         [_settingsModel setEnableSubscribe:NO];
     }
 }
+#pragma mark - Table view delegate(enable flexfec-03)
+- (UITableViewCell *)enableFlexFECConfigTableViewCellForTableView:(UITableView *)tableView
+                                                   atIndexPath:(NSIndexPath *)indexPath {
+    NSString *dequeueIdentifier = @"ARDSettingsEnableFlexFECConfigCellIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dequeueIdentifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                      reuseIdentifier:dequeueIdentifier];
+        
+        cell.textLabel.text = @"开启FlexFEC-03";
 
+        CGRect frame = CGRectMake(self.view.frame.size.width-51-10,cell.frame.origin.y+(cell.frame.size.height-31)/2,  0,  0);
+        UISwitch *sw = [[UISwitch alloc] initWithFrame:frame];
+        [sw addTarget:self action:@selector(enableFlexFECChanged:) forControlEvents:UIControlEventValueChanged];
+        [sw setOn:[_settingsModel eanbleFlexFEC]];
+        [cell.contentView addSubview:sw];
+    }
+    return cell;
+}
+-(void)enableFlexFECChanged:(UISwitch*)sw{
+    if ([sw isOn]){
+        APM_INFO(@"enable FlexFEC-03");
+        [_settingsModel setEnableFlexFEC:YES];
+    } else {
+        APM_INFO(@"diable FlexFEC-03");
+        [_settingsModel setEnableFlexFEC:NO];
+    }
+}
+#pragma mark - Table view delegate(BWE Experiment)
+
+- (UITableViewCell *)enableBWEExperimentConfigTableViewCellForTableView:(UITableView *)tableView
+                                          atIndexPath:(NSIndexPath *)indexPath {
+  NSString *dequeueIdentifier = @"ARDSettingsBWEExperimentCellIdentifier";
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dequeueIdentifier];
+  if (!cell) {
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                  reuseIdentifier:dequeueIdentifier];
+
+    self.bweTF = [[UITextField alloc]
+        initWithFrame:CGRectMake(10, 0, cell.bounds.size.width - 20, cell.bounds.size.height)];
+      NSString* storedBweFlag = [_settingsModel bweExperimentFlag];
+      self.bweTF.placeholder = storedBweFlag;
+      self.bweTF.text = storedBweFlag;
+
+    // Numerical keyboards have no return button, we need to add one manually.
+    UIToolbar *numberToolbar =
+        [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 50)];
+    numberToolbar.items = @[
+      [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                    target:nil
+                                                    action:nil],
+      [[UIBarButtonItem alloc] initWithTitle:@"Apply"
+                                       style:UIBarButtonItemStyleDone
+                                      target:self
+                                      action:@selector(saveBweExperimentFlag)]
+    ];
+    [numberToolbar sizeToFit];
+
+    self.bweTF.inputAccessoryView = numberToolbar;
+    [cell.contentView addSubview:self.bweTF];
+  }
+  return cell;
+}
+-(void)saveBweExperimentFlag{
+    NSString *text = self.bweTF.text;
+    [_settingsModel setBweExperimentFlag:text];
+    [self.view endEditing:YES];
+}
 #pragma mark - Table view delegate(enable invite)
 - (UITableViewCell *)enableInviteConfigTableViewCellForTableView:(UITableView *)tableView
                                                    atIndexPath:(NSIndexPath *)indexPath {
@@ -670,7 +969,7 @@ typedef NS_ENUM(int, ARDSettingsSections) {
     [numberToolbar sizeToFit];
 
     self.inviteeUidTF.inputAccessoryView = numberToolbar;
-    [cell addSubview:self.inviteeUidTF];
+    [cell.contentView addSubview:self.inviteeUidTF];
   }
   return cell;
 }
@@ -709,7 +1008,7 @@ typedef NS_ENUM(int, ARDSettingsSections) {
     [numberToolbar sizeToFit];
 
     self.liveUrlTF.inputAccessoryView = numberToolbar;
-    [cell addSubview:self.liveUrlTF];
+    [cell.contentView addSubview:self.liveUrlTF];
   }
   return cell;
 }
@@ -748,7 +1047,7 @@ typedef NS_ENUM(int, ARDSettingsSections) {
     [numberToolbar sizeToFit];
 
     self.uidTF.inputAccessoryView = numberToolbar;
-    [cell addSubview:self.uidTF];
+    [cell.contentView addSubview:self.uidTF];
   }
   return cell;
 }
@@ -787,7 +1086,7 @@ typedef NS_ENUM(int, ARDSettingsSections) {
     [numberToolbar sizeToFit];
 
     self.biznameTF.inputAccessoryView = numberToolbar;
-    [cell addSubview:self.biznameTF];
+    [cell.contentView addSubview:self.biznameTF];
   }
   return cell;
 }
@@ -796,6 +1095,84 @@ typedef NS_ENUM(int, ARDSettingsSections) {
     [_settingsModel setBizname:text];
     [self.view endEditing:YES];
 }
+#pragma mark - Table view delegate(subbiz)
+
+- (UITableViewCell *)subbizConfigTableViewCellForTableView:(UITableView *)tableView
+                                          atIndexPath:(NSIndexPath *)indexPath {
+  NSString *dequeueIdentifier = @"ARDSettingssubbizCellIdentifier";
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dequeueIdentifier];
+  if (!cell) {
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                  reuseIdentifier:dequeueIdentifier];
+
+    self.subbizTF = [[UITextField alloc]
+        initWithFrame:CGRectMake(10, 0, cell.bounds.size.width - 20, cell.bounds.size.height)];
+      NSString* stored = [_settingsModel subbiz];
+      self.subbizTF.text = stored;
+
+    // Numerical keyboards have no return button, we need to add one manually.
+    UIToolbar *numberToolbar =
+        [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 50)];
+    numberToolbar.items = @[
+      [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                    target:nil
+                                                    action:nil],
+      [[UIBarButtonItem alloc] initWithTitle:@"Apply"
+                                       style:UIBarButtonItemStyleDone
+                                      target:self
+                                      action:@selector(saveSubbiz)]
+    ];
+    [numberToolbar sizeToFit];
+
+    self.subbizTF.inputAccessoryView = numberToolbar;
+    [cell.contentView addSubview:self.subbizTF];
+  }
+  return cell;
+}
+-(void)saveSubbiz{
+    NSString *text = self.subbizTF.text;
+    [_settingsModel setSubbiz:text];
+    [self.view endEditing:YES];
+}
+#ifdef ARTVC_BUILD_FOR_MPAAS
+- (UITableViewCell *)workspaceIdConfigTableViewCellForTableView:(UITableView *)tableView
+                                          atIndexPath:(NSIndexPath *)indexPath {
+  NSString *dequeueIdentifier = @"ARDSettingsWorkspaceIdCellIdentifier";
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dequeueIdentifier];
+  if (!cell) {
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                  reuseIdentifier:dequeueIdentifier];
+
+    self.workspaceIdTF = [[UITextField alloc]
+        initWithFrame:CGRectMake(10, 0, cell.bounds.size.width - 20, cell.bounds.size.height)];
+      NSString* stored = [_settingsModel workspaceId];
+      self.workspaceIdTF.text = stored;
+
+    // Numerical keyboards have no return button, we need to add one manually.
+    UIToolbar *numberToolbar =
+        [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 50)];
+    numberToolbar.items = @[
+      [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                    target:nil
+                                                    action:nil],
+      [[UIBarButtonItem alloc] initWithTitle:@"Apply"
+                                       style:UIBarButtonItemStyleDone
+                                      target:self
+                                      action:@selector(saveWorkspaceId)]
+    ];
+    [numberToolbar sizeToFit];
+
+    self.workspaceIdTF.inputAccessoryView = numberToolbar;
+    [cell.contentView addSubview:self.workspaceIdTF];
+  }
+  return cell;
+}
+-(void)saveWorkspaceId{
+    NSString *text = self.workspaceIdTF.text;
+    [_settingsModel setWorkspaceId:text];
+    [self.view endEditing:YES];
+}
+#endif
 #pragma mark - Table view delegate(signature)
 
 - (UITableViewCell *)signatureConfigTableViewCellForTableView:(UITableView *)tableView
@@ -826,7 +1203,7 @@ typedef NS_ENUM(int, ARDSettingsSections) {
     [numberToolbar sizeToFit];
 
     self.signatureTF.inputAccessoryView = numberToolbar;
-    [cell addSubview:self.signatureTF];
+    [cell.contentView addSubview:self.signatureTF];
   }
   return cell;
 }
@@ -834,6 +1211,395 @@ typedef NS_ENUM(int, ARDSettingsSections) {
     NSString *text = self.signatureTF.text;
     [_settingsModel setSignature:text];
     [self.view endEditing:YES];
+}
+#pragma mark - Table view delegate(custom server url)
+
+- (UITableViewCell *)customServerUrlConfigTableViewCellForTableView:(UITableView *)tableView
+                                          atIndexPath:(NSIndexPath *)indexPath {
+  NSString *dequeueIdentifier = @"ARDSettingsCustomServerUrlCellIdentifier";
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dequeueIdentifier];
+  if (!cell) {
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                  reuseIdentifier:dequeueIdentifier];
+
+    self.customServerUrlTF = [[UITextField alloc]
+        initWithFrame:CGRectMake(10, 0, cell.bounds.size.width - 20, cell.bounds.size.height)];
+      NSString* stored = [_settingsModel customServerUrl];
+      self.customServerUrlTF.text = stored;
+
+    // Numerical keyboards have no return button, we need to add one manually.
+    UIToolbar *numberToolbar =
+        [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 50)];
+    numberToolbar.items = @[
+      [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                    target:nil
+                                                    action:nil],
+      [[UIBarButtonItem alloc] initWithTitle:@"Apply"
+                                       style:UIBarButtonItemStyleDone
+                                      target:self
+                                      action:@selector(saveCustomServerUrl)]
+    ];
+    [numberToolbar sizeToFit];
+
+    self.customServerUrlTF.inputAccessoryView = numberToolbar;
+    [cell.contentView addSubview:self.customServerUrlTF];
+  }
+  return cell;
+}
+-(void)saveCustomServerUrl{
+    NSString *text = self.customServerUrlTF.text;
+    [_settingsModel setCustomServerUrl:text];
+    [self.view endEditing:YES];
+}
+
+#pragma mark - Table view delegate(useBlox)
+- (UITableViewCell *)enableUseBloxWayTableViewCellForTableView:(UITableView *)tableView
+                                                   atIndexPath:(NSIndexPath *)indexPath {
+    NSString *dequeueIdentifier = @"ARDSettingsEnableUseBloxWayCellIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dequeueIdentifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                      reuseIdentifier:dequeueIdentifier];
+        
+        cell.textLabel.text = @"使用智能音视频处理";
+
+        CGRect frame = CGRectMake(self.view.frame.size.width-51-10,cell.frame.origin.y+(cell.frame.size.height-31)/2,  0,  0);
+        UISwitch *sw = [[UISwitch alloc] initWithFrame:frame];
+        [sw addTarget:self action:@selector(enableUseBloxWayChanged:) forControlEvents:UIControlEventValueChanged];
+        [sw setOn:[_settingsModel enableUseBloxWay]];
+        [cell.contentView addSubview:sw];
+    }
+    return cell;
+}
+-(void)enableUseBloxWayChanged:(UISwitch*)sw{
+    if ([sw isOn]){
+        APM_INFO(@"enable blox way");
+        [_settingsModel setUseBloxWayChanged:YES];
+    } else {
+        APM_INFO(@"diable blox way");
+        [_settingsModel setUseBloxWayChanged:NO];
+    }
+}
+
+#pragma mark - Table view delegate(beauty)
+- (UITableViewCell *)beautyLevelTableViewCellForTableView:(UITableView *)tableView
+                                          atIndexPath:(NSIndexPath *)indexPath {
+    NSString *dequeueIdentifier = @"ARDSettingsBeautyLevelCellIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dequeueIdentifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                      reuseIdentifier:dequeueIdentifier];
+        
+        self.beautyLevelTF = [[UITextField alloc]
+                                  initWithFrame:CGRectMake(10, 0, cell.bounds.size.width - 20, cell.bounds.size.height)];
+        self.beautyLevelTF.text = [_settingsModel beautyLevel];
+        
+        // Numerical keyboards have no return button, we need to add one manually.
+        UIToolbar *numberToolbar =
+        [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 50)];
+        numberToolbar.items = @[
+                                [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                                              target:nil
+                                                                              action:nil],
+                                [[UIBarButtonItem alloc] initWithTitle:@"Apply"
+                                                                 style:UIBarButtonItemStyleDone
+                                                                target:self
+                                                                action:@selector(saveBeautyLevel)]
+                                ];
+        [numberToolbar sizeToFit];
+        
+        self.beautyLevelTF.inputAccessoryView = numberToolbar;
+        [cell.contentView addSubview:self.beautyLevelTF];
+    }
+    return cell;
+}
+-(void)saveBeautyLevel{
+    NSString *text = self.beautyLevelTF.text;
+    [_settingsModel setBeautyLevel:[text floatValue]];
+    [self.view endEditing:YES];
+}
+
+#pragma mark - Table view delegate(virtual background)
+- (UITableViewCell *)virtualBGTableViewCellForTableView:(UITableView *)tableView
+                                            atIndexPath:(NSIndexPath *)indexPath {
+    NSString *dequeueIdentifier = @"ARDSettingsEnableVirtualBGCellIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dequeueIdentifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                      reuseIdentifier:dequeueIdentifier];
+        
+        cell.textLabel.text = @"开启虚拟背景";
+
+        CGRect frame = CGRectMake(self.view.frame.size.width-51-10,cell.frame.origin.y+(cell.frame.size.height-31)/2,  0,  0);
+        UISwitch *sw = [[UISwitch alloc] initWithFrame:frame];
+        [sw addTarget:self action:@selector(useVirtualBGChanged:) forControlEvents:UIControlEventValueChanged];
+        [sw setOn:[_settingsModel enableVirtualBG]];
+        [cell.contentView addSubview:sw];
+    }
+    return cell;
+}
+-(void)useVirtualBGChanged:(UISwitch*)sw{
+    if ([sw isOn]){
+        APM_INFO(@"enable virtual background.");
+        [_settingsModel setVirtualBG:YES];
+    } else {
+        APM_INFO(@"disable virtual background.");
+        [_settingsModel setVirtualBG:NO];
+    }
+}
+#pragma mark - Table view delegate(pacing experiment)
+
+- (UITableViewCell *)pacingExperimentConfigTableViewCellForTableView:(UITableView *)tableView
+                                          atIndexPath:(NSIndexPath *)indexPath {
+  NSString *dequeueIdentifier = @"ARDSettingsPacingExperimentCellIdentifier";
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dequeueIdentifier];
+  if (!cell) {
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                  reuseIdentifier:dequeueIdentifier];
+
+    self.pacingExpeTF = [[UITextField alloc]
+        initWithFrame:CGRectMake(10, 0, cell.bounds.size.width - 20, cell.bounds.size.height)];
+      NSString* stored = [_settingsModel pacingExperiment];
+      self.pacingExpeTF.text = stored;
+
+    // Numerical keyboards have no return button, we need to add one manually.
+    UIToolbar *numberToolbar =
+        [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 50)];
+    numberToolbar.items = @[
+      [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                    target:nil
+                                                    action:nil],
+      [[UIBarButtonItem alloc] initWithTitle:@"Apply"
+                                       style:UIBarButtonItemStyleDone
+                                      target:self
+                                      action:@selector(savePacingExperiment)]
+    ];
+    [numberToolbar sizeToFit];
+
+    self.pacingExpeTF.inputAccessoryView = numberToolbar;
+    [cell.contentView addSubview:self.pacingExpeTF];
+  }
+  return cell;
+}
+-(void)savePacingExperiment{
+    NSString *text = self.pacingExpeTF.text;
+    [_settingsModel setPacingExperiment:text];
+    [self.view endEditing:YES];
+}
+#pragma mark - Table view delegate(NACK experiment)
+
+- (UITableViewCell *)nackExperimentConfigTableViewCellForTableView:(UITableView *)tableView
+                                          atIndexPath:(NSIndexPath *)indexPath {
+  NSString *dequeueIdentifier = @"ARDSettingsNackExperimentCellIdentifier";
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dequeueIdentifier];
+  if (!cell) {
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                  reuseIdentifier:dequeueIdentifier];
+
+    self.nackExpeTF = [[UITextField alloc]
+        initWithFrame:CGRectMake(10, 0, cell.bounds.size.width - 20, cell.bounds.size.height)];
+      NSString* stored = [_settingsModel nackExperiment];
+      self.nackExpeTF.text = stored;
+
+    // Numerical keyboards have no return button, we need to add one manually.
+    UIToolbar *numberToolbar =
+        [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 50)];
+    numberToolbar.items = @[
+      [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                    target:nil
+                                                    action:nil],
+      [[UIBarButtonItem alloc] initWithTitle:@"Apply"
+                                       style:UIBarButtonItemStyleDone
+                                      target:self
+                                      action:@selector(saveNackExperiment)]
+    ];
+    [numberToolbar sizeToFit];
+
+    self.nackExpeTF.inputAccessoryView = numberToolbar;
+    [cell.contentView addSubview:self.nackExpeTF];
+  }
+  return cell;
+}
+-(void)saveNackExperiment{
+    NSString *text = self.nackExpeTF.text;
+    [_settingsModel setNackExperiment:text];
+    [self.view endEditing:YES];
+}
+#pragma mark - Table view delegate(PlayoutDelay experiment)
+
+- (UITableViewCell *)playoutDelayExperimentConfigTableViewCellForTableView:(UITableView *)tableView
+                                          atIndexPath:(NSIndexPath *)indexPath {
+  NSString *dequeueIdentifier = @"ARDSettingsPlayoutDelayExperimentCellIdentifier";
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dequeueIdentifier];
+  if (!cell) {
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                  reuseIdentifier:dequeueIdentifier];
+
+    self.playoutDelayExpeTF = [[UITextField alloc]
+        initWithFrame:CGRectMake(10, 0, cell.bounds.size.width - 20, cell.bounds.size.height)];
+      NSString* stored = [_settingsModel playoutDelayExperiment];
+      self.playoutDelayExpeTF.text = stored;
+
+    // Numerical keyboards have no return button, we need to add one manually.
+    UIToolbar *numberToolbar =
+        [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 50)];
+    numberToolbar.items = @[
+      [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                    target:nil
+                                                    action:nil],
+      [[UIBarButtonItem alloc] initWithTitle:@"Apply"
+                                       style:UIBarButtonItemStyleDone
+                                      target:self
+                                      action:@selector(savePlayoutDelayExperiment)]
+    ];
+    [numberToolbar sizeToFit];
+
+    self.playoutDelayExpeTF.inputAccessoryView = numberToolbar;
+    [cell.contentView addSubview:self.playoutDelayExpeTF];
+  }
+  return cell;
+}
+-(void)savePlayoutDelayExperiment{
+    NSString *text = self.playoutDelayExpeTF.text;
+    [_settingsModel setPlayoutDelayExperiment:text];
+    [self.view endEditing:YES];
+}
+#pragma mark - Table view delegate(Jitter experiment)
+
+- (UITableViewCell *)jitterExperimentConfigTableViewCellForTableView:(UITableView *)tableView
+                                          atIndexPath:(NSIndexPath *)indexPath {
+  NSString *dequeueIdentifier = @"ARDSettingsJitterExperimentCellIdentifier";
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dequeueIdentifier];
+  if (!cell) {
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                  reuseIdentifier:dequeueIdentifier];
+
+    self.jitterExpeTF = [[UITextField alloc]
+        initWithFrame:CGRectMake(10, 0, cell.bounds.size.width - 20, cell.bounds.size.height)];
+      NSString* stored = [_settingsModel jitterExperiment];
+      self.jitterExpeTF.text = stored;
+
+    // Numerical keyboards have no return button, we need to add one manually.
+    UIToolbar *numberToolbar =
+        [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 50)];
+    numberToolbar.items = @[
+      [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                    target:nil
+                                                    action:nil],
+      [[UIBarButtonItem alloc] initWithTitle:@"Apply"
+                                       style:UIBarButtonItemStyleDone
+                                      target:self
+                                      action:@selector(saveJitterExperiment)]
+    ];
+    [numberToolbar sizeToFit];
+
+    self.jitterExpeTF.inputAccessoryView = numberToolbar;
+    [cell.contentView addSubview:self.jitterExpeTF];
+  }
+  return cell;
+}
+-(void)saveJitterExperiment{
+    NSString *text = self.jitterExpeTF.text;
+    [_settingsModel setJitterExperiment:text];
+    [self.view endEditing:YES];
+}
+
+#pragma mark - Table view delegate(mocked cloud configs)
+- (UITableViewCell *)mockedCloudConfigsTableViewCellForTableView:(UITableView *)tableView
+                                                     atIndexPath:(NSIndexPath *)indexPath {
+    NSString *dequeueIdentifier = @"ARDSettingsSectionMockedCloudConfigsCellIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dequeueIdentifier];
+    if (!cell) {
+      cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                    reuseIdentifier:dequeueIdentifier];
+
+      self.mockedConfigsTF = [[UITextField alloc]
+          initWithFrame:CGRectMake(10, 0, cell.bounds.size.width - 20, cell.bounds.size.height)];
+        NSString* stored = [_settingsModel mockedConfigs];
+        self.mockedConfigsTF.text = stored;
+
+      // Numerical keyboards have no return button, we need to add one manually.
+      UIToolbar *numberToolbar =
+          [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 50)];
+      numberToolbar.items = @[
+        [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                      target:nil
+                                                      action:nil],
+        [[UIBarButtonItem alloc] initWithTitle:@"Apply"
+                                         style:UIBarButtonItemStyleDone
+                                        target:self
+                                        action:@selector(saveMockedConfigs)]
+      ];
+      [numberToolbar sizeToFit];
+
+      self.mockedConfigsTF.inputAccessoryView = numberToolbar;
+      [cell.contentView addSubview:self.mockedConfigsTF];
+    }
+    return cell;
+}
+- (void)saveMockedConfigs {
+    NSString *text = self.mockedConfigsTF.text;
+    [_settingsModel setMockedConfigs:text];
+    [self.view endEditing:YES];
+}
+
+#pragma mark - Table view delegate(Disable Smooth Rendering experiment)
+
+- (UITableViewCell *)videoSmoothRenderingExperimentConfigTableViewCellForTableView:(UITableView *)tableView
+                                          atIndexPath:(NSIndexPath *)indexPath {
+    NSString *dequeueIdentifier = @"ARDSettingsVideoSmoothRenderingConfigCellIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dequeueIdentifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                      reuseIdentifier:dequeueIdentifier];
+        
+        cell.textLabel.text = @"关闭平滑渲染";
+
+        CGRect frame = CGRectMake(self.view.frame.size.width-51-10,cell.frame.origin.y+(cell.frame.size.height-31)/2,  0,  0);
+        UISwitch *sw = [[UISwitch alloc] initWithFrame:frame];
+        [sw addTarget:self action:@selector(videoSmoothRenderingChanged:) forControlEvents:UIControlEventValueChanged];
+        [sw setOn:[_settingsModel isVideoSmoothRenderingDisabled]];
+        [cell.contentView addSubview:sw];
+    }
+    return cell;
+}
+-(void)videoSmoothRenderingChanged:(UISwitch*)sw{
+    if ([sw isOn]){
+        APM_INFO(@"disable video smooth rendering switch is on.");
+        [_settingsModel disableVideoSmoothRendering:YES];
+    } else {
+        APM_INFO(@"disable video smooth rendering switch is off.");
+        [_settingsModel disableVideoSmoothRendering:NO];
+    }
+}
+#pragma mark - Table view delegate(loopback test)
+
+- (UITableViewCell *)loopbackConfigTableViewCellForTableView:(UITableView *)tableView
+                                          atIndexPath:(NSIndexPath *)indexPath {
+    NSString *dequeueIdentifier = @"ARDSettingsLoopbackConfigCellIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:dequeueIdentifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                      reuseIdentifier:dequeueIdentifier];
+        
+        cell.textLabel.text = @"环回测试";
+
+        CGRect frame = CGRectMake(self.view.frame.size.width-51-10,cell.frame.origin.y+(cell.frame.size.height-31)/2,  0,  0);
+        UISwitch *sw = [[UISwitch alloc] initWithFrame:frame];
+        [sw addTarget:self action:@selector(loopbackTestChanged:) forControlEvents:UIControlEventValueChanged];
+        [sw setOn:[_settingsModel isLoopbackTestEnabled]];
+        [cell.contentView addSubview:sw];
+    }
+    return cell;
+}
+-(void)loopbackTestChanged:(UISwitch*)sw{
+    if ([sw isOn]){
+        APM_INFO(@"enable loopback test switch is on.");
+        [_settingsModel enableLoopbackTest:YES];
+    } else {
+        APM_INFO(@"enable loopback test switch is off.");
+        [_settingsModel enableLoopbackTest:NO];
+    }
 }
 @end
 NS_ASSUME_NONNULL_END

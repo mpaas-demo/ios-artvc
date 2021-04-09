@@ -18,5 +18,7 @@
 
 - (NSBundle *)languageBundleForName:(NSString *)bundleName;
 
+- (void)setCustomLanguagesBundlePath:(NSString *)customLanguagesBundlePath;
+
 @end
 

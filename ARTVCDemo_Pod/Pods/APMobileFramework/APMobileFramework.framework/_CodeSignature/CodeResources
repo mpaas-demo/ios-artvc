@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/DFNavigationController.h</key>
 		<data>
-		JQpwS7OSwx3znIj33dC5tBaRJ2A=
+		dktB5VVZZTjcH41Zbc/qcpAHJ5Y=
 		</data>
 		<key>Headers/DTApplication.h</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Headers/DTFrameworkInterface.h</key>
 		<data>
-		sI7H2H6SC3QlybpLSdqQtSw54a4=
+		2APZ2wAbygxt3bFlC4hcJ6KuRq4=
 		</data>
 		<key>Headers/DTMicroApplication.h</key>
 		<data>
@@ -166,7 +166,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CShcvd4xtkUZo7MltPqRFb50zSY=
+		7+DxE3Nf1tkZp/3P+wfIIFpqxqE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -351,11 +351,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JQpwS7OSwx3znIj33dC5tBaRJ2A=
+			dktB5VVZZTjcH41Zbc/qcpAHJ5Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			NJid42HbHOrA1KggIZClJkDMBgRqOrBhFpZjN0JIt0U=
+			AXBH3d5LdESnZYFWH4UnvFuDkaaf821+3sM0pXuTXsY=
 			</data>
 		</dict>
 		<key>Headers/DTApplication.h</key>
@@ -428,11 +428,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sI7H2H6SC3QlybpLSdqQtSw54a4=
+			2APZ2wAbygxt3bFlC4hcJ6KuRq4=
 			</data>
 			<key>hash2</key>
 			<data>
-			oWgE0SdgixBDX5yIsQielDSmb8taGLI1ZrEsxD6RaUs=
+			aNqls9yFybUtTuOm2/68UxvUVqXsIBwxWpNlhYumbVY=
 			</data>
 		</dict>
 		<key>Headers/DTMicroApplication.h</key>

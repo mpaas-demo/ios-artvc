@@ -39,6 +39,13 @@
 #import "APMSystemMonitor.h"
 #import "APMSystemInfo.h"
 #import "NSString+APMJSONSerialization.h"
+#import "APMBizPointEventLog.h"
+#import "APMBase64.h"
+#import "NSString+APMJSONSerialization.h"
+#import "NSArray+APMJSONSerialization.h"
+#import "NSDictionary+APMJSONSerialization.h"
+#import "APMAppContextInterface.h"
+#import "APMDefaultCryptInterface.h"
 
 #define WEAKSELF() __weak __typeof(self) weakSelf = self;
 #define STRONGSELF() if (!weakSelf) return; __strong __typeof(weakSelf) self = weakSelf;

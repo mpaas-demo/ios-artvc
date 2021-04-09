@@ -9,8 +9,8 @@
 #ifdef __OBJC__
 
 #import "ARTVCDemo-mPaaS-Headers.h"
-
-#import <APMobileFramework/APMobileFramework.h>
+#import <APLog/APLog.h>
+//#import <APMobileFramework/APMobileFramework.h>
 //#import <APCommonUI/APCommonUI.h>
 #define ARTVC_ENABLE_LOCAL_DEMO_TEST
 #define ARTVCShowImageResource(imgName) \

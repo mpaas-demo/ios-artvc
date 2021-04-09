@@ -46,7 +46,9 @@ typedef NS_ENUM(NSInteger, mPaaSBizType)
     mPaaS_OCR_iOS,         // OCR
     mPaaS_SafeKeyboard_iOS, // 安全键盘
     mPaaS_Traffic_iOS,      // 流量监控
-    mPaaS_Framework_iOS     // 框架
+    mPaaS_Framework_iOS,     // 框架
+    mPaaS_Multimedia_iOS,    //多媒体
+    mPaaS_Client_iOS,       // 客户端 license
 };
 
 /**
@@ -630,6 +632,9 @@ typedef NS_ENUM(NSInteger, APRemoteLoggerPageInfomationType) {
 
 #pragma mark -
 #pragma mark 以下函数业务不要调用
+
+// copy from 埋点，获取产品集信息用
++ (NSString *)getMPaaSBaseline;
 
 +(void)writeCrashLog:(NSString *) report vcStack:(NSString *) vcStack;
 +(NSDictionary*)stateWhenCrashed:(NSString*)vcStack;

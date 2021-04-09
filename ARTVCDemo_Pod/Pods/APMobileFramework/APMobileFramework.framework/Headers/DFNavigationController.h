@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <APMobileFramework/DTNavigationController.h>
 
 @interface DFNavigationController : DTNavigationController
 

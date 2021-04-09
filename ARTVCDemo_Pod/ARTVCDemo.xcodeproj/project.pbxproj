@@ -15,22 +15,33 @@
 		39775D7524C14DBF003E7D0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39775D7424C14DBF003E7D0E /* Assets.xcassets */; };
 		39775D7824C14DBF003E7D0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39775D7624C14DBF003E7D0E /* LaunchScreen.storyboard */; };
 		39775D7B24C14DBF003E7D0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D7A24C14DBF003E7D0E /* main.m */; };
-		39775D9824C153C9003E7D0E /* ARTVCDemoSettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D8724C153C9003E7D0E /* ARTVCDemoSettingsVC.m */; };
-		39775D9924C153CA003E7D0E /* ARTVCDemoSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D8824C153C9003E7D0E /* ARTVCDemoSettingsStore.m */; };
-		39775D9A24C153CA003E7D0E /* ARTVCDemoSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D8924C153C9003E7D0E /* ARTVCDemoSettingsModel.m */; };
-		39775D9B24C153CA003E7D0E /* AMImageSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D8C24C153C9003E7D0E /* AMImageSaver.m */; };
-		39775D9C24C153CA003E7D0E /* ARTVCDemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D8D24C153C9003E7D0E /* ARTVCDemoCollectionViewCell.m */; };
-		39775D9D24C153CA003E7D0E /* ARTVCDemoConferenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D8E24C153C9003E7D0E /* ARTVCDemoConferenceVC.m */; };
-		39775D9E24C153CA003E7D0E /* ARTVCDemoControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D9024C153C9003E7D0E /* ARTVCDemoControlView.m */; };
-		39775D9F24C153CA003E7D0E /* UIView+ARTVCToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D9524C153C9003E7D0E /* UIView+ARTVCToast.m */; };
-		39775DA024C153CA003E7D0E /* ARTVCDemoMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39775D9724C153C9003E7D0E /* ARTVCDemoMainVC.m */; };
-		39C49B1C24C156FA0098C35F /* MPARTVCDemo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 39C49B1B24C156FA0098C35F /* MPARTVCDemo.bundle */; };
 		39C49B1D24C16A980098C35F /* libPods-ARTVCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 270C04827E2BF9EA10B6FF97 /* libPods-ARTVCDemo.a */; };
 		3BE93255E23B95E1D28B23DE /* Images_mPaaS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3969742FF47D4A09A48164A /* Images_mPaaS.xcassets */; };
 		504BC4E71482DAC97AD81986 /* DTRpcInterface+ARTVCDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 874490B9286DBD8343ACED90 /* DTRpcInterface+ARTVCDemo.m */; };
+		53160A7E0D40AC027C223F8D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8853B81D92262E4A27D248 /* CoreTelephony.framework */; };
 		56D1046647212507C687B00C /* MobileRuntime.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AD541FA7E3C260872C0F14E /* MobileRuntime.plist */; };
 		594478D154749ACDD46587EC /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA58EEC21A8926BD0FC15AF9 /* yw_1222.jpg */; };
+		60F29212AE813AA43CE3B247 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7CA349A7A5E0247B97BE0A /* SystemConfiguration.framework */; };
 		6B4F04BAAEA16E555D927D0C /* meta.config in Resources */ = {isa = PBXBuildFile; fileRef = DE9D0A2B7BD1EF7D71A5AAB4 /* meta.config */; };
+		703BD4AB261D542A0010BB6B /* ARTVCDemoSettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 703BD49A261D54290010BB6B /* ARTVCDemoSettingsVC.m */; };
+		703BD4AC261D542A0010BB6B /* ARTVCDemoSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 703BD49B261D54290010BB6B /* ARTVCDemoSettingsStore.m */; };
+		703BD4AD261D542A0010BB6B /* ARTVCDemoSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 703BD49C261D54290010BB6B /* ARTVCDemoSettingsModel.m */; };
+		703BD4AE261D542A0010BB6B /* AMImageSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 703BD49F261D54290010BB6B /* AMImageSaver.m */; };
+		703BD4AF261D542A0010BB6B /* ARTVCDemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 703BD4A0261D54290010BB6B /* ARTVCDemoCollectionViewCell.m */; };
+		703BD4B0261D542A0010BB6B /* ARTVCDemoConferenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 703BD4A1261D54290010BB6B /* ARTVCDemoConferenceVC.m */; };
+		703BD4B1261D542A0010BB6B /* ARTVCDemoControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 703BD4A3261D54290010BB6B /* ARTVCDemoControlView.m */; };
+		703BD4B2261D542A0010BB6B /* UIView+ARTVCToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 703BD4A8261D54290010BB6B /* UIView+ARTVCToast.m */; };
+		703BD4B3261D542A0010BB6B /* ARTVCDemoMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 703BD4AA261D54290010BB6B /* ARTVCDemoMainVC.m */; };
+		70EBD9D7261F0B15002DE7CB /* MPARTVCDemo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 70EBD9D6261F0B15002DE7CB /* MPARTVCDemo.bundle */; };
+		70EBDA8A261F2D82002DE7CB /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EBD9DE261F2048002DE7CB /* ReplayKit.framework */; };
+		70EBDA8E261F2D82002DE7CB /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EBDA8D261F2D82002DE7CB /* SampleHandler.m */; };
+		70EBDA95261F2D83002DE7CB /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EBD9DE261F2048002DE7CB /* ReplayKit.framework */; };
+		70EBDA96261F2D83002DE7CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EBDA4B261F2BE2002DE7CB /* UIKit.framework */; };
+		70EBDA9A261F2D83002DE7CB /* BroadcastSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EBDA99261F2D83002DE7CB /* BroadcastSetupViewController.m */; };
+		70EBDA9E261F2D83002DE7CB /* broadcastUploadSetupUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 70EBDA94261F2D83002DE7CB /* broadcastUploadSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		70EBDAA1261F2D83002DE7CB /* broadcastUpload.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 70EBDA89261F2D82002DE7CB /* broadcastUpload.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		70EBDAAE261F2DEA002DE7CB /* MPARTVCUpload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EBD9EE261F2078002DE7CB /* MPARTVCUpload.framework */; };
+		70EBDAAF261F2DEA002DE7CB /* MPARTVCUpload.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70EBD9EE261F2078002DE7CB /* MPARTVCUpload.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8021A8597968F5ACFAB15623 /* MPaaSInterface+ARTVCDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA93884C4D6C6D18830969D /* MPaaSInterface+ARTVCDemo.m */; };
 		AE589A3B92A5F99EFF262FAF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892348442D54E35340FC5D57 /* CoreTelephony.framework */; };
 		B90DE77584FC86DF88091B59 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46F6D1030F7D25104A0D06C /* SystemConfiguration.framework */; };
@@ -39,6 +50,49 @@
 		F112617FE0500E346C821DC4 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180FD5A06FE258FA7CB28B86 /* DemoViewController.m */; };
 		F7208B30D09193AF0D2DE17D /* APLogAdditions+ARTVCDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D4DA2403491A5EBDA413F /* APLogAdditions+ARTVCDemo.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70EBDA9C261F2D83002DE7CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39775D5D24C14DBC003E7D0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70EBDA93261F2D83002DE7CB;
+			remoteInfo = broadcastUploadSetupUI;
+		};
+		70EBDA9F261F2D83002DE7CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39775D5D24C14DBC003E7D0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70EBDA88261F2D82002DE7CB;
+			remoteInfo = broadcastUpload;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		70EBD9EB261F2048002DE7CB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				70EBDA9E261F2D83002DE7CB /* broadcastUploadSetupUI.appex in Embed App Extensions */,
+				70EBDAA1261F2D83002DE7CB /* broadcastUpload.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70EBDAB0261F2DEA002DE7CB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				70EBDAAF261F2DEA002DE7CB /* MPARTVCUpload.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0B4F5B4C22BB4C6EA147650B /* MPLauncherAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MPLauncherAppDelegate.m; sourceTree = "<group>"; };
@@ -62,32 +116,44 @@
 		39775D7724C14DBF003E7D0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39775D7924C14DBF003E7D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39775D7A24C14DBF003E7D0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		39775D8324C153C9003E7D0E /* ARTVCDemoSettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoSettingsVC.h; sourceTree = "<group>"; };
-		39775D8424C153C9003E7D0E /* ARTVCDemoSettingsModel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARTVCDemoSettingsModel+Private.h"; sourceTree = "<group>"; };
-		39775D8524C153C9003E7D0E /* ARTVCDemoSettingsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoSettingsStore.h; sourceTree = "<group>"; };
-		39775D8624C153C9003E7D0E /* ARTVCDemoSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoSettingsModel.h; sourceTree = "<group>"; };
-		39775D8724C153C9003E7D0E /* ARTVCDemoSettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoSettingsVC.m; sourceTree = "<group>"; };
-		39775D8824C153C9003E7D0E /* ARTVCDemoSettingsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoSettingsStore.m; sourceTree = "<group>"; };
-		39775D8924C153C9003E7D0E /* ARTVCDemoSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoSettingsModel.m; sourceTree = "<group>"; };
-		39775D8B24C153C9003E7D0E /* ARTVCDemoControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoControlView.h; sourceTree = "<group>"; };
-		39775D8C24C153C9003E7D0E /* AMImageSaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMImageSaver.m; sourceTree = "<group>"; };
-		39775D8D24C153C9003E7D0E /* ARTVCDemoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoCollectionViewCell.m; sourceTree = "<group>"; };
-		39775D8E24C153C9003E7D0E /* ARTVCDemoConferenceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoConferenceVC.m; sourceTree = "<group>"; };
-		39775D8F24C153C9003E7D0E /* AMImageSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMImageSaver.h; sourceTree = "<group>"; };
-		39775D9024C153C9003E7D0E /* ARTVCDemoControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoControlView.m; sourceTree = "<group>"; };
-		39775D9124C153C9003E7D0E /* ARTVCDemoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoCollectionViewCell.h; sourceTree = "<group>"; };
-		39775D9224C153C9003E7D0E /* ARTVCDemoConferenceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoConferenceVC.h; sourceTree = "<group>"; };
-		39775D9324C153C9003E7D0E /* ARTVCDemoMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoMainVC.h; sourceTree = "<group>"; };
-		39775D9524C153C9003E7D0E /* UIView+ARTVCToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ARTVCToast.m"; sourceTree = "<group>"; };
-		39775D9624C153C9003E7D0E /* UIView+ARTVCToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ARTVCToast.h"; sourceTree = "<group>"; };
-		39775D9724C153C9003E7D0E /* ARTVCDemoMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoMainVC.m; sourceTree = "<group>"; };
-		39C49B1B24C156FA0098C35F /* MPARTVCDemo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MPARTVCDemo.bundle; sourceTree = "<group>"; };
 		40DFF6CF4AB71D152920E7E2 /* ARTVCDemo-mPaaS-Headers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARTVCDemo-mPaaS-Headers.h"; sourceTree = "<group>"; };
 		4F7C9C56B5386183568D6AFF /* MPLauncherAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MPLauncherAppDelegate.h; sourceTree = "<group>"; };
 		5784D940A801CA6C87A73210 /* ARTVCDemo-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ARTVCDemo-Prefix.pch"; path = "../../../ARTVCDemo/ARTVCDemo-Prefix.pch"; sourceTree = "<group>"; };
 		6FCC5BF185C3823490E4D68C /* APLogAdditions+ARTVCDemo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APLogAdditions+ARTVCDemo.h"; sourceTree = "<group>"; };
+		703BD496261D54290010BB6B /* ARTVCDemoSettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoSettingsVC.h; sourceTree = "<group>"; };
+		703BD497261D54290010BB6B /* ARTVCDemoSettingsModel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARTVCDemoSettingsModel+Private.h"; sourceTree = "<group>"; };
+		703BD498261D54290010BB6B /* ARTVCDemoSettingsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoSettingsStore.h; sourceTree = "<group>"; };
+		703BD499261D54290010BB6B /* ARTVCDemoSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoSettingsModel.h; sourceTree = "<group>"; };
+		703BD49A261D54290010BB6B /* ARTVCDemoSettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoSettingsVC.m; sourceTree = "<group>"; };
+		703BD49B261D54290010BB6B /* ARTVCDemoSettingsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoSettingsStore.m; sourceTree = "<group>"; };
+		703BD49C261D54290010BB6B /* ARTVCDemoSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoSettingsModel.m; sourceTree = "<group>"; };
+		703BD49E261D54290010BB6B /* ARTVCDemoControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoControlView.h; sourceTree = "<group>"; };
+		703BD49F261D54290010BB6B /* AMImageSaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMImageSaver.m; sourceTree = "<group>"; };
+		703BD4A0261D54290010BB6B /* ARTVCDemoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoCollectionViewCell.m; sourceTree = "<group>"; };
+		703BD4A1261D54290010BB6B /* ARTVCDemoConferenceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoConferenceVC.m; sourceTree = "<group>"; };
+		703BD4A2261D54290010BB6B /* AMImageSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMImageSaver.h; sourceTree = "<group>"; };
+		703BD4A3261D54290010BB6B /* ARTVCDemoControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoControlView.m; sourceTree = "<group>"; };
+		703BD4A4261D54290010BB6B /* ARTVCDemoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoCollectionViewCell.h; sourceTree = "<group>"; };
+		703BD4A5261D54290010BB6B /* ARTVCDemoConferenceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoConferenceVC.h; sourceTree = "<group>"; };
+		703BD4A6261D54290010BB6B /* ARTVCDemoMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTVCDemoMainVC.h; sourceTree = "<group>"; };
+		703BD4A8261D54290010BB6B /* UIView+ARTVCToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ARTVCToast.m"; sourceTree = "<group>"; };
+		703BD4A9261D54290010BB6B /* UIView+ARTVCToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ARTVCToast.h"; sourceTree = "<group>"; };
+		703BD4AA261D54290010BB6B /* ARTVCDemoMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTVCDemoMainVC.m; sourceTree = "<group>"; };
+		70EBD9D6261F0B15002DE7CB /* MPARTVCDemo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MPARTVCDemo.bundle; sourceTree = "<group>"; };
+		70EBD9DE261F2048002DE7CB /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		70EBD9EE261F2078002DE7CB /* MPARTVCUpload.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MPARTVCUpload.framework; path = Pods/MPARTVCUpload/MPARTVCUpload.framework; sourceTree = "<group>"; };
+		70EBDA4B261F2BE2002DE7CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		70EBDA89261F2D82002DE7CB /* broadcastUpload.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = broadcastUpload.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		70EBDA8C261F2D82002DE7CB /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		70EBDA8D261F2D82002DE7CB /* SampleHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
+		70EBDA8F261F2D82002DE7CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70EBDA94261F2D83002DE7CB /* broadcastUploadSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = broadcastUploadSetupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		70EBDA98261F2D83002DE7CB /* BroadcastSetupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BroadcastSetupViewController.h; sourceTree = "<group>"; };
+		70EBDA99261F2D83002DE7CB /* BroadcastSetupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadcastSetupViewController.m; sourceTree = "<group>"; };
+		70EBDA9B261F2D83002DE7CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		874490B9286DBD8343ACED90 /* DTRpcInterface+ARTVCDemo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DTRpcInterface+ARTVCDemo.m"; sourceTree = "<group>"; };
 		892348442D54E35340FC5D57 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		8F8853B81D92262E4A27D248 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
 		9A9983E54714D71D9AC8921A /* DTRpcInterface+ARTVCDemo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DTRpcInterface+ARTVCDemo.h"; sourceTree = "<group>"; };
 		A3969742FF47D4A09A48164A /* Images_mPaaS.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images_mPaaS.xcassets; sourceTree = "<group>"; };
 		B46D39FC1DE2C7F833529241 /* MPTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MPTabBarController.m; sourceTree = "<group>"; };
@@ -97,6 +163,7 @@
 		C52D13B503CF31EDAC29666C /* MPaaSInterface+ARTVCDemo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPaaSInterface+ARTVCDemo.h"; sourceTree = "<group>"; };
 		DCFE6A159A5709D70AE8FB8C /* DTFrameworkInterface+ARTVCDemo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DTFrameworkInterface+ARTVCDemo.m"; sourceTree = "<group>"; };
 		DE9D0A2B7BD1EF7D71A5AAB4 /* meta.config */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = meta.config; sourceTree = "<group>"; };
+		EE7CA349A7A5E0247B97BE0A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		F46F6D1030F7D25104A0D06C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -108,6 +175,26 @@
 				39C49B1D24C16A980098C35F /* libPods-ARTVCDemo.a in Frameworks */,
 				AE589A3B92A5F99EFF262FAF /* CoreTelephony.framework in Frameworks */,
 				B90DE77584FC86DF88091B59 /* SystemConfiguration.framework in Frameworks */,
+				53160A7E0D40AC027C223F8D /* CoreTelephony.framework in Frameworks */,
+				60F29212AE813AA43CE3B247 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70EBDA86261F2D82002DE7CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70EBDA8A261F2D82002DE7CB /* ReplayKit.framework in Frameworks */,
+				70EBDAAE261F2DEA002DE7CB /* MPARTVCUpload.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70EBDA91261F2D83002DE7CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70EBDA95261F2D83002DE7CB /* ReplayKit.framework in Frameworks */,
+				70EBDA96261F2D83002DE7CB /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +221,8 @@
 			isa = PBXGroup;
 			children = (
 				39775D6724C14DBC003E7D0E /* ARTVCDemo */,
+				70EBDA8B261F2D82002DE7CB /* broadcastUpload */,
+				70EBDA97261F2D83002DE7CB /* broadcastUploadSetupUI */,
 				39775D6624C14DBC003E7D0E /* Products */,
 				9CF4A2861F89A0EA338E9AAF /* Pods */,
 				A9D866ACC539176B3EE55C39 /* Frameworks */,
@@ -145,6 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				39775D6524C14DBC003E7D0E /* ARTVCDemo.app */,
+				70EBDA89261F2D82002DE7CB /* broadcastUpload.appex */,
+				70EBDA94261F2D83002DE7CB /* broadcastUploadSetupUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,7 +243,8 @@
 		39775D6724C14DBC003E7D0E /* ARTVCDemo */ = {
 			isa = PBXGroup;
 			children = (
-				39775D8124C153C9003E7D0E /* mcu */,
+				70EBD9D5261F0B15002DE7CB /* Resources */,
+				703BD494261D54290010BB6B /* mcu */,
 				39775D6824C14DBC003E7D0E /* AppDelegate.h */,
 				39775D6924C14DBC003E7D0E /* AppDelegate.m */,
 				39775D6B24C14DBC003E7D0E /* SceneDelegate.h */,
@@ -166,57 +258,6 @@
 				39775D7A24C14DBF003E7D0E /* main.m */,
 			);
 			path = ARTVCDemo;
-			sourceTree = "<group>";
-		};
-		39775D8124C153C9003E7D0E /* mcu */ = {
-			isa = PBXGroup;
-			children = (
-				39C49B1B24C156FA0098C35F /* MPARTVCDemo.bundle */,
-				39775D8224C153C9003E7D0E /* settings */,
-				39775D8A24C153C9003E7D0E /* conference */,
-				39775D9324C153C9003E7D0E /* ARTVCDemoMainVC.h */,
-				39775D9424C153C9003E7D0E /* Toast */,
-				39775D9724C153C9003E7D0E /* ARTVCDemoMainVC.m */,
-			);
-			path = mcu;
-			sourceTree = "<group>";
-		};
-		39775D8224C153C9003E7D0E /* settings */ = {
-			isa = PBXGroup;
-			children = (
-				39775D8324C153C9003E7D0E /* ARTVCDemoSettingsVC.h */,
-				39775D8424C153C9003E7D0E /* ARTVCDemoSettingsModel+Private.h */,
-				39775D8524C153C9003E7D0E /* ARTVCDemoSettingsStore.h */,
-				39775D8624C153C9003E7D0E /* ARTVCDemoSettingsModel.h */,
-				39775D8724C153C9003E7D0E /* ARTVCDemoSettingsVC.m */,
-				39775D8824C153C9003E7D0E /* ARTVCDemoSettingsStore.m */,
-				39775D8924C153C9003E7D0E /* ARTVCDemoSettingsModel.m */,
-			);
-			path = settings;
-			sourceTree = "<group>";
-		};
-		39775D8A24C153C9003E7D0E /* conference */ = {
-			isa = PBXGroup;
-			children = (
-				39775D8B24C153C9003E7D0E /* ARTVCDemoControlView.h */,
-				39775D8C24C153C9003E7D0E /* AMImageSaver.m */,
-				39775D8D24C153C9003E7D0E /* ARTVCDemoCollectionViewCell.m */,
-				39775D8E24C153C9003E7D0E /* ARTVCDemoConferenceVC.m */,
-				39775D8F24C153C9003E7D0E /* AMImageSaver.h */,
-				39775D9024C153C9003E7D0E /* ARTVCDemoControlView.m */,
-				39775D9124C153C9003E7D0E /* ARTVCDemoCollectionViewCell.h */,
-				39775D9224C153C9003E7D0E /* ARTVCDemoConferenceVC.h */,
-			);
-			path = conference;
-			sourceTree = "<group>";
-		};
-		39775D9424C153C9003E7D0E /* Toast */ = {
-			isa = PBXGroup;
-			children = (
-				39775D9524C153C9003E7D0E /* UIView+ARTVCToast.m */,
-				39775D9624C153C9003E7D0E /* UIView+ARTVCToast.h */,
-			);
-			path = Toast;
 			sourceTree = "<group>";
 		};
 		6096D270F9E4A23AEE55A569 /* ARTVCDemo */ = {
@@ -243,13 +284,93 @@
 			path = APRemoteLogging;
 			sourceTree = "<group>";
 		};
+		703BD494261D54290010BB6B /* mcu */ = {
+			isa = PBXGroup;
+			children = (
+				703BD495261D54290010BB6B /* settings */,
+				703BD49D261D54290010BB6B /* conference */,
+				703BD4A6261D54290010BB6B /* ARTVCDemoMainVC.h */,
+				703BD4A7261D54290010BB6B /* Toast */,
+				703BD4AA261D54290010BB6B /* ARTVCDemoMainVC.m */,
+			);
+			path = mcu;
+			sourceTree = "<group>";
+		};
+		703BD495261D54290010BB6B /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				703BD496261D54290010BB6B /* ARTVCDemoSettingsVC.h */,
+				703BD497261D54290010BB6B /* ARTVCDemoSettingsModel+Private.h */,
+				703BD498261D54290010BB6B /* ARTVCDemoSettingsStore.h */,
+				703BD499261D54290010BB6B /* ARTVCDemoSettingsModel.h */,
+				703BD49A261D54290010BB6B /* ARTVCDemoSettingsVC.m */,
+				703BD49B261D54290010BB6B /* ARTVCDemoSettingsStore.m */,
+				703BD49C261D54290010BB6B /* ARTVCDemoSettingsModel.m */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		703BD49D261D54290010BB6B /* conference */ = {
+			isa = PBXGroup;
+			children = (
+				703BD49E261D54290010BB6B /* ARTVCDemoControlView.h */,
+				703BD49F261D54290010BB6B /* AMImageSaver.m */,
+				703BD4A0261D54290010BB6B /* ARTVCDemoCollectionViewCell.m */,
+				703BD4A1261D54290010BB6B /* ARTVCDemoConferenceVC.m */,
+				703BD4A2261D54290010BB6B /* AMImageSaver.h */,
+				703BD4A3261D54290010BB6B /* ARTVCDemoControlView.m */,
+				703BD4A4261D54290010BB6B /* ARTVCDemoCollectionViewCell.h */,
+				703BD4A5261D54290010BB6B /* ARTVCDemoConferenceVC.h */,
+			);
+			path = conference;
+			sourceTree = "<group>";
+		};
+		703BD4A7261D54290010BB6B /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				703BD4A8261D54290010BB6B /* UIView+ARTVCToast.m */,
+				703BD4A9261D54290010BB6B /* UIView+ARTVCToast.h */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
 		7099627E0D4CF3A693B11580 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				892348442D54E35340FC5D57 /* CoreTelephony.framework */,
 				F46F6D1030F7D25104A0D06C /* SystemConfiguration.framework */,
+				8F8853B81D92262E4A27D248 /* CoreTelephony.framework */,
+				EE7CA349A7A5E0247B97BE0A /* SystemConfiguration.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		70EBD9D5261F0B15002DE7CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				70EBD9D6261F0B15002DE7CB /* MPARTVCDemo.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		70EBDA8B261F2D82002DE7CB /* broadcastUpload */ = {
+			isa = PBXGroup;
+			children = (
+				70EBDA8C261F2D82002DE7CB /* SampleHandler.h */,
+				70EBDA8D261F2D82002DE7CB /* SampleHandler.m */,
+				70EBDA8F261F2D82002DE7CB /* Info.plist */,
+			);
+			path = broadcastUpload;
+			sourceTree = "<group>";
+		};
+		70EBDA97261F2D83002DE7CB /* broadcastUploadSetupUI */ = {
+			isa = PBXGroup;
+			children = (
+				70EBDA98261F2D83002DE7CB /* BroadcastSetupViewController.h */,
+				70EBDA99261F2D83002DE7CB /* BroadcastSetupViewController.m */,
+				70EBDA9B261F2D83002DE7CB /* Info.plist */,
+			);
+			path = broadcastUploadSetupUI;
 			sourceTree = "<group>";
 		};
 		976CE11DB2BA19EE6C625F27 /* APMobileNetwork */ = {
@@ -274,7 +395,10 @@
 			isa = PBXGroup;
 			children = (
 				270C04827E2BF9EA10B6FF97 /* libPods-ARTVCDemo.a */,
+				70EBD9EE261F2078002DE7CB /* MPARTVCUpload.framework */,
 				7099627E0D4CF3A693B11580 /* iOS */,
+				70EBD9DE261F2048002DE7CB /* ReplayKit.framework */,
+				70EBDA4B261F2BE2002DE7CB /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -316,17 +440,55 @@
 				39775D6124C14DBC003E7D0E /* Sources */,
 				39775D6224C14DBC003E7D0E /* Frameworks */,
 				39775D6324C14DBC003E7D0E /* Resources */,
-				A0C5D2C1830EF0C79CA1B5DF /* [CP] Embed Pods Frameworks */,
-				77A3C5F34372AE56B7C15EE8 /* [CP] Copy Pods Resources */,
+				1E3DDF3BFD1CEE4FAE4E3371 /* [CP] Embed Pods Frameworks */,
+				DAA9FBEC172486636FA8AF50 /* [CP] Copy Pods Resources */,
+				70EBD9EB261F2048002DE7CB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				70EBDA9D261F2D83002DE7CB /* PBXTargetDependency */,
+				70EBDAA0261F2D83002DE7CB /* PBXTargetDependency */,
 			);
 			name = ARTVCDemo;
 			productName = ARTVCDemo;
 			productReference = 39775D6524C14DBC003E7D0E /* ARTVCDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		70EBDA88261F2D82002DE7CB /* broadcastUpload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70EBDAA5261F2D83002DE7CB /* Build configuration list for PBXNativeTarget "broadcastUpload" */;
+			buildPhases = (
+				70EBDA85261F2D82002DE7CB /* Sources */,
+				70EBDA86261F2D82002DE7CB /* Frameworks */,
+				70EBDA87261F2D82002DE7CB /* Resources */,
+				70EBDAB0261F2DEA002DE7CB /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = broadcastUpload;
+			productName = broadcastUpload;
+			productReference = 70EBDA89261F2D82002DE7CB /* broadcastUpload.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		70EBDA93261F2D83002DE7CB /* broadcastUploadSetupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70EBDAA2261F2D83002DE7CB /* Build configuration list for PBXNativeTarget "broadcastUploadSetupUI" */;
+			buildPhases = (
+				70EBDA90261F2D83002DE7CB /* Sources */,
+				70EBDA91261F2D83002DE7CB /* Frameworks */,
+				70EBDA92261F2D83002DE7CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = broadcastUploadSetupUI;
+			productName = broadcastUploadSetupUI;
+			productReference = 70EBDA94261F2D83002DE7CB /* broadcastUploadSetupUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -339,6 +501,12 @@
 				TargetAttributes = {
 					39775D6424C14DBC003E7D0E = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					70EBDA88261F2D82002DE7CB = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					70EBDA93261F2D83002DE7CB = {
+						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
@@ -356,6 +524,8 @@
 			projectRoot = "";
 			targets = (
 				39775D6424C14DBC003E7D0E /* ARTVCDemo */,
+				70EBDA88261F2D82002DE7CB /* broadcastUpload */,
+				70EBDA93261F2D83002DE7CB /* broadcastUploadSetupUI */,
 			);
 		};
 /* End PBXProject section */
@@ -369,16 +539,47 @@
 				39775D7524C14DBF003E7D0E /* Assets.xcassets in Resources */,
 				39775D7324C14DBC003E7D0E /* Main.storyboard in Resources */,
 				6B4F04BAAEA16E555D927D0C /* meta.config in Resources */,
-				39C49B1C24C156FA0098C35F /* MPARTVCDemo.bundle in Resources */,
+				70EBD9D7261F0B15002DE7CB /* MPARTVCDemo.bundle in Resources */,
 				594478D154749ACDD46587EC /* yw_1222.jpg in Resources */,
 				56D1046647212507C687B00C /* MobileRuntime.plist in Resources */,
 				3BE93255E23B95E1D28B23DE /* Images_mPaaS.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70EBDA87261F2D82002DE7CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70EBDA92261F2D83002DE7CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1E3DDF3BFD1CEE4FAE4E3371 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARTVCDemo/Pods-ARTVCDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARTVCDemo/Pods-ARTVCDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARTVCDemo/Pods-ARTVCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2A1B8A3EE2CB50E325BBF7E0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,7 +602,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		77A3C5F34372AE56B7C15EE8 /* [CP] Copy Pods Resources */ = {
+		DAA9FBEC172486636FA8AF50 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -418,23 +619,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARTVCDemo/Pods-ARTVCDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A0C5D2C1830EF0C79CA1B5DF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ARTVCDemo/Pods-ARTVCDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ARTVCDemo/Pods-ARTVCDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARTVCDemo/Pods-ARTVCDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -442,30 +626,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39775D9A24C153CA003E7D0E /* ARTVCDemoSettingsModel.m in Sources */,
-				39775D9B24C153CA003E7D0E /* AMImageSaver.m in Sources */,
+				703BD4AD261D542A0010BB6B /* ARTVCDemoSettingsModel.m in Sources */,
+				703BD4AE261D542A0010BB6B /* AMImageSaver.m in Sources */,
 				39775D7024C14DBC003E7D0E /* ViewController.m in Sources */,
 				39775D6A24C14DBC003E7D0E /* AppDelegate.m in Sources */,
-				39775D9C24C153CA003E7D0E /* ARTVCDemoCollectionViewCell.m in Sources */,
+				703BD4AF261D542A0010BB6B /* ARTVCDemoCollectionViewCell.m in Sources */,
 				39775D7B24C14DBF003E7D0E /* main.m in Sources */,
-				39775D9824C153C9003E7D0E /* ARTVCDemoSettingsVC.m in Sources */,
-				39775DA024C153CA003E7D0E /* ARTVCDemoMainVC.m in Sources */,
+				703BD4AB261D542A0010BB6B /* ARTVCDemoSettingsVC.m in Sources */,
+				703BD4B3261D542A0010BB6B /* ARTVCDemoMainVC.m in Sources */,
 				39775D6D24C14DBC003E7D0E /* SceneDelegate.m in Sources */,
 				504BC4E71482DAC97AD81986 /* DTRpcInterface+ARTVCDemo.m in Sources */,
-				39775D9F24C153CA003E7D0E /* UIView+ARTVCToast.m in Sources */,
-				39775D9D24C153CA003E7D0E /* ARTVCDemoConferenceVC.m in Sources */,
+				703BD4B2261D542A0010BB6B /* UIView+ARTVCToast.m in Sources */,
+				703BD4B0261D542A0010BB6B /* ARTVCDemoConferenceVC.m in Sources */,
 				8021A8597968F5ACFAB15623 /* MPaaSInterface+ARTVCDemo.m in Sources */,
 				BA48DC184DDE5E2F92FFAA3D /* DTFrameworkInterface+ARTVCDemo.m in Sources */,
-				39775D9E24C153CA003E7D0E /* ARTVCDemoControlView.m in Sources */,
+				703BD4B1261D542A0010BB6B /* ARTVCDemoControlView.m in Sources */,
 				BE2C69DE51C38606A57583BA /* MPLauncherAppDelegate.m in Sources */,
 				0CA6F4DE2FBDA53D96933134 /* MPTabBarController.m in Sources */,
 				F112617FE0500E346C821DC4 /* DemoViewController.m in Sources */,
-				39775D9924C153CA003E7D0E /* ARTVCDemoSettingsStore.m in Sources */,
+				703BD4AC261D542A0010BB6B /* ARTVCDemoSettingsStore.m in Sources */,
 				F7208B30D09193AF0D2DE17D /* APLogAdditions+ARTVCDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70EBDA85261F2D82002DE7CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70EBDA8E261F2D82002DE7CB /* SampleHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70EBDA90261F2D83002DE7CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70EBDA9A261F2D83002DE7CB /* BroadcastSetupViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70EBDA9D261F2D83002DE7CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70EBDA93261F2D83002DE7CB /* broadcastUploadSetupUI */;
+			targetProxy = 70EBDA9C261F2D83002DE7CB /* PBXContainerItemProxy */;
+		};
+		70EBDAA0261F2D83002DE7CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70EBDA88261F2D82002DE7CB /* broadcastUpload */;
+			targetProxy = 70EBDA9F261F2D83002DE7CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		39775D7124C14DBC003E7D0E /* Main.storyboard */ = {
@@ -602,9 +815,11 @@
 			baseConfigurationReference = 23E37BD88F1BD9EF72141102 /* Pods-ARTVCDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NWNC46252S;
+				DEVELOPMENT_TEAM = 8MG9V6T29S;
 				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ARTVCDemo/ARTVCDemo-Prefix.pch";
 				INFOPLIST_FILE = ARTVCDemo/Info.plist;
@@ -624,9 +839,11 @@
 			baseConfigurationReference = 1608C84E04AC859897527850 /* Pods-ARTVCDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NWNC46252S;
+				DEVELOPMENT_TEAM = 8MG9V6T29S;
 				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ARTVCDemo/ARTVCDemo-Prefix.pch";
 				INFOPLIST_FILE = ARTVCDemo/Info.plist;
@@ -639,6 +856,116 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mpaas.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70EBDAA3261F2D83002DE7CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MG9V6T29S;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = broadcastUploadSetupUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mpaas.demo.broadcastUploadSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		70EBDAA4261F2D83002DE7CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MG9V6T29S;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = broadcastUploadSetupUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mpaas.demo.broadcastUploadSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+		70EBDAA6261F2D83002DE7CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MG9V6T29S;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/MPARTVCUpload",
+				);
+				INFOPLIST_FILE = broadcastUpload/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"-lz",
+					"-lsqlite3",
+					"-lxml2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mpaas.demo.broadcastUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		70EBDAA7261F2D83002DE7CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MG9V6T29S;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/MPARTVCUpload",
+				);
+				INFOPLIST_FILE = broadcastUpload/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"-lz",
+					"-lsqlite3",
+					"-lxml2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mpaas.demo.broadcastUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -659,6 +986,24 @@
 			buildConfigurations = (
 				39775D7F24C14DBF003E7D0E /* Debug */,
 				39775D8024C14DBF003E7D0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70EBDAA2261F2D83002DE7CB /* Build configuration list for PBXNativeTarget "broadcastUploadSetupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70EBDAA3261F2D83002DE7CB /* Debug */,
+				70EBDAA4261F2D83002DE7CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70EBDAA5261F2D83002DE7CB /* Build configuration list for PBXNativeTarget "broadcastUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70EBDAA6261F2D83002DE7CB /* Debug */,
+				70EBDAA7261F2D83002DE7CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

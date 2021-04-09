@@ -52,4 +52,11 @@
 #define ARTVC_BUILD_FOR_MPAAS
 //-----macros for mpass end-----
 
+//-----macros for blox begin-----
+#if defined(ARTVC_BUILD_FOR_NOT_USEBLOX)
+#undef ARTVC_BUILD_FOR_NOT_USEBLOX
+#endif
+#define ARTVC_BUILD_FOR_NOT_USEBLOX
+//-----macros for blox end-----
+
 #endif  // SDK_OBJC_BASE_RTCMACROS_H_

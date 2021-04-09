@@ -29,6 +29,8 @@
 @property (nonatomic, assign) int bitrate;
 @property (nonatomic, assign) int fps;
 @property (nonatomic, assign) BOOL needsMirrored;
+@property (nonatomic, assign) BOOL ensureVideoFrameFirst; // 是否确保第一帧是视频帧，默认是YES，如果音频帧请求编码时，第一帧视频帧还未到达，则丢弃音频帧；NO则不丢弃
+
 @property (nonatomic, assign) AVCaptureVideoOrientation orientation; // 视频目标方向，输入方向默认y为portrait
 @property (nonatomic, assign, getter=isInputTextureOpenGLCoordinatesSystem) BOOL inputTextureOpenGLCoordinatesSystem; // 输入纹理方向是否是OpenGL坐标系，默认为YES
 
@@ -48,12 +50,14 @@
 - (instancetype)initWithURL:(NSURL *)URL;
 
 - (BOOL)prepareToRecord;
-
+- (BOOL)isReadyForAppendingVideoBuffer;
+- (BOOL)isReadyForAppendingAudioBuffer;
 - (void)appendVideoPixelBuffer:(GLuint)texture context:(EAGLContext *)t time:(CMTime)time;
-
 - (void)appendAudioSampleBuffer:(CMSampleBufferRef)sampleBuffer;
 - (void)appendVideoSampleBuffer:(CMSampleBufferRef)sampleBuffer;
 
+- (void)requestaAudioDataWhenReadyOnQueue:(dispatch_queue_t)queue usingBlock:(void (^)(void))block;
+- (void)requestaVideoDataWhenReadyOnQueue:(dispatch_queue_t)queue usingBlock:(void (^)(void))block;
 - (void)finishRecording:(BOOL)isCanceled;
 
 @end

@@ -42,6 +42,7 @@ XRTC_OBJC_EXPORT
 @property(nonatomic,copy) NSString* actualEncodeBitrate;
 @property(nonatomic,copy) NSString* googTransmitBitrate;
 @property(nonatomic,copy) NSString* googRetransmitBitrate;
+@property(nonatomic,copy) NSString* googBucketDelay;
 
 //video send
 /** 视频码率发 单位bps*/
@@ -61,6 +62,15 @@ XRTC_OBJC_EXPORT
 @property(nonatomic,copy) NSString* googCodecName_videoSend;
 @property(nonatomic,copy) NSString* googAvgEncodeMs_video;
 @property(nonatomic,copy) NSString* googRtt_video;
+@property(nonatomic,copy) NSString* googBandwidthLimitedResolution;
+@property(nonatomic,copy) NSString* googCpuLimitedResolution;
+@property(nonatomic,copy) NSString* googAdaptationChanges;
+@property(nonatomic,copy) NSString* hugeFramesSent;
+@property(nonatomic,copy) NSString* googNacksReceived;
+@property(nonatomic,copy) NSString* googFirsReceived;
+@property(nonatomic,copy) NSString* googPlisReceived;
+@property(nonatomic,copy) NSString* packetsLost;
+
 
 
 //video recv
@@ -81,15 +91,26 @@ XRTC_OBJC_EXPORT
 @property(nonatomic,copy) NSString* googPlisSent;
 @property(nonatomic,copy) NSString* googJitterBufferMs_video;
 @property(nonatomic,copy) NSString* googRenderDelayMs_video;
+@property(nonatomic,copy) NSString* googTimingFrameInfo;
+@property(nonatomic,copy) NSString* googFirstFrameReceivedToDecodedMs;
+@property(nonatomic,copy) NSString* videoReceivedPacketsLost;
+@property(nonatomic,copy) NSString* googInterframeDelayMax;
+@property(nonatomic,copy) NSString* googMinPlayoutDelayMs;
+@property(nonatomic,copy) NSString* googMaxDecodeMs;
+@property(nonatomic,copy) NSString* videoRecvLossRate;
+
 
 
 //audio send
 /** 音频发送丢包率*/
 @property(nonatomic,copy) NSString* audioLossRate;
+@property(nonatomic,copy) NSString* audioSendPacketsLost;
 /** 声音码率发 单位bps*/
 @property(nonatomic,copy) NSString* audioSendBitrate;
 @property(nonatomic,copy) NSString* googCodecName_audioSend;
 @property(nonatomic,copy) NSString* googRtt_audio;
+@property(nonatomic,copy) NSString* audioInputLevel;
+@property(nonatomic,copy) NSString* totalAudioEnergy;
 
 //audio recv
 /** 当前音频接收时延 单位ms */
@@ -97,9 +118,10 @@ XRTC_OBJC_EXPORT
 @property(nonatomic,copy) NSString* googJitterBufferMs_audio;
 /** 声音码率收 单位bps*/
 @property(nonatomic,copy) NSString* audioRecvBitrate;
+@property(nonatomic,copy) NSString* audioRecvPacketsLost;
 @property(nonatomic,copy) NSString* googCodecName_audioRecv;
-
-
+@property(nonatomic,copy) NSString* totalAudioEnergy_recv;
+@property(nonatomic,copy) NSString* audioRecvLossRate;
 
 /** p2p:1 服务端中转：0*/
 @property(nonatomic,copy) NSString* isP2P;
@@ -115,6 +137,8 @@ XRTC_OBJC_EXPORT
 /** 多人通话下才有该字段，表示多人通话中的某一路流*/
 @property(nonatomic,copy) NSString* streamId;
 @property(nonatomic,copy) NSString* callId;//p2p
+//it used in toDictionary method,controling which item can be selected for generating the json dictionary.
+@property(nonatomic,assign) BOOL isPublish;
 
 ///** 返回闲鱼定制化的字典*/
 //-(NSDictionary*)toDictionary_specifiedForIdlefish;

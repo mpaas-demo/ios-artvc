@@ -23,10 +23,12 @@
 @property (strong, nonatomic)  UITextField *p2pCallText;
 @property (strong, nonatomic)  UITextField *broadcastText;
 @property (strong, nonatomic)  UITextField *customVideoText;
+@property (strong, nonatomic)  UITextField *onlyPubVideoText;
 @property (strong, nonatomic)  UISwitch *audioSw;
 @property (strong, nonatomic)  UISwitch *p2pSw;
 @property (strong, nonatomic)  UISwitch *broadcastSw;
 @property (strong, nonatomic)  UISwitch *customVideoSw;
+@property (strong, nonatomic)  UISwitch *onlyPubVideoSw;
 @property (strong, nonatomic)  UIButton *callButton;
 @end
 
@@ -55,6 +57,10 @@
     self.audioOnlyText = [[UITextField alloc] initWithFrame:CGRectZero];
     self.audioOnlyText.text = @"Audio-only Call";
     self.audioSw = [[UISwitch alloc] initWithFrame:CGRectZero];
+    [self.audioSw setOn:NO];
+    [self.audioSw setEnabled:YES];
+    [self.audioSw addTarget:self action:@selector(audioOnlyChanged:) forControlEvents:UIControlEventTouchUpInside];
+    
     self.p2pCallText = [[UITextField alloc] initWithFrame:CGRectZero];
     self.p2pCallText.text = @"Test AliYun SDK";
     self.p2pSw = [[UISwitch alloc] initWithFrame:CGRectZero];
@@ -73,10 +79,19 @@
     [self.customVideoSw setOn:NO];
     [self.customVideoSw setEnabled:YES];
     
+    self.onlyPubVideoText = [[UITextField alloc] initWithFrame:CGRectZero];
+    self.onlyPubVideoText.text = @"Only Publish Video";
+    self.onlyPubVideoSw = [[UISwitch alloc] initWithFrame:CGRectZero];
+    [self.onlyPubVideoSw setOn:NO];
+    [self.onlyPubVideoSw setEnabled:YES];
+    [self.onlyPubVideoSw addTarget:self action:@selector(publishVideoOnlyChanged:) forControlEvents:UIControlEventTouchUpInside];
+    
     self.callButton = [[UIButton alloc] initWithFrame:CGRectZero];
     
 //    UIImage *image = ARTVCImageResource(@"callvideo_answer");
     UIImage *image = ARTVCShowImageResource(@"callvideo_answer");
+    NSString* url = [NSString stringWithFormat:@"MPARTVCDemo.bundle/image/%@", @"callvideo_answer"];
+//    UIImage *image2 = [UIImage imageNamed:url];
     [self.callButton setBackgroundImage:image forState:UIControlStateNormal];
     self.callButton.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [self.callButton addTarget:self action:@selector(call) forControlEvents:UIControlEventTouchUpInside];
@@ -93,6 +108,8 @@
     [self.view addSubview:_broadcastSw];
     [self.view addSubview:_customVideoText];
     [self.view addSubview:_customVideoSw];
+    [self.view addSubview:_onlyPubVideoText];
+    [self.view addSubview:_onlyPubVideoSw];
     [self.view addSubview:_callButton];
     [self layout];
 }
@@ -133,6 +150,11 @@
     frame = CGRectMake(width-switchWitdh-margin, _customVideoText.frame.origin.y, switchWitdh, height4TxSw);
     _customVideoSw.frame = frame;
     
+    frame = CGRectMake(margin, _customVideoSw.frame.origin.y+height4TxSw+margin, textWitdh, height4TxSw);
+    _onlyPubVideoText.frame = frame;
+    frame = CGRectMake(width-switchWitdh-margin, _onlyPubVideoText.frame.origin.y, switchWitdh, height4TxSw);
+    _onlyPubVideoSw.frame = frame;
+    
     frame = CGRectMake((width-60)/2, height-90-statusBarHeight-navigationBarHeight, 60, 60);
     _callButton.frame = frame;
 }
@@ -140,6 +162,12 @@
 - (void)viewWillAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:NO];
     self.title = @"视频通话";
+    //ARTVC_ENABLE_DEMO_CONTINUS_IN_OUT
+#if 0
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+         [self makecall];
+    });
+#endif
 }
 
 - (void)didReceiveMemoryWarning {
@@ -194,6 +222,7 @@
 #if defined(__arm64__)
     ARTVCDemoConferenceVC *vc = [[ARTVCDemoConferenceVC alloc] init];
     vc.audioOnly = [self.audioSw isOn];
+    vc.publishVideoOnly = [self.onlyPubVideoSw isOn];
     vc.testBroadcast = [self.broadcastSw isOn];
     vc.testCustomVideoCapture = [self.customVideoSw isOn];
     [self.navigationController pushViewController:vc animated:YES];
@@ -208,6 +237,7 @@
 //    vc.roomId = @"1031876";
 //    vc.rtoken = @"123";
     vc.audioOnly = [self.audioSw isOn];
+    vc.publishVideoOnly = [self.onlyPubVideoSw isOn];
     vc.testAliyunSDK = [self.p2pSw isOn];
     vc.testCustomVideoCapture = [self.customVideoSw isOn];
     [self.navigationController pushViewController:vc animated:YES];
@@ -221,6 +251,16 @@
                                            settingsModel:[[ARTVCDemoSettingsModel alloc] init]];
     [self.navigationController pushViewController:settingVc animated:YES];
 #endif
+}
+-(void)audioOnlyChanged:(UIButton*)bt{
+    if([self.audioSw isOn]){
+        [self.onlyPubVideoSw setOn:NO];
+    }
+}
+-(void)publishVideoOnlyChanged:(UIButton*)bt{
+    if([self.onlyPubVideoSw isOn]){
+        [self.audioSw setOn:NO];
+    }
 }
 
 @end

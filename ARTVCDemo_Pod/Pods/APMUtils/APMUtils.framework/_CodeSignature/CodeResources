@@ -8,6 +8,14 @@
 		<data>
 		wJpuMvONU3NLEqmGXErAXrHyjwc=
 		</data>
+		<key>Headers/APMAppContextInterface.h</key>
+		<data>
+		DTxH96HaHZlzHVJJFHvhLlmSByk=
+		</data>
+		<key>Headers/APMAssetReader.h</key>
+		<data>
+		kU5vAvEAs0YFnCrRV8T+enB80xQ=
+		</data>
 		<key>Headers/APMAudioSessionConfiguration.h</key>
 		<data>
 		Z4otPp0Jiy/uLkG0T5YXajQi00M=
@@ -16,13 +24,25 @@
 		<data>
 		549ynyReerawQY0gEHNwmd+ESsE=
 		</data>
+		<key>Headers/APMBase64.h</key>
+		<data>
+		JpGPaIdYVpIGWcM7sWZtOolX62I=
+		</data>
+		<key>Headers/APMBizPointEventLog.h</key>
+		<data>
+		1vKEcEBzZ+jeIuHTK6SjNZjg4mA=
+		</data>
 		<key>Headers/APMCameraView.h</key>
 		<data>
-		orHMrYGoZ+A0v1RuhrxdQrmfVqg=
+		OzDYxRU0zQ3yG7x4GFoI2uRRpmw=
 		</data>
 		<key>Headers/APMConfig.h</key>
 		<data>
 		JC5v8z/APIuvsiZ9/ZTTZwfK9Fc=
+		</data>
+		<key>Headers/APMDefaultCryptInterface.h</key>
+		<data>
+		X1rYxTmWpttUBxy6lB1dlGn3sFw=
 		</data>
 		<key>Headers/APMDeviceInfo.h</key>
 		<data>
@@ -50,7 +70,7 @@
 		</data>
 		<key>Headers/APMLog.h</key>
 		<data>
-		4njTIawhf+Xoj4ih1Ipe6S5aAOc=
+		Hmwk4h2UMTe2+DvyLSAEmVk2Lh0=
 		</data>
 		<key>Headers/APMMainCall.h</key>
 		<data>
@@ -86,7 +106,7 @@
 		</data>
 		<key>Headers/APMRemoteLog.h</key>
 		<data>
-		oT1f2C6qIs9LZr04PEEhczD1uEA=
+		46sGewdkeLd1MCOo0i6j8zcTs0g=
 		</data>
 		<key>Headers/APMSimplePing.h</key>
 		<data>
@@ -106,7 +126,7 @@
 		</data>
 		<key>Headers/APMUtils.h</key>
 		<data>
-		4jKAnyMgdDjFkDT8rWN0KN7aAeE=
+		nkTHwKzW2EUrCuyBcfYoaMjVyGI=
 		</data>
 		<key>Headers/APMVertexArrayCalculator.h</key>
 		<data>
@@ -122,7 +142,15 @@
 		</data>
 		<key>Headers/APMVideoWriter.h</key>
 		<data>
-		lHyZjxAwdHxIkG6CgiBPOPJHhpY=
+		G72GYUCJmLCJiPr5JnT+cpTYq+U=
+		</data>
+		<key>Headers/NSArray+APMJSONSerialization.h</key>
+		<data>
+		MKuDLe6qtjORkd11jk9K1eRlfKU=
+		</data>
+		<key>Headers/NSDictionary+APMJSONSerialization.h</key>
+		<data>
+		NnjZu/FQfbKljctmbCXArxFAWGg=
 		</data>
 		<key>Headers/NSString+APMContainString.h</key>
 		<data>
@@ -187,6 +215,28 @@
 			Vgv+Gbzu64taMsOeMOzNqlPDaaTEhFsNSmUF9fJJnUw=
 			</data>
 		</dict>
+		<key>Headers/APMAppContextInterface.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DTxH96HaHZlzHVJJFHvhLlmSByk=
+			</data>
+			<key>hash2</key>
+			<data>
+			5a7T6d8DGX6BnK9kw+9lyujn2wNJlSwEoIHYmO/p4Xg=
+			</data>
+		</dict>
+		<key>Headers/APMAssetReader.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kU5vAvEAs0YFnCrRV8T+enB80xQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			FoyJwvQpIz6jvYVB+uyLghUzdOPhY5nYsBTULAJh4ek=
+			</data>
+		</dict>
 		<key>Headers/APMAudioSessionConfiguration.h</key>
 		<dict>
 			<key>hash</key>
@@ -209,15 +259,37 @@
 			dh8HLpXxyp93YM3Ky1+Fcuck30R1vu+9fmdavpZkF8A=
 			</data>
 		</dict>
+		<key>Headers/APMBase64.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JpGPaIdYVpIGWcM7sWZtOolX62I=
+			</data>
+			<key>hash2</key>
+			<data>
+			P5cCpk+eNogr6D/qb4NEcF+HWLFH7IpKfrebBsKD56I=
+			</data>
+		</dict>
+		<key>Headers/APMBizPointEventLog.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1vKEcEBzZ+jeIuHTK6SjNZjg4mA=
+			</data>
+			<key>hash2</key>
+			<data>
+			+p9G47O6/0LuMpdEOBtOzpi9897gfu+t4mykI7bPc5s=
+			</data>
+		</dict>
 		<key>Headers/APMCameraView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			orHMrYGoZ+A0v1RuhrxdQrmfVqg=
+			OzDYxRU0zQ3yG7x4GFoI2uRRpmw=
 			</data>
 			<key>hash2</key>
 			<data>
-			I8vPd1HT8w+y9qu5nKHDqnwl8Yn87oSH9v45o/UyKuo=
+			ym53X6W2DCfiDIOjDt59eqPaPc94dHb7DLZgaG2j1WY=
 			</data>
 		</dict>
 		<key>Headers/APMConfig.h</key>
@@ -229,6 +301,17 @@
 			<key>hash2</key>
 			<data>
 			ToxYlzwkaUarkUMpoyOwGmRrkdETXxW0bcobvz5zgfM=
+			</data>
+		</dict>
+		<key>Headers/APMDefaultCryptInterface.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			X1rYxTmWpttUBxy6lB1dlGn3sFw=
+			</data>
+			<key>hash2</key>
+			<data>
+			q/kCfPzerdkck/p78p2Jq0WjC0VH9zVCDk55/33hM8k=
 			</data>
 		</dict>
 		<key>Headers/APMDeviceInfo.h</key>
@@ -301,11 +384,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4njTIawhf+Xoj4ih1Ipe6S5aAOc=
+			Hmwk4h2UMTe2+DvyLSAEmVk2Lh0=
 			</data>
 			<key>hash2</key>
 			<data>
-			kvTAY/VqiYXwl/OvdwRvGWNbq/YO+FRfDAws9GOXv+Y=
+			gEs6UQHOeOtyqSFxhuWifkZfgnH3C+HZJEyKYnmaGZQ=
 			</data>
 		</dict>
 		<key>Headers/APMMainCall.h</key>
@@ -400,11 +483,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oT1f2C6qIs9LZr04PEEhczD1uEA=
+			46sGewdkeLd1MCOo0i6j8zcTs0g=
 			</data>
 			<key>hash2</key>
 			<data>
-			OxbszaZgG8ufwKbQdXJWGIejR4sEPhAq8qkKXNeAgAg=
+			hAR/qVNYLxsGCSELaL4tjp7RjxAqekgGazGMOAD6uzI=
 			</data>
 		</dict>
 		<key>Headers/APMSimplePing.h</key>
@@ -455,11 +538,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4jKAnyMgdDjFkDT8rWN0KN7aAeE=
+			nkTHwKzW2EUrCuyBcfYoaMjVyGI=
 			</data>
 			<key>hash2</key>
 			<data>
-			5H/EqOW1w70iIb+c1Xh9naJZhRV40Eqsh1ZCrvULG7A=
+			oQ9m7Z7ul/fyGYWXw8fY6uikQmF9/n4swvs590Qm2DY=
 			</data>
 		</dict>
 		<key>Headers/APMVertexArrayCalculator.h</key>
@@ -499,11 +582,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lHyZjxAwdHxIkG6CgiBPOPJHhpY=
+			G72GYUCJmLCJiPr5JnT+cpTYq+U=
 			</data>
 			<key>hash2</key>
 			<data>
-			xhQpN03rrW4tnCv5SAUJvwbl+Psrd0h3g52Y4hvdIrA=
+			aOXuNK9c+jpJ5rx9Wn89t+5m2rpNCj6j3lKlBljP8GM=
+			</data>
+		</dict>
+		<key>Headers/NSArray+APMJSONSerialization.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MKuDLe6qtjORkd11jk9K1eRlfKU=
+			</data>
+			<key>hash2</key>
+			<data>
+			BZow/A6+ZI/4P9yW4MQsXH7S8ziauR1GO4vTlrEORmM=
+			</data>
+		</dict>
+		<key>Headers/NSDictionary+APMJSONSerialization.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NnjZu/FQfbKljctmbCXArxFAWGg=
+			</data>
+			<key>hash2</key>
+			<data>
+			SsBmVLBeUeJQlTBSuuIHjNFkIrbMxbjFFnIGhD/WZ1c=
 			</data>
 		</dict>
 		<key>Headers/NSString+APMContainString.h</key>

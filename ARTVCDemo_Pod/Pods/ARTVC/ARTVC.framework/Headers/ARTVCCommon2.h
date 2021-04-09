@@ -53,6 +53,17 @@ typedef NS_ENUM(NSInteger, ARTVCIceTransportPolicy) {
 #define ARTVCDynamicConfigEnableStatsForSubscribedUserKey @"enableStatsForSubscribedUser"
 //attention,if DTLS disabled,the underlying call won't be encryped,risking private data leaked.
 #define ARTVCDynamicConfigDisableDTLSKey @"disableDTLS"
+//test-popurse key,for SDK test only.
+#define ARTVCDynamicConfigEnableFlexFecKey @"enableFlexFec"
+#define ARTVCDynamicConfigEnablePacingExperimentKey @"enablePacingExperiment"
+#define ARTVCDynamicConfigEnableBWEExperimentKey @"enableBWEExperiment"
+#define ARTVCDynamicConfigEnableNackExperimentKey @"enableNackExperiment"
+#define ARTVCDynamicConfigEnablePlayoutDelayExperimentKey @"enablePlayoutDelayExperiment"
+#define ARTVCDynamicConfigEnableJitterEstimatorExperimentKey @"enableJitterEstimatorExperiment"
+#define ARTVCDynamicConfigEnableMockedCloudConfigsKey @"enableMockedCloudConfigs"
+#define ARTVCDynamicConfigEnableVideoSmoothRenderingExperimentKey @"enableVideoSmoothRenderingExperiment"
+#define ARTVCDynamicConfigDisableVideoTimingExperimentKey @"disableVideoTimingExperiment"
+#define ARTVCDynamicConfigEnableAvSyncExperimentKey @"enableAvSyncExperiment"
 /**
  * 云控配置协议
  */

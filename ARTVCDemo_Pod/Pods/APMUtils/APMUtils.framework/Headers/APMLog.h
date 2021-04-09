@@ -34,8 +34,11 @@ typedef enum {
 
 @interface APMLog : NSObject
 
-+ (void)log:(NSString *)format atLevel:(APMLogLevel)level, ...NS_FORMAT_FUNCTION(1,3);
++ (void)setLogLevel:(APMLogLevel)logLevel;
 
++ (APMLogLevel)logLevel;
+
++ (void)log:(NSString *)format atLevel:(APMLogLevel)level, ...NS_FORMAT_FUNCTION(1,3);
 /**
  *  console打完日志之后接着输出一份，供外部覆盖处理，比如写文件
  *

@@ -3,7 +3,7 @@
 
 #import "MPLauncherAppDelegate.h"
 #import "MPTabBarController.h"
-
+#import "ARTVCDemoMainVC.h"
 @interface MPLauncherAppDelegate ()
 
 @property (nonatomic, strong) UITabBarController* tabBarController;
@@ -30,7 +30,7 @@
                                @"TabBar_PublicService_Sel",
                                @"TabBar_Friends_Sel", nil];
         
-        UIViewController* tab1ViewController = (UIViewController *) [self createLoggingViewController:@"DemoViewController"];
+        UIViewController* tab1ViewController = [(UIViewController *) [ARTVCDemoMainVC alloc] init];
         UIViewController* tab2ViewController = [[DTViewController alloc] init];
         UIViewController* tab3ViewController = [[DTViewController alloc] init];
         UIViewController* tab4ViewController = [[DTViewController alloc] init];

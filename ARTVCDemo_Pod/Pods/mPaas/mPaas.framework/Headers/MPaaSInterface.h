@@ -49,6 +49,11 @@
  */
 - (NSString *)appSchema;
 
+/**
+*  集成mPaaS SDK的渠道。
+*  @return 当前应用的schema
+*/
+- (NSString *)channelSource;
 
 /**
  *  是否启用 Thread Task Monitor
@@ -65,6 +70,12 @@
 - (BOOL)enablePrivacyAuth;
 
 /**
+ *  框架托管情况下，重置保存的弹框状态，下次启动会重新触发弹框
+ *
+ */
+- (void)resetPrivacyAuth;
+
+/**
  *  是否由mPaaS用户控制隐私权限弹框处理逻辑。
  *
  *  @return YES 允许，否则不允许。默认返回NO，即mPaaS业务方不处理
@@ -79,6 +90,7 @@
 - (BOOL)shouldShowAuthAlert;
 
 
+
 #pragma mark mPaaS内部接口，开发者请勿调用，否则后果自负
 /**
  *  检查当前是否提示隐私授权。框架托管情况下SDK内部方法，开发者请勿调用
@@ -91,4 +103,5 @@
  *  框架托管情况下，用户点击同意后，保存当前状态。框架内部方法，开发者请勿调用
  */
 - (void)didAgreePrivacyAuth;
+
 @end

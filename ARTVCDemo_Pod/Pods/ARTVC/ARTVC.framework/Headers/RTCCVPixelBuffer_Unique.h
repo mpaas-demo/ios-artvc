@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, readonly) int cropY;
 @property(nonatomic, readonly) int cropWidth;
 @property(nonatomic, readonly) int cropHeight;
+@property(nonatomic, readonly) int bufferWidth;
+@property(nonatomic, readonly) int bufferHeight;
 
 + (NSSet<NSNumber *> *)supportedPixelFormats;
 

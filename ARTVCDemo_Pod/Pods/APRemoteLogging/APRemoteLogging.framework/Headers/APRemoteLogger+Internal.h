@@ -44,6 +44,7 @@ typedef NS_ENUM(NSInteger, mPaaSBizType)
     mPaaS_Traffic_iOS,      // 流量监控
     mPaaS_Framework_iOS,     // 框架
     mPaaS_Multimedia_iOS,    //多媒体
+    mPaaS_Client_iOS,       // 客户端 license
 };
 
 

@@ -87,6 +87,50 @@ typedef void (^APMCameraOperationHandler)(BOOL result);
 @property (nonatomic, assign) AVCaptureExposureMode exposureMode;
 
 /**
+ *  白平衡模式，默认为AVCaptureWhiteBalanceModeContinuousAutoWhiteBalance
+ */
+@property (nonatomic, assign) AVCaptureWhiteBalanceMode whiteBalanceMode;
+
+/**
+*  曝光时长有效值区间,, 在相机运行状态APMCameraRunningStarted后获取
+*/
+@property (nonatomic, assign, readonly) CMTime minExposureDuration;
+@property (nonatomic, assign, readonly) CMTime maxExposureDuration;
+
+/**
+*  ISO感光有效值区间, 在相机运行状态APMCameraRunningStarted后获取
+*/
+@property (nonatomic, assign, readonly) float minISO;
+@property (nonatomic, assign, readonly) float maxISO;
+
+@property(nonatomic, assign) NSUInteger fps;
+
+@property(nonatomic) BOOL automaticallyAdjustsVideoHDREnabled;
+@property(nonatomic, getter=isVideoHDREnabled) BOOL videoHDREnabled;
+
+/**
+*  表示设定曝光水平与目标曝光之间的偏差，单位为EV
+*/
+@property(nonatomic, readonly) float exposureTargetOffset;
+
+/**
+*  应用于目标曝光值偏差，单位为EV,
+*  当exposureMode为AVCaptureExposureModeContinuousAutoExposure或AVCaptureExposureModeLocked时，偏差会影响计量(exposureTargetOffset)和实际曝光水平(exposureDuration和ISO)。曝光模式为AVCaptureExposureModeCustom时，只会影响测量。这个属性是key-value observable。它可以在任何时候读取，但是只能通过setExposureTargetBias:completionHandler:来设置。
+*/
+@property(nonatomic, readonly) float exposureTargetBias;
+
+/**
+*  支持的最小曝光偏差
+*/
+@property(nonatomic, readonly) float minExposureTargetBias;
+
+/**
+*  支持的最大曝光偏差
+*/
+@property(nonatomic, readonly) float maxExposureTargetBias;
+
+
+/**
  *  录制APMCameraRunning前加载图片
  */
 @property (nonatomic, strong) UIImage* loadingImage;
@@ -177,6 +221,26 @@ typedef void (^APMCameraOperationHandler)(BOOL result);
  */
 - (void)setTorchMode:(AVCaptureTorchMode)torchMode handler:(APMCameraOperationHandler)handler;
 
+/**
+ *  设置曝光时长和ISO感光值
+ *  录制过程中设置无效
+ *
+ *  @param  expTime     曝光时长(需参考minExposureDuration、maxExposureDuration),不修改则入参AVCaptureExposureDurationCurrent
+ *  @param  iso              ISO感光值(需参考minISO、maxISO),不修改则入参AVCaptureISOCurrent
+ *  @param  handler     设置完成回调
+ *  注意：过大的曝光时长会影响FPS，正常环境下曝光时长60ms只可达到30FPS
+ *      此接口需要在收到- (void)startRunning:(APMCameraRunningHandler)handler的APMCameraRunningHandler的status为APMCameraRunningStarted后设置
+ */
+- (void)setExposureTime:(CMTime)expTime ISO:(float)iso completionHandler:(void (^)(CMTime syncTime))handler;
+
+/**
+ *  设置曝光偏差
+ *  录制过程中设置无效
+ *
+ *  @param  bias           应用于目标曝光值偏差，单位为EV，不希望改变时使用AVCaptureExposureTargetBiasCurrent
+ *  @param  handler     设置完成回调
+ */
+- (void)setExposureTargetBias:(float)bias completionHandler:(void (^)(CMTime syncTime))handler;
 #pragma mark - 采集与拍摄
 
 /**

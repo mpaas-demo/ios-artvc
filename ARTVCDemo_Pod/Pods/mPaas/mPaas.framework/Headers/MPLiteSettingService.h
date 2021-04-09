@@ -61,9 +61,29 @@
 + (NSString *)getPlatform;
 
 /**
+ * 语音识别 websocket 地址
+ */
++ (NSString *)getSmWebSocket;
+
+/**
+ *上传组件上传、下载的地址
+ */
++ (NSString *)getMassHost;
+
+/**
+ *上传组件上传、下载的端口
+ */
++ (NSString *)getMassPort;
+/**
  * 获取mrtcserver地址, 与meta.config文件中 mrtcserver 字段一致
  */
 + (NSString *)getMrtcServerGateway;
+
+
+/**
+ * 获取mmtc服务地址，与meta.config文件中mmtcserver字段一致
+ */
++ (NSString *)getMMTCGateway;
 
 
 @end

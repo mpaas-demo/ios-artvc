@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -18,31 +18,27 @@
 		};
 		0F681679473EBD02A4B9B3EDFD8ABD7E /* APMobileNetwork */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 4F9161407482B121DD83D3E10F9F39A0 /* Build configuration list for PBXAggregateTarget "APMobileNetwork" */;
+			buildConfigurationList = EDDCD06E5755E05CEE26DEAAF9CE3EA9 /* Build configuration list for PBXAggregateTarget "APMobileNetwork" */;
 			buildPhases = (
 			);
 			dependencies = (
-				749660594BDE32675E6638890F05B8C3 /* PBXTargetDependency */,
-				351A761E4E4BBC9AD0E920D1E80F35B7 /* PBXTargetDependency */,
-				6D6BE7D09EA19AD4BF704E744A9AD942 /* PBXTargetDependency */,
-				C58607B01B0CE48EEDC05F4E944208BE /* PBXTargetDependency */,
+				202F3819F7041737ED0153498F3F937D /* PBXTargetDependency */,
+				3F3A1B94B11A7345F01F6F3067CFB61C /* PBXTargetDependency */,
 			);
 			name = APMobileNetwork;
 		};
 		1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 70E0F6DFD4F3AB1E69A5F1F93A037DC6 /* Build configuration list for PBXAggregateTarget "SocketRocket" */;
+			buildConfigurationList = 7A0DB5596E693546B4DD29133B609FD2 /* Build configuration list for PBXAggregateTarget "SocketRocket" */;
 			buildPhases = (
 			);
 			dependencies = (
-				E6CA096D5C9AC54A3C12F1971CD866B3 /* PBXTargetDependency */,
-				4CE70E5B041A95E8A6EF2FBD4F6BDEA4 /* PBXTargetDependency */,
 			);
 			name = SocketRocket;
 		};
 		39ECD579BA06A9D774BDFEB9D3378766 /* APOpenSSL */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 7783FB57E758DAC78BFE45B9EAF79C26 /* Build configuration list for PBXAggregateTarget "APOpenSSL" */;
+			buildConfigurationList = 315D8B32304CA560333E3C5578AED913 /* Build configuration list for PBXAggregateTarget "APOpenSSL" */;
 			buildPhases = (
 			);
 			dependencies = (
@@ -51,7 +47,7 @@
 		};
 		4863D9B7AB289E489DD574863D709C93 /* UTDID */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 10A7928339205F11074AA8252A236319 /* Build configuration list for PBXAggregateTarget "UTDID" */;
+			buildConfigurationList = C0DC4233A651B8C85E7DB4DFFED3ECF8 /* Build configuration list for PBXAggregateTarget "UTDID" */;
 			buildPhases = (
 			);
 			dependencies = (
@@ -60,20 +56,20 @@
 		};
 		5E3FB151716D87A4E86032D4B8B7CF8F /* ARTVC */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 0FA1CE08D525B49001D68C769398EB49 /* Build configuration list for PBXAggregateTarget "ARTVC" */;
+			buildConfigurationList = 9EBD14120232E1A4CA87C3CC3E798DFD /* Build configuration list for PBXAggregateTarget "ARTVC" */;
 			buildPhases = (
 			);
 			dependencies = (
-				18CE70CD4384E338AF08FDA48F3B7331 /* PBXTargetDependency */,
-				1290D983BD2AFCC8B1F3FDB3F8F239EB /* PBXTargetDependency */,
-				867A44E00FEF457DEAAC4292A1CF1591 /* PBXTargetDependency */,
-				61B33B9EFE80D8D3954891AD7D713CB0 /* PBXTargetDependency */,
+				97809EBE06DE1E422DF3CAAA5BEAFB8F /* PBXTargetDependency */,
+				646A3A0DB07F765F90BED9D7BB7619F6 /* PBXTargetDependency */,
+				743121C4D78105372C5E51F440E45119 /* PBXTargetDependency */,
+				5570A7806F12AC053FFB03EAF00A5837 /* PBXTargetDependency */,
 			);
 			name = ARTVC;
 		};
 		66EBE67085BF26D5B8C3FB1D37A9F63F /* APProtocolBuffers */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = FFE16DD5DCBBB1A5703D411DE3A69A0C /* Build configuration list for PBXAggregateTarget "APProtocolBuffers" */;
+			buildConfigurationList = FCD8CA2A2E543C058A9A5E0B668C6B86 /* Build configuration list for PBXAggregateTarget "APProtocolBuffers" */;
 			buildPhases = (
 			);
 			dependencies = (
@@ -82,7 +78,7 @@
 		};
 		94D1DDF6BCD57BDBE6A10ED5DA249091 /* SecurityGuardSDK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 4DC4D71D00A6E10AE27AE052740527D6 /* Build configuration list for PBXAggregateTarget "SecurityGuardSDK" */;
+			buildConfigurationList = BE817ED4BFC1D40B1D22976F2749B711 /* Build configuration list for PBXAggregateTarget "SecurityGuardSDK" */;
 			buildPhases = (
 			);
 			dependencies = (
@@ -91,62 +87,61 @@
 		};
 		9A02864533E64BC00D260DCE9A3D8907 /* APMobileFramework */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 552DBACFB583C59DF37F841687B61D9F /* Build configuration list for PBXAggregateTarget "APMobileFramework" */;
+			buildConfigurationList = EFA59209A6D5BDB6B8FA92B154991209 /* Build configuration list for PBXAggregateTarget "APMobileFramework" */;
 			buildPhases = (
 			);
 			dependencies = (
-				B374AC03A6825CA46267AE01C5F006F9 /* PBXTargetDependency */,
-				DA3EF1D0D134E1FD6106F62FAEFCF1EB /* PBXTargetDependency */,
-				E100429949007334B7CFFD658AD4F16D /* PBXTargetDependency */,
+				1C5A237ACBF6FBC4A03C76C608225A86 /* PBXTargetDependency */,
+				8C5C25A210A6C390B685108935596ABB /* PBXTargetDependency */,
+				0EDD2215948CC6E40B405BB014B97974 /* PBXTargetDependency */,
 			);
 			name = APMobileFramework;
 		};
-		9E15CEBC5D012F3C10A0C64164AFE86D /* APSecurityUtility */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 726275BAA13CB212FEEFF19CE3926D77 /* Build configuration list for PBXAggregateTarget "APSecurityUtility" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = APSecurityUtility;
-		};
 		BEECCE27D73ABE1213B8CEC95D941FBE /* mPaas */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 9D427EE0550D4D6F45A05B5492E2BEBA /* Build configuration list for PBXAggregateTarget "mPaas" */;
+			buildConfigurationList = 741FD9470DD751814220BE3297A9AED0 /* Build configuration list for PBXAggregateTarget "mPaas" */;
 			buildPhases = (
 			);
 			dependencies = (
-				EB878F685B98914DCC889D2250471B49 /* PBXTargetDependency */,
+				8EA6AD693B69585B5B1B210E6CE59066 /* PBXTargetDependency */,
 			);
 			name = mPaas;
 		};
 		C14DBE92CC5799BDD360618FAF1E0D4E /* APRemoteLogging */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 9629A78F92CBDC0DD890ECE95A5881E8 /* Build configuration list for PBXAggregateTarget "APRemoteLogging" */;
+			buildConfigurationList = FBCC5FE967C878AE2B887D24A22BADCA /* Build configuration list for PBXAggregateTarget "APRemoteLogging" */;
 			buildPhases = (
 			);
 			dependencies = (
-				EEF1B53D0414983BAFDB856B8A53245C /* PBXTargetDependency */,
-				D64BB2A404A4BDAB447C172424E4A742 /* PBXTargetDependency */,
-				B586F427CF0CA01F40974116F0AFFC7B /* PBXTargetDependency */,
+				EA219ECB89DBAAE239DB0F3A2102B2DF /* PBXTargetDependency */,
+				F42B27FF2735AC3FC12DCC5B3B1326C3 /* PBXTargetDependency */,
 			);
 			name = APRemoteLogging;
 		};
 		CB015D9FA4F018CA9B9CA9877219C936 /* APMLogging */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = F60DF63FC588DFBAD45467F6AD24117F /* Build configuration list for PBXAggregateTarget "APMLogging" */;
+			buildConfigurationList = 79649A5867097A3B1815A39666515CFA /* Build configuration list for PBXAggregateTarget "APMLogging" */;
 			buildPhases = (
 			);
 			dependencies = (
-				83888995B602C227617270131392D7AE /* PBXTargetDependency */,
-				A1E7B22934857C2FE765E9690A9FA82E /* PBXTargetDependency */,
-				EC28580683F9C1208C157E2CC0F7A82B /* PBXTargetDependency */,
+				105B132A9539B5EE52FEF1F69FD31343 /* PBXTargetDependency */,
+				5CE6848D7CA3ED77D87FB03BD71A8563 /* PBXTargetDependency */,
+				69E9CADB51498836727E2F97F59B0561 /* PBXTargetDependency */,
 			);
 			name = APMLogging;
 		};
+		D86AE823E929439C922166100F704979 /* MPARTVCUpload */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FA86BB443790BD99577906DCB5D81B3F /* Build configuration list for PBXAggregateTarget "MPARTVCUpload" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = MPARTVCUpload;
+		};
 		DD40110C494E672320E3E1029D7E84C2 /* APMUtils */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 653EAACC1D86D91E75BDACFD0323AC46 /* Build configuration list for PBXAggregateTarget "APMUtils" */;
+			buildConfigurationList = C09ECA5230DBBF8C7A41C00A68187DE9 /* Build configuration list for PBXAggregateTarget "APMUtils" */;
 			buildPhases = (
 			);
 			dependencies = (
@@ -156,297 +151,276 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		8309EF3B2CA845E4BEA927234E99E01A /* Pods-ARTVCDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D487001BAB24EA27DD2EA5FF03734B /* Pods-ARTVCDemo-dummy.m */; };
+		3EF0C6C314B13BE233CA03CFC38215EF /* Pods-ARTVCDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D487001BAB24EA27DD2EA5FF03734B /* Pods-ARTVCDemo-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		005405900BD977B76B7E423BD69DF45D /* PBXContainerItemProxy */ = {
+		065AB04B76631341AB212C3312B9D3D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C14DBE92CC5799BDD360618FAF1E0D4E;
-			remoteInfo = APRemoteLogging;
+			remoteGlobalIDString = D86AE823E929439C922166100F704979;
+			remoteInfo = MPARTVCUpload;
 		};
-		0EC46AA9601CE543753941538D2BBCE6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0ECFB72C0FD8D5CA63B11441F3F5DC28;
-			remoteInfo = APLog;
-		};
-		0FAB394BC1AE94B2E070818FB321971B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0ECFB72C0FD8D5CA63B11441F3F5DC28;
-			remoteInfo = APLog;
-		};
-		1A34CE3EE817E7B3B01BF9D48707287A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9E15CEBC5D012F3C10A0C64164AFE86D;
-			remoteInfo = APSecurityUtility;
-		};
-		1DBE4E6CA1602A1AAB2751856184D5F0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DD40110C494E672320E3E1029D7E84C2;
-			remoteInfo = APMUtils;
-		};
-		2E73BE50FC496500A947741DCFAB8BE9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BEECCE27D73ABE1213B8CEC95D941FBE;
-			remoteInfo = mPaas;
-		};
-		32601B56514E44A0E5954BEC1720559C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0F681679473EBD02A4B9B3EDFD8ABD7E;
-			remoteInfo = APMobileNetwork;
-		};
-		3CDECF9E2E5DF60ACBDF0AF791D8CA1E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB015D9FA4F018CA9B9CA9877219C936;
-			remoteInfo = APMLogging;
-		};
-		44FA4B3F758B797251F228CA998910C8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9A02864533E64BC00D260DCE9A3D8907;
-			remoteInfo = APMobileFramework;
-		};
-		480846950DE0FD4FDC7F440805BF2D78 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 39ECD579BA06A9D774BDFEB9D3378766;
-			remoteInfo = APOpenSSL;
-		};
-		4FE8D8E732D16E34CB32E1074FE4210F /* PBXContainerItemProxy */ = {
+		1F1FDEB0F9BB225A83F355D11B3633CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4863D9B7AB289E489DD574863D709C93;
 			remoteInfo = UTDID;
 		};
-		5A3078AE1457566329F02492132886A7 /* PBXContainerItemProxy */ = {
+		23E9DD0009673CFA6DE2B8870F57D17D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9A02864533E64BC00D260DCE9A3D8907;
-			remoteInfo = APMobileFramework;
+			remoteGlobalIDString = DD40110C494E672320E3E1029D7E84C2;
+			remoteInfo = APMUtils;
 		};
-		5BA1122F3385C7096C2F0E3340F504BC /* PBXContainerItemProxy */ = {
+		2B851C3AEE7A68AD024C0507EA0F4DAF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1948D0B63D2CF6A48E18B0B292BC6091;
-			remoteInfo = SocketRocket;
+			remoteGlobalIDString = CB015D9FA4F018CA9B9CA9877219C936;
+			remoteInfo = APMLogging;
 		};
-		66BEF34DDA760BA76E8D87A2850521F5 /* PBXContainerItemProxy */ = {
+		324C09131CD4ACBA852ADAC8F9C9FCC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB015D9FA4F018CA9B9CA9877219C936;
+			remoteInfo = APMLogging;
+		};
+		37F1206459BCC8482A23C1225286E6FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ECFB72C0FD8D5CA63B11441F3F5DC28;
+			remoteInfo = APLog;
+		};
+		465A31675FA91CA4E7F74FE267078595 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ECFB72C0FD8D5CA63B11441F3F5DC28;
+			remoteInfo = APLog;
+		};
+		4A5F4CCADD83600586F642B4595A7F72 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BEECCE27D73ABE1213B8CEC95D941FBE;
 			remoteInfo = mPaas;
 		};
-		6944C5062EEFFA20CB3907BAECE97C09 /* PBXContainerItemProxy */ = {
+		4CABD7592D827B837168F6D99E66BEA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39ECD579BA06A9D774BDFEB9D3378766;
+			remoteInfo = APOpenSSL;
+		};
+		5FAE2525707167192E1FC5B9B108F4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39ECD579BA06A9D774BDFEB9D3378766;
+			remoteInfo = APOpenSSL;
+		};
+		6341C80F5EB152065E589779949D6CE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD40110C494E672320E3E1029D7E84C2;
+			remoteInfo = APMUtils;
+		};
+		655D2E6D4E6CBF714861559755DCE8EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEECCE27D73ABE1213B8CEC95D941FBE;
+			remoteInfo = mPaas;
+		};
+		79101C71607E8A73976980EF00422360 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1948D0B63D2CF6A48E18B0B292BC6091;
+			remoteInfo = SocketRocket;
+		};
+		7FC99FCF567B22FB273BAD0BA10940F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A02864533E64BC00D260DCE9A3D8907;
+			remoteInfo = APMobileFramework;
+		};
+		99881A5437FD794D46FC3223CED400A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD40110C494E672320E3E1029D7E84C2;
+			remoteInfo = APMUtils;
+		};
+		A12F2BDB1624909541CE230897E750AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C14DBE92CC5799BDD360618FAF1E0D4E;
+			remoteInfo = APRemoteLogging;
+		};
+		B567C2211D93EB9491CF3D6F22C4DE82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F681679473EBD02A4B9B3EDFD8ABD7E;
+			remoteInfo = APMobileNetwork;
+		};
+		B5F24A32634169EB066F52835F664BB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66EBE67085BF26D5B8C3FB1D37A9F63F;
+			remoteInfo = APProtocolBuffers;
+		};
+		BB719B9E43C0B9F556BF9EBE1142AF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ECFB72C0FD8D5CA63B11441F3F5DC28;
+			remoteInfo = APLog;
+		};
+		CA1F20F6C2894110E53373FB400F0CB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEECCE27D73ABE1213B8CEC95D941FBE;
+			remoteInfo = mPaas;
+		};
+		CBFAE733E3B91FA2CDE526141AF0734A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 94D1DDF6BCD57BDBE6A10ED5DA249091;
 			remoteInfo = SecurityGuardSDK;
 		};
-		6A8D92EC22BA13B2C89B66EFCE276007 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BEECCE27D73ABE1213B8CEC95D941FBE;
-			remoteInfo = mPaas;
-		};
-		7134BE72894B681B4265F6C2388C4344 /* PBXContainerItemProxy */ = {
+		DA01CC46F914B027A30DEEBBCAF97ADD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 66EBE67085BF26D5B8C3FB1D37A9F63F;
 			remoteInfo = APProtocolBuffers;
 		};
-		78754482D5DC1677AB13AD3FAF0935F7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C14DBE92CC5799BDD360618FAF1E0D4E;
-			remoteInfo = APRemoteLogging;
-		};
-		7DB5E4780D773EA8FCEE7D59602B24FA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 66EBE67085BF26D5B8C3FB1D37A9F63F;
-			remoteInfo = APProtocolBuffers;
-		};
-		8E95CDE118BCCB709857E96CACCDB765 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DD40110C494E672320E3E1029D7E84C2;
-			remoteInfo = APMUtils;
-		};
-		8F29F5A72B90AB44F32B103CE57EB265 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 39ECD579BA06A9D774BDFEB9D3378766;
-			remoteInfo = APOpenSSL;
-		};
-		95BEA1151E3C63765BDCA843CFF2CDED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1948D0B63D2CF6A48E18B0B292BC6091;
-			remoteInfo = SocketRocket;
-		};
-		A921D952AFAE631085CE528A916D9383 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BEECCE27D73ABE1213B8CEC95D941FBE;
-			remoteInfo = mPaas;
-		};
-		AB9D43467A939F01D65EE937833F0C7B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB015D9FA4F018CA9B9CA9877219C936;
-			remoteInfo = APMLogging;
-		};
-		BB8555078A3F31C2BFB2FF1804F6DAF9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0ECFB72C0FD8D5CA63B11441F3F5DC28;
-			remoteInfo = APLog;
-		};
-		BE1333ADB7CDA10793F0FC583161BC76 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BEECCE27D73ABE1213B8CEC95D941FBE;
-			remoteInfo = mPaas;
-		};
-		C0F13A6A673413008D0B939255945A6E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4863D9B7AB289E489DD574863D709C93;
-			remoteInfo = UTDID;
-		};
-		C0FCC336CF7E09BF97D335C6F4FC0FF6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9E15CEBC5D012F3C10A0C64164AFE86D;
-			remoteInfo = APSecurityUtility;
-		};
-		C519CDE1CF5240E378CEA8A0A4A46DE0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0ECFB72C0FD8D5CA63B11441F3F5DC28;
-			remoteInfo = APLog;
-		};
-		D6D636B0A352FA18901805E0D249C6DA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C14DBE92CC5799BDD360618FAF1E0D4E;
-			remoteInfo = APRemoteLogging;
-		};
-		E67314EC8D9D98785F8BD765E2982F9F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0F681679473EBD02A4B9B3EDFD8ABD7E;
-			remoteInfo = APMobileNetwork;
-		};
-		E7551004CA70702DBF612BA45560283F /* PBXContainerItemProxy */ = {
+		DB46ABEEFA86847742BC60C419D4E684 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5E3FB151716D87A4E86032D4B8B7CF8F;
 			remoteInfo = ARTVC;
 		};
-		E81C255A6656EBA311A46E40B41B1ACB /* PBXContainerItemProxy */ = {
+		DB86B749059E2BBCF85E9FE92DD8EDD1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DD40110C494E672320E3E1029D7E84C2;
-			remoteInfo = APMUtils;
+			remoteGlobalIDString = C14DBE92CC5799BDD360618FAF1E0D4E;
+			remoteInfo = APRemoteLogging;
 		};
-		EBBEE8BB3720F15CC075C724107411A5 /* PBXContainerItemProxy */ = {
+		DD5BC06D0C75850EA4CB96FDF55A5802 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 94D1DDF6BCD57BDBE6A10ED5DA249091;
-			remoteInfo = SecurityGuardSDK;
+			remoteGlobalIDString = C14DBE92CC5799BDD360618FAF1E0D4E;
+			remoteInfo = APRemoteLogging;
+		};
+		DE66C9891223FF3138D9AFE61E0D7F6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1948D0B63D2CF6A48E18B0B292BC6091;
+			remoteInfo = SocketRocket;
+		};
+		EC27DB16446728EBADE4071D8CE78E56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ECFB72C0FD8D5CA63B11441F3F5DC28;
+			remoteInfo = APLog;
+		};
+		F82FADCF4ECB88F2421E60140BF57D6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEECCE27D73ABE1213B8CEC95D941FBE;
+			remoteInfo = mPaas;
+		};
+		FE98724AD2B8BEC5AB247BF38EF81CB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEECCE27D73ABE1213B8CEC95D941FBE;
+			remoteInfo = mPaas;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		019CABE43EB52F63D5297076A5E92C35 /* Pods-ARTVCDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ARTVCDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		04EC272B5F59E32CAE16A1F70E1BA3A8 /* APProtocolBuffers.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APProtocolBuffers.xcconfig; sourceTree = "<group>"; };
-		0526E3DEE98083B89B9AFF1E1F266FB1 /* APLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APLog.framework; sourceTree = "<group>"; };
-		08A51CC8B1A7D55495DFE151E4CE6C84 /* SGMain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SGMain.framework; sourceTree = "<group>"; };
-		0FBE0C7AEA089820EEC31FEAA03B6EE6 /* APRemoteLogging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APRemoteLogging.xcconfig; sourceTree = "<group>"; };
-		1DCDDF0A2009AD9BC23CE17149949540 /* APSecurityUtility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APSecurityUtility.framework; sourceTree = "<group>"; };
-		1FC6437C4F31A2E505AD9930C4B9FC72 /* UTDID.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UTDID.xcconfig; sourceTree = "<group>"; };
-		2538632DC734F3138F9C34F82AB7F347 /* APRemoteLogging.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = APRemoteLogging.bundle; path = APRemoteLogging.framework/APRemoteLogging.bundle; sourceTree = "<group>"; };
-		3D941617171BE4E5D20D8DEB197A6BBC /* APMLogging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APMLogging.framework; sourceTree = "<group>"; };
-		45CE596AC5268B843B2560496185FF1C /* APMUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APMUtils.framework; sourceTree = "<group>"; };
-		5D9E9435493F7CBACFE9AF82F5761483 /* APLog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APLog.xcconfig; sourceTree = "<group>"; };
-		61295F5A5B8778F78217887B857AE0CC /* SecurityGuardSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SecurityGuardSDK.framework; sourceTree = "<group>"; };
-		6693A7586B382694BEA590DB8B841AF8 /* APMobileNetwork.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APMobileNetwork.xcconfig; sourceTree = "<group>"; };
+		05852EF13AD7C5BB7FA15EB42FCCC89A /* APMUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APMUtils.debug.xcconfig; sourceTree = "<group>"; };
+		061E2FE60B171D7AD25C957AF75870D6 /* APMobileFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APMobileFramework.debug.xcconfig; sourceTree = "<group>"; };
+		0F91A0E0DF677C6A7B2FA86EF1C08F3F /* MPARTVCUpload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MPARTVCUpload.debug.xcconfig; sourceTree = "<group>"; };
+		0FA3A3EF7784F333426496134C3CAD34 /* mPaas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = mPaas.debug.xcconfig; sourceTree = "<group>"; };
+		1034C705E1F523C4325E58A780B9208F /* mPaas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = mPaas.release.xcconfig; sourceTree = "<group>"; };
+		1936222BEF2F883732FA49F4E672E3EE /* APMobileNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APMobileNetwork.debug.xcconfig; sourceTree = "<group>"; };
+		1EFAA481E9860247F68158DB35A9F3D2 /* APMUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APMUtils.release.xcconfig; sourceTree = "<group>"; };
+		229C92D4F2F666AA5CE3E6A78ADA3B52 /* APMobileFramework.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = APMobileFramework.bundle; path = APMobileFramework.framework/APMobileFramework.bundle; sourceTree = "<group>"; };
+		257B3B23E89E327777471DC375EDF7A8 /* APRemoteLogging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APRemoteLogging.release.xcconfig; sourceTree = "<group>"; };
+		2DA8092C818BF92628ED203E0CC31062 /* SGMain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SGMain.framework; sourceTree = "<group>"; };
+		32746B120B656FC32C0587DF4AFDAB80 /* APMobileNetwork.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = APMobileNetwork.bundle; path = APMobileNetwork.framework/APMobileNetwork.bundle; sourceTree = "<group>"; };
+		32F296926BB685B5D6A017D11582D973 /* ARTVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARTVC.release.xcconfig; sourceTree = "<group>"; };
+		35C9F18864E992005847416B06280570 /* mPaas.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mPaas.framework; sourceTree = "<group>"; };
+		37841498ED051204DF20BCDB6D44EED7 /* APOpenSSL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APOpenSSL.debug.xcconfig; sourceTree = "<group>"; };
+		4363401B5753C4DF9D3B95D5465F2B67 /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTDID.framework; sourceTree = "<group>"; };
+		446D56A459A9F1B47A89CFC3568CC9F6 /* APProtocolBuffers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APProtocolBuffers.framework; sourceTree = "<group>"; };
+		49F43538891A761EFFDB58FA5469917F /* ARTVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARTVC.debug.xcconfig; sourceTree = "<group>"; };
+		4E999C23013019167788667DE6E2D5E7 /* SecurityGuardSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SecurityGuardSDK.release.xcconfig; sourceTree = "<group>"; };
+		5395064A362BE3C38C4CFD350835CA41 /* SocketRocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.debug.xcconfig; sourceTree = "<group>"; };
+		5A9B6D7D26CFDEC7F8A6C4D1702017A5 /* SocketRocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.release.xcconfig; sourceTree = "<group>"; };
+		5B51988DEFF1638C0F185D574495D03C /* APMobileFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APMobileFramework.release.xcconfig; sourceTree = "<group>"; };
+		633D0ACFAA50C92ABD6C6DC4F7FAB08E /* UTDID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UTDID.debug.xcconfig; sourceTree = "<group>"; };
+		67869FB96B349444E249E406F2705E6B /* APOpenSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APOpenSSL.framework; sourceTree = "<group>"; };
 		6789D34DDF914D269F8B8FCF4237566A /* Pods-ARTVCDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARTVCDemo-resources.sh"; sourceTree = "<group>"; };
+		6AE79AEEBFA83C2174196C882B52B116 /* UTDID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UTDID.release.xcconfig; sourceTree = "<group>"; };
+		6CBBBCAED65148C5215486ECBCAC5689 /* APMLogging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APMLogging.release.xcconfig; sourceTree = "<group>"; };
+		6D79E637C3E7119A7D409742685D3232 /* APMobileNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APMobileNetwork.release.xcconfig; sourceTree = "<group>"; };
 		79D217E5959808061DDB4A5715893EB2 /* Pods-ARTVCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARTVCDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		7BCE758611AC98599A91740D5A267E81 /* APMobileFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APMobileFramework.xcconfig; sourceTree = "<group>"; };
-		7E94AC553E61E13351B3925769534F28 /* ARTVC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARTVC.xcconfig; sourceTree = "<group>"; };
-		889D7BEAA128A330446A14B7692A9ECB /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SocketRocket.framework; sourceTree = "<group>"; };
-		8963AB2731BEB186F2EFDC3D6DF419BC /* APMLogging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APMLogging.xcconfig; sourceTree = "<group>"; };
-		8FD7D2CEC4F23D3E4E1BA4529BA54607 /* APOpenSSL.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APOpenSSL.xcconfig; sourceTree = "<group>"; };
+		887A66308652BC4D069501CC902FBA9C /* ARTVC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ARTVC.framework; sourceTree = "<group>"; };
+		889907B98508130AD997C1ACD995407F /* SecurityGuardSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SecurityGuardSDK.debug.xcconfig; sourceTree = "<group>"; };
+		8CB595713532DBEB3FDC2C109A434FE1 /* APMLogging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APMLogging.debug.xcconfig; sourceTree = "<group>"; };
+		900CB030B8E97A1B62DD09BDF13CD09A /* APMUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APMUtils.framework; sourceTree = "<group>"; };
+		92AC50F169A7D97225EDC49DC2396A2A /* APLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APLog.release.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3D333B819ED41F8042CE6ACCC4F3F75 /* APProtocolBuffers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APProtocolBuffers.framework; sourceTree = "<group>"; };
+		9E98B5DF4D6980F7AEA2B6D000EACBC3 /* APLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APLog.debug.xcconfig; sourceTree = "<group>"; };
 		A4A7229BB762DDCBEEA02A234BEE2DF1 /* Pods-ARTVCDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARTVCDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		A51D7ECA543BACA9DE73467FFDCF40D6 /* APMUtils.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APMUtils.xcconfig; sourceTree = "<group>"; };
-		A65D835653FD5C85B429DD05A5DF9DDD /* APMobileFramework.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = APMobileFramework.bundle; path = APMobileFramework.framework/APMobileFramework.bundle; sourceTree = "<group>"; };
 		AAA3A236D79DC760D3D82E3F7413E0A9 /* Pods-ARTVCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARTVCDemo.release.xcconfig"; sourceTree = "<group>"; };
-		ABC08A6F4E2FFDDA10305A0356F4D0DF /* ARTVC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ARTVC.framework; sourceTree = "<group>"; };
-		B126B28179B14322E6DD118AF9EE65DE /* APMobileNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APMobileNetwork.framework; sourceTree = "<group>"; };
-		B9E1265DED1900718854317AAFA8939A /* APMobileFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APMobileFramework.framework; sourceTree = "<group>"; };
-		BBE20458DF1075B4336C5283EA79E2ED /* SocketRocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.xcconfig; sourceTree = "<group>"; };
-		BF35A507C118FF33792E6C5CE5753534 /* APSecurityUtility.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APSecurityUtility.xcconfig; sourceTree = "<group>"; };
-		C73B8392FFD422F5C7137C0A4F14F7CC /* APMobileNetwork.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = APMobileNetwork.bundle; path = APMobileNetwork.framework/APMobileNetwork.bundle; sourceTree = "<group>"; };
-		CDE8E44360509B245664AB53C6C5D512 /* mPaas.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = mPaas.xcconfig; sourceTree = "<group>"; };
+		B3252C81CD1A90674CB41CA593CDB67F /* APProtocolBuffers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APProtocolBuffers.debug.xcconfig; sourceTree = "<group>"; };
+		B4F2B8E7689079A4DD0F0DB7DBEF2066 /* APProtocolBuffers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APProtocolBuffers.release.xcconfig; sourceTree = "<group>"; };
+		BCFADE6BF320D0C762546E0681A424C7 /* APRemoteLogging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APRemoteLogging.debug.xcconfig; sourceTree = "<group>"; };
+		BFC9E67DEE326AA6703232E4A9E97F8B /* APRemoteLogging.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = APRemoteLogging.bundle; path = APRemoteLogging.framework/APRemoteLogging.bundle; sourceTree = "<group>"; };
+		C51E17C1682757715BCB4A9162E5C514 /* APLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APLog.framework; sourceTree = "<group>"; };
+		C62A81382F4BC8628EBE2E119F9B7EB6 /* SecurityGuardSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SecurityGuardSDK.framework; sourceTree = "<group>"; };
+		C64133CE3E45F47B9B99FB567F76A507 /* APRemoteLogging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APRemoteLogging.framework; sourceTree = "<group>"; };
+		CA49EFA8CD75BF55728E09D38D69FC94 /* MPARTVCUpload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MPARTVCUpload.release.xcconfig; sourceTree = "<group>"; };
+		CA61AB67076823FED593F614245EE550 /* MPARTVCUpload.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MPARTVCUpload.framework; sourceTree = "<group>"; };
+		CF95B5C1E6B5B320351469FBDE3747B3 /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SocketRocket.framework; sourceTree = "<group>"; };
+		CFE5D15B099B45EB5DAAAC4396A0EF5B /* APOpenSSL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APOpenSSL.release.xcconfig; sourceTree = "<group>"; };
 		D1649B5C92306BE53349BCD3E2DA1EE0 /* Pods-ARTVCDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARTVCDemo-frameworks.sh"; sourceTree = "<group>"; };
-		D16FC5C3C021C2EE4595D586DA73353E /* APOpenSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APOpenSSL.framework; sourceTree = "<group>"; };
-		D48B69A443C7273DA4D6E92BC9A4C959 /* SecurityGuardSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SecurityGuardSDK.xcconfig; sourceTree = "<group>"; };
-		D9D58296F16D350D0222D494DB5D11C2 /* mPaas.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mPaas.framework; sourceTree = "<group>"; };
-		DB0D9890E0DEB0072DD3714240DBE790 /* APMUtils.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = APMUtils.bundle; path = APMUtils.framework/APMUtils.bundle; sourceTree = "<group>"; };
-		E582358F29C72447AC6B3CD01E1F0AAA /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTDID.framework; sourceTree = "<group>"; };
 		E6D487001BAB24EA27DD2EA5FF03734B /* Pods-ARTVCDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARTVCDemo-dummy.m"; sourceTree = "<group>"; };
+		EA54E4D29EA44A25400BCA8E6E72EB59 /* APMUtils.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = APMUtils.bundle; path = APMUtils.framework/APMUtils.bundle; sourceTree = "<group>"; };
+		EDD3B064D9A7B30D91FED68332707504 /* APMobileFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APMobileFramework.framework; sourceTree = "<group>"; };
+		F39DEDF610458B181501502A9D919C6D /* APMLogging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APMLogging.framework; sourceTree = "<group>"; };
+		F75277B33AEFCE3372727F3487AB1A1A /* APMobileNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APMobileNetwork.framework; sourceTree = "<group>"; };
 		FAE8256C3298111E6E9BFCB3F69116F0 /* libPods-ARTVCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ARTVCDemo.a"; path = "libPods-ARTVCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB0CF19DFDE67ACC3BF1E9C1418C9A53 /* APRemoteLogging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APRemoteLogging.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D2B03B9553F579A1FEAAEE726F75CF5A /* Frameworks */ = {
+		EF2140EA55426155CBB61761A9776748 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -456,146 +430,136 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		032649CF9C2E613C8B63831A13273478 /* APOpenSSL */ = {
+		019808398DAECFA4E9D01F3600A6BC55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				34E9AAC39D66B8D93B9A34101DE0C083 /* Frameworks */,
-				10C377B5FD14A2EDFE277614BA544C07 /* Support Files */,
-			);
-			name = APOpenSSL;
-			path = APOpenSSL;
-			sourceTree = "<group>";
-		};
-		0CE50F093334025FB10017DE960FFDB0 /* APMobileFramework */ = {
-			isa = PBXGroup;
-			children = (
-				E12FD31B247DFEE427E1F4E3A2B6DF65 /* Frameworks */,
-				2643D71502DE5EA9C4C5103063A46864 /* Resources */,
-				302BF2F8C06E9CE4D6250ACEBAB9FB4B /* Support Files */,
-			);
-			name = APMobileFramework;
-			path = APMobileFramework;
-			sourceTree = "<group>";
-		};
-		0D893CFC6B86B4C5EFCBA7FDCF0568B9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				ABC08A6F4E2FFDDA10305A0356F4D0DF /* ARTVC.framework */,
+				900CB030B8E97A1B62DD09BDF13CD09A /* APMUtils.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		10C377B5FD14A2EDFE277614BA544C07 /* Support Files */ = {
+		1C396DEC662AC3AAA6CFCBAFC9F7E328 /* APRemoteLogging */ = {
 			isa = PBXGroup;
 			children = (
-				8FD7D2CEC4F23D3E4E1BA4529BA54607 /* APOpenSSL.xcconfig */,
+				2B65FDC6EF5E13C5139BDEB97A9AC29D /* Frameworks */,
+				BE9ADD4B31FA00673B219B8C04968FF7 /* Resources */,
+				331B7593D2BA0E558C1DE1A0AC57F5A7 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/APOpenSSL";
+			name = APRemoteLogging;
+			path = APRemoteLogging;
 			sourceTree = "<group>";
 		};
-		1CE962F561A8B1DF60A3ED37ED5DF52B /* Support Files */ = {
+		1D2BD51889D6749082F687D9157A02E0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7E94AC553E61E13351B3925769534F28 /* ARTVC.xcconfig */,
+				49F43538891A761EFFDB58FA5469917F /* ARTVC.debug.xcconfig */,
+				32F296926BB685B5D6A017D11582D973 /* ARTVC.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ARTVC";
 			sourceTree = "<group>";
 		};
-		2643D71502DE5EA9C4C5103063A46864 /* Resources */ = {
+		1D5C586A6343AF75B2C9EE64F312394D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A65D835653FD5C85B429DD05A5DF9DDD /* APMobileFramework.bundle */,
+				4363401B5753C4DF9D3B95D5465F2B67 /* UTDID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		234EB0558719915B182578DC2742D28C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA54E4D29EA44A25400BCA8E6E72EB59 /* APMUtils.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		2727167AA8C716DCA6D350B7CD89E973 /* APSecurityUtility */ = {
+		26B3399AA317499B91A412DD73E47BDC /* mPaas */ = {
 			isa = PBXGroup;
 			children = (
-				6AF998B03D5C61F0650264D9DF7CE8E9 /* Frameworks */,
-				E444983EA0DD12EA229A8EE9226752BB /* Support Files */,
+				D7A197EF7EBCEF4B84705F5376E0BB53 /* Frameworks */,
+				84EE6DFF26C648C525968492DCDF4ED1 /* Support Files */,
 			);
-			name = APSecurityUtility;
-			path = APSecurityUtility;
+			name = mPaas;
+			path = mPaas;
 			sourceTree = "<group>";
 		};
-		2AF4550B807FC78D7186D2A4D3B1963D /* SocketRocket */ = {
+		2B65FDC6EF5E13C5139BDEB97A9AC29D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				70A6C36A4D9D872A541DC5DF7682C2EE /* Frameworks */,
-				7321E3FAAD741217D5C7A3A8DF79303E /* Support Files */,
+				C64133CE3E45F47B9B99FB567F76A507 /* APRemoteLogging.framework */,
 			);
-			name = SocketRocket;
-			path = SocketRocket;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		302BF2F8C06E9CE4D6250ACEBAB9FB4B /* Support Files */ = {
+		331B7593D2BA0E558C1DE1A0AC57F5A7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7BCE758611AC98599A91740D5A267E81 /* APMobileFramework.xcconfig */,
+				BCFADE6BF320D0C762546E0681A424C7 /* APRemoteLogging.debug.xcconfig */,
+				257B3B23E89E327777471DC375EDF7A8 /* APRemoteLogging.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/APRemoteLogging";
+			sourceTree = "<group>";
+		};
+		349E975AC8E8D549854619C166475BC1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				633D0ACFAA50C92ABD6C6DC4F7FAB08E /* UTDID.debug.xcconfig */,
+				6AE79AEEBFA83C2174196C882B52B116 /* UTDID.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UTDID";
+			sourceTree = "<group>";
+		};
+		3B792C0C7B3A86C00A3553035586AB86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				446D56A459A9F1B47A89CFC3568CC9F6 /* APProtocolBuffers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F4544FED1281973C627203586B11E82 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				061E2FE60B171D7AD25C957AF75870D6 /* APMobileFramework.debug.xcconfig */,
+				5B51988DEFF1638C0F185D574495D03C /* APMobileFramework.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/APMobileFramework";
 			sourceTree = "<group>";
 		};
-		323B0870274B41F3B18E64B5DFC50444 /* Frameworks */ = {
+		40DD58D18BF9192292CC9BC75C06ED3D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				45CE596AC5268B843B2560496185FF1C /* APMUtils.framework */,
+				8CB595713532DBEB3FDC2C109A434FE1 /* APMLogging.debug.xcconfig */,
+				6CBBBCAED65148C5215486ECBCAC5689 /* APMLogging.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/APMLogging";
 			sourceTree = "<group>";
 		};
-		34E9AAC39D66B8D93B9A34101DE0C083 /* Frameworks */ = {
+		45E36FA13DA0B1EDC4B7D356A8F282F4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D16FC5C3C021C2EE4595D586DA73353E /* APOpenSSL.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		39C1A4E097652C1FC3FF4FA39323B0A0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				81BA8BB17D8FAFA73452A668A6441D2B /* APLog */,
-				9097C45B41A4A215338247631E9D14D3 /* APMLogging */,
-				0CE50F093334025FB10017DE960FFDB0 /* APMobileFramework */,
-				429F68889FC8D74263C24C161F5F6F05 /* APMobileNetwork */,
-				4EB00BD3078E0CD37F67FFFA5EC5404B /* APMUtils */,
-				032649CF9C2E613C8B63831A13273478 /* APOpenSSL */,
-				761C7A25DAE1F3B3224E7E3962B4D865 /* APProtocolBuffers */,
-				6D0E589EA027DA2F019608AF0804C22D /* APRemoteLogging */,
-				2727167AA8C716DCA6D350B7CD89E973 /* APSecurityUtility */,
-				9150295E651B8CA4E17461637D18BB55 /* ARTVC */,
-				6C3B63A57CDDD0099C67A8744E858C1F /* mPaas */,
-				991C91A1BCBA5E02AEE7CAC2B0519917 /* SecurityGuardSDK */,
-				2AF4550B807FC78D7186D2A4D3B1963D /* SocketRocket */,
-				3D3F5A50E4BF1B3BDAE715774903823C /* UTDID */,
+				70186BC797A7740AB686F10E01250412 /* APLog */,
+				B3A32829E6F10DC50853114D8239DD40 /* APMLogging */,
+				7FB0F594F7AC302CC12E831ACA9D5A82 /* APMobileFramework */,
+				A548E09312861EE3489F3B035D9D18C3 /* APMobileNetwork */,
+				4E7A93EB2181172B31BBE53A3534722E /* APMUtils */,
+				9EFDCE7A7B7A4553D178DC547563E2FA /* APOpenSSL */,
+				A5C6E345D1F4B71392C65787DA3C1AB2 /* APProtocolBuffers */,
+				1C396DEC662AC3AAA6CFCBAFC9F7E328 /* APRemoteLogging */,
+				9523CA3773D26D4214C5FF6CFD96CD8A /* ARTVC */,
+				26B3399AA317499B91A412DD73E47BDC /* mPaas */,
+				5FC6A5C3DB8F7CB798DA2A4EDBFADEA4 /* MPARTVCUpload */,
+				9F381771B6C8AEA1AD5239217B0E5AA5 /* SecurityGuardSDK */,
+				A16753C8C778426BF2818B69F5FB29F9 /* SocketRocket */,
+				76BD87D99DDB62001B4A1FEF85ABE839 /* UTDID */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		3D3F5A50E4BF1B3BDAE715774903823C /* UTDID */ = {
-			isa = PBXGroup;
-			children = (
-				5FA783CD6A523C14829F0E41406EFC66 /* Frameworks */,
-				D9B8E9E012C7016411FFF2C86E92A62A /* Support Files */,
-			);
-			name = UTDID;
-			path = UTDID;
-			sourceTree = "<group>";
-		};
-		429F68889FC8D74263C24C161F5F6F05 /* APMobileNetwork */ = {
-			isa = PBXGroup;
-			children = (
-				BEEE52D6582B2833C2375D5DA49D6BCD /* Frameworks */,
-				76BFAF53D3E76B3BC58DDDE3C57278D2 /* Resources */,
-				AA88EBD21FEB61D28A6C5C498F93CAF6 /* Support Files */,
-			);
-			name = APMobileNetwork;
-			path = APMobileNetwork;
 			sourceTree = "<group>";
 		};
 		4DFF5B4E7AFE0326D252D52EFEF8E55E /* Pods-ARTVCDemo */ = {
@@ -613,186 +577,197 @@
 			path = "Target Support Files/Pods-ARTVCDemo";
 			sourceTree = "<group>";
 		};
-		4EB00BD3078E0CD37F67FFFA5EC5404B /* APMUtils */ = {
+		4E7A93EB2181172B31BBE53A3534722E /* APMUtils */ = {
 			isa = PBXGroup;
 			children = (
-				323B0870274B41F3B18E64B5DFC50444 /* Frameworks */,
-				AB7E4EC1977CD003D912129299B6B89A /* Resources */,
-				B60E0B98185252C5F90D319C3BBAE4DC /* Support Files */,
+				019808398DAECFA4E9D01F3600A6BC55 /* Frameworks */,
+				234EB0558719915B182578DC2742D28C /* Resources */,
+				B52ED6E7FD8DFE3C9876B835380ACA9C /* Support Files */,
 			);
 			name = APMUtils;
 			path = APMUtils;
 			sourceTree = "<group>";
 		};
-		56315D9C1A2CBFE21C1D032F8D51FBA4 /* Resources */ = {
+		4EF9935BCE67581DE1A08B20931119EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2538632DC734F3138F9C34F82AB7F347 /* APRemoteLogging.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		56D22A86414C672A23F5B9E2F5450845 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0526E3DEE98083B89B9AFF1E1F266FB1 /* APLog.framework */,
+				C51E17C1682757715BCB4A9162E5C514 /* APLog.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5FA783CD6A523C14829F0E41406EFC66 /* Frameworks */ = {
+		5390661381804BEEC15280A7C243DE78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E582358F29C72447AC6B3CD01E1F0AAA /* UTDID.framework */,
+				EDD3B064D9A7B30D91FED68332707504 /* APMobileFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6AF998B03D5C61F0650264D9DF7CE8E9 /* Frameworks */ = {
+		5FC6A5C3DB8F7CB798DA2A4EDBFADEA4 /* MPARTVCUpload */ = {
 			isa = PBXGroup;
 			children = (
-				1DCDDF0A2009AD9BC23CE17149949540 /* APSecurityUtility.framework */,
+				B2A462BF7356429059589240B752E6A9 /* Frameworks */,
+				9AD7B91C693CAE29B24E3399F4077C45 /* Support Files */,
 			);
-			name = Frameworks;
+			name = MPARTVCUpload;
+			path = MPARTVCUpload;
 			sourceTree = "<group>";
 		};
-		6C3B63A57CDDD0099C67A8744E858C1F /* mPaas */ = {
+		604FB36CF8C3BD92DE0F083FFD89BABB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AEA1958DEF365C75407DCE6DEDF07E51 /* Frameworks */,
-				B537A8CB5CA6FCB019C02BC977559BCE /* Support Files */,
-			);
-			name = mPaas;
-			path = mPaas;
-			sourceTree = "<group>";
-		};
-		6D0E589EA027DA2F019608AF0804C22D /* APRemoteLogging */ = {
-			isa = PBXGroup;
-			children = (
-				7BCE11E54FE4E68B957500FCC216AAD3 /* Frameworks */,
-				56315D9C1A2CBFE21C1D032F8D51FBA4 /* Resources */,
-				704082BF717F58CABB3D868A4F043D0F /* Support Files */,
-			);
-			name = APRemoteLogging;
-			path = APRemoteLogging;
-			sourceTree = "<group>";
-		};
-		704082BF717F58CABB3D868A4F043D0F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0FBE0C7AEA089820EEC31FEAA03B6EE6 /* APRemoteLogging.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/APRemoteLogging";
-			sourceTree = "<group>";
-		};
-		70A6C36A4D9D872A541DC5DF7682C2EE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				889D7BEAA128A330446A14B7692A9ECB /* SocketRocket.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7321E3FAAD741217D5C7A3A8DF79303E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BBE20458DF1075B4336C5283EA79E2ED /* SocketRocket.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SocketRocket";
-			sourceTree = "<group>";
-		};
-		761C7A25DAE1F3B3224E7E3962B4D865 /* APProtocolBuffers */ = {
-			isa = PBXGroup;
-			children = (
-				B826D05CB342AD736599C3F8D700B7C5 /* Frameworks */,
-				D4D356C541431383ECE2E6A127BC784F /* Support Files */,
-			);
-			name = APProtocolBuffers;
-			path = APProtocolBuffers;
-			sourceTree = "<group>";
-		};
-		76BFAF53D3E76B3BC58DDDE3C57278D2 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C73B8392FFD422F5C7137C0A4F14F7CC /* APMobileNetwork.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		7BCE11E54FE4E68B957500FCC216AAD3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FB0CF19DFDE67ACC3BF1E9C1418C9A53 /* APRemoteLogging.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		81BA8BB17D8FAFA73452A668A6441D2B /* APLog */ = {
-			isa = PBXGroup;
-			children = (
-				56D22A86414C672A23F5B9E2F5450845 /* Frameworks */,
-				FD484A0ECBA0765A06ACCA6910AF6A61 /* Support Files */,
-			);
-			name = APLog;
-			path = APLog;
-			sourceTree = "<group>";
-		};
-		85109DA2AF1D16D00645947E34523D35 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D48B69A443C7273DA4D6E92BC9A4C959 /* SecurityGuardSDK.xcconfig */,
+				889907B98508130AD997C1ACD995407F /* SecurityGuardSDK.debug.xcconfig */,
+				4E999C23013019167788667DE6E2D5E7 /* SecurityGuardSDK.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SecurityGuardSDK";
 			sourceTree = "<group>";
 		};
-		9097C45B41A4A215338247631E9D14D3 /* APMLogging */ = {
+		70186BC797A7740AB686F10E01250412 /* APLog */ = {
 			isa = PBXGroup;
 			children = (
-				D04D8685ECB3043E8A9C8AD0129C5CC3 /* Frameworks */,
-				EC72795D69CB18B63F6CCF1DD18C1DE9 /* Support Files */,
+				4EF9935BCE67581DE1A08B20931119EF /* Frameworks */,
+				C10A3DA2C4708A34EA6DABC31E1EB725 /* Support Files */,
 			);
-			name = APMLogging;
-			path = APMLogging;
+			name = APLog;
+			path = APLog;
 			sourceTree = "<group>";
 		};
-		9150295E651B8CA4E17461637D18BB55 /* ARTVC */ = {
+		721E43C120CAB07F6CFD5CC4CFCA3E93 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0D893CFC6B86B4C5EFCBA7FDCF0568B9 /* Frameworks */,
-				1CE962F561A8B1DF60A3ED37ED5DF52B /* Support Files */,
-			);
-			name = ARTVC;
-			path = ARTVC;
-			sourceTree = "<group>";
-		};
-		991C91A1BCBA5E02AEE7CAC2B0519917 /* SecurityGuardSDK */ = {
-			isa = PBXGroup;
-			children = (
-				B35E60C15993848274641FD531C043C3 /* Frameworks */,
-				85109DA2AF1D16D00645947E34523D35 /* Support Files */,
-			);
-			name = SecurityGuardSDK;
-			path = SecurityGuardSDK;
-			sourceTree = "<group>";
-		};
-		AA88EBD21FEB61D28A6C5C498F93CAF6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6693A7586B382694BEA590DB8B841AF8 /* APMobileNetwork.xcconfig */,
+				1936222BEF2F883732FA49F4E672E3EE /* APMobileNetwork.debug.xcconfig */,
+				6D79E637C3E7119A7D409742685D3232 /* APMobileNetwork.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/APMobileNetwork";
 			sourceTree = "<group>";
 		};
-		AB7E4EC1977CD003D912129299B6B89A /* Resources */ = {
+		76BD87D99DDB62001B4A1FEF85ABE839 /* UTDID */ = {
 			isa = PBXGroup;
 			children = (
-				DB0D9890E0DEB0072DD3714240DBE790 /* APMUtils.bundle */,
+				1D5C586A6343AF75B2C9EE64F312394D /* Frameworks */,
+				349E975AC8E8D549854619C166475BC1 /* Support Files */,
+			);
+			name = UTDID;
+			path = UTDID;
+			sourceTree = "<group>";
+		};
+		7B9EA80900E073CA92CF74C5F3E3DA4B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32746B120B656FC32C0587DF4AFDAB80 /* APMobileNetwork.bundle */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		7FB0F594F7AC302CC12E831ACA9D5A82 /* APMobileFramework */ = {
+			isa = PBXGroup;
+			children = (
+				5390661381804BEEC15280A7C243DE78 /* Frameworks */,
+				D0721A7CD3A9CD0EF0C2B9846F81A3B9 /* Resources */,
+				3F4544FED1281973C627203586B11E82 /* Support Files */,
+			);
+			name = APMobileFramework;
+			path = APMobileFramework;
+			sourceTree = "<group>";
+		};
+		80985E43E60143BFE9E886203447C496 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F75277B33AEFCE3372727F3487AB1A1A /* APMobileNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84EE6DFF26C648C525968492DCDF4ED1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FA3A3EF7784F333426496134C3CAD34 /* mPaas.debug.xcconfig */,
+				1034C705E1F523C4325E58A780B9208F /* mPaas.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/mPaas";
+			sourceTree = "<group>";
+		};
+		9523CA3773D26D4214C5FF6CFD96CD8A /* ARTVC */ = {
+			isa = PBXGroup;
+			children = (
+				EAAF3B54CC7A92D730CD0974CB444856 /* Frameworks */,
+				1D2BD51889D6749082F687D9157A02E0 /* Support Files */,
+			);
+			name = ARTVC;
+			path = ARTVC;
+			sourceTree = "<group>";
+		};
+		9AD7B91C693CAE29B24E3399F4077C45 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F91A0E0DF677C6A7B2FA86EF1C08F3F /* MPARTVCUpload.debug.xcconfig */,
+				CA49EFA8CD75BF55728E09D38D69FC94 /* MPARTVCUpload.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MPARTVCUpload";
+			sourceTree = "<group>";
+		};
+		9EFDCE7A7B7A4553D178DC547563E2FA /* APOpenSSL */ = {
+			isa = PBXGroup;
+			children = (
+				CCB6C78DF8F6FE7E4C6FBA95DB44C0B6 /* Frameworks */,
+				E9A85CEEEE07E5160722D63A9E400B89 /* Support Files */,
+			);
+			name = APOpenSSL;
+			path = APOpenSSL;
+			sourceTree = "<group>";
+		};
+		9F381771B6C8AEA1AD5239217B0E5AA5 /* SecurityGuardSDK */ = {
+			isa = PBXGroup;
+			children = (
+				B71EDE5FB0BDAF91588142C0B058BE7F /* Frameworks */,
+				604FB36CF8C3BD92DE0F083FFD89BABB /* Support Files */,
+			);
+			name = SecurityGuardSDK;
+			path = SecurityGuardSDK;
+			sourceTree = "<group>";
+		};
+		A16753C8C778426BF2818B69F5FB29F9 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				D4611EB2731D5329BE4A2AE63EC4ACB6 /* Frameworks */,
+				BB2A05848B2ADA1976598BD9DCB19F11 /* Support Files */,
+			);
+			name = SocketRocket;
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		A548E09312861EE3489F3B035D9D18C3 /* APMobileNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				80985E43E60143BFE9E886203447C496 /* Frameworks */,
+				7B9EA80900E073CA92CF74C5F3E3DA4B /* Resources */,
+				721E43C120CAB07F6CFD5CC4CFCA3E93 /* Support Files */,
+			);
+			name = APMobileNetwork;
+			path = APMobileNetwork;
+			sourceTree = "<group>";
+		};
+		A5C6E345D1F4B71392C65787DA3C1AB2 /* APProtocolBuffers */ = {
+			isa = PBXGroup;
+			children = (
+				3B792C0C7B3A86C00A3553035586AB86 /* Frameworks */,
+				EFCB62DD4FE875D6A5FD0D086A80E894 /* Support Files */,
+			);
+			name = APProtocolBuffers;
+			path = APProtocolBuffers;
+			sourceTree = "<group>";
+		};
+		A5FC6B21F332CB9B2900A6289CB97EC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F39DEDF610458B181501502A9D919C6D /* APMLogging.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AE82B9EF22DB0838A7751E55C66766A0 /* Targets Support Files */ = {
@@ -803,53 +778,75 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		AEA1958DEF365C75407DCE6DEDF07E51 /* Frameworks */ = {
+		B2A462BF7356429059589240B752E6A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D9D58296F16D350D0222D494DB5D11C2 /* mPaas.framework */,
+				CA61AB67076823FED593F614245EE550 /* MPARTVCUpload.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B35E60C15993848274641FD531C043C3 /* Frameworks */ = {
+		B3A32829E6F10DC50853114D8239DD40 /* APMLogging */ = {
 			isa = PBXGroup;
 			children = (
-				61295F5A5B8778F78217887B857AE0CC /* SecurityGuardSDK.framework */,
-				08A51CC8B1A7D55495DFE151E4CE6C84 /* SGMain.framework */,
+				A5FC6B21F332CB9B2900A6289CB97EC4 /* Frameworks */,
+				40DD58D18BF9192292CC9BC75C06ED3D /* Support Files */,
 			);
-			name = Frameworks;
+			name = APMLogging;
+			path = APMLogging;
 			sourceTree = "<group>";
 		};
-		B537A8CB5CA6FCB019C02BC977559BCE /* Support Files */ = {
+		B52ED6E7FD8DFE3C9876B835380ACA9C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CDE8E44360509B245664AB53C6C5D512 /* mPaas.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/mPaas";
-			sourceTree = "<group>";
-		};
-		B60E0B98185252C5F90D319C3BBAE4DC /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A51D7ECA543BACA9DE73467FFDCF40D6 /* APMUtils.xcconfig */,
+				05852EF13AD7C5BB7FA15EB42FCCC89A /* APMUtils.debug.xcconfig */,
+				1EFAA481E9860247F68158DB35A9F3D2 /* APMUtils.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/APMUtils";
 			sourceTree = "<group>";
 		};
-		B826D05CB342AD736599C3F8D700B7C5 /* Frameworks */ = {
+		B71EDE5FB0BDAF91588142C0B058BE7F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A3D333B819ED41F8042CE6ACCC4F3F75 /* APProtocolBuffers.framework */,
+				C62A81382F4BC8628EBE2E119F9B7EB6 /* SecurityGuardSDK.framework */,
+				2DA8092C818BF92628ED203E0CC31062 /* SGMain.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BEEE52D6582B2833C2375D5DA49D6BCD /* Frameworks */ = {
+		BB2A05848B2ADA1976598BD9DCB19F11 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B126B28179B14322E6DD118AF9EE65DE /* APMobileNetwork.framework */,
+				5395064A362BE3C38C4CFD350835CA41 /* SocketRocket.debug.xcconfig */,
+				5A9B6D7D26CFDEC7F8A6C4D1702017A5 /* SocketRocket.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SocketRocket";
+			sourceTree = "<group>";
+		};
+		BE9ADD4B31FA00673B219B8C04968FF7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFC9E67DEE326AA6703232E4A9E97F8B /* APRemoteLogging.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C10A3DA2C4708A34EA6DABC31E1EB725 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E98B5DF4D6980F7AEA2B6D000EACBC3 /* APLog.debug.xcconfig */,
+				92AC50F169A7D97225EDC49DC2396A2A /* APLog.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/APLog";
+			sourceTree = "<group>";
+		};
+		CCB6C78DF8F6FE7E4C6FBA95DB44C0B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67869FB96B349444E249E406F2705E6B /* APOpenSSL.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -859,27 +856,34 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				39C1A4E097652C1FC3FF4FA39323B0A0 /* Pods */,
+				45E36FA13DA0B1EDC4B7D356A8F282F4 /* Pods */,
 				E7FD0380EC68E882B83BA1115725470F /* Products */,
 				AE82B9EF22DB0838A7751E55C66766A0 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D04D8685ECB3043E8A9C8AD0129C5CC3 /* Frameworks */ = {
+		D0721A7CD3A9CD0EF0C2B9846F81A3B9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3D941617171BE4E5D20D8DEB197A6BBC /* APMLogging.framework */,
+				229C92D4F2F666AA5CE3E6A78ADA3B52 /* APMobileFramework.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D4611EB2731D5329BE4A2AE63EC4ACB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF95B5C1E6B5B320351469FBDE3747B3 /* SocketRocket.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D4D356C541431383ECE2E6A127BC784F /* Support Files */ = {
+		D7A197EF7EBCEF4B84705F5376E0BB53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				04EC272B5F59E32CAE16A1F70E1BA3A8 /* APProtocolBuffers.xcconfig */,
+				35C9F18864E992005847416B06280570 /* mPaas.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/APProtocolBuffers";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
@@ -887,32 +891,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D9B8E9E012C7016411FFF2C86E92A62A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1FC6437C4F31A2E505AD9930C4B9FC72 /* UTDID.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UTDID";
-			sourceTree = "<group>";
-		};
-		E12FD31B247DFEE427E1F4E3A2B6DF65 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B9E1265DED1900718854317AAFA8939A /* APMobileFramework.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E444983EA0DD12EA229A8EE9226752BB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BF35A507C118FF33792E6C5CE5753534 /* APSecurityUtility.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/APSecurityUtility";
 			sourceTree = "<group>";
 		};
 		E7FD0380EC68E882B83BA1115725470F /* Products */ = {
@@ -923,28 +901,38 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EC72795D69CB18B63F6CCF1DD18C1DE9 /* Support Files */ = {
+		E9A85CEEEE07E5160722D63A9E400B89 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8963AB2731BEB186F2EFDC3D6DF419BC /* APMLogging.xcconfig */,
+				37841498ED051204DF20BCDB6D44EED7 /* APOpenSSL.debug.xcconfig */,
+				CFE5D15B099B45EB5DAAAC4396A0EF5B /* APOpenSSL.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/APMLogging";
+			path = "../Target Support Files/APOpenSSL";
 			sourceTree = "<group>";
 		};
-		FD484A0ECBA0765A06ACCA6910AF6A61 /* Support Files */ = {
+		EAAF3B54CC7A92D730CD0974CB444856 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5D9E9435493F7CBACFE9AF82F5761483 /* APLog.xcconfig */,
+				887A66308652BC4D069501CC902FBA9C /* ARTVC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFCB62DD4FE875D6A5FD0D086A80E894 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3252C81CD1A90674CB41CA593CDB67F /* APProtocolBuffers.debug.xcconfig */,
+				B4F2B8E7689079A4DD0F0DB7DBEF2066 /* APProtocolBuffers.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/APLog";
+			path = "../Target Support Files/APProtocolBuffers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		395EF687214FD0FA4924A558EACCB4BF /* Headers */ = {
+		D5F96AEC4DEB9B6439737708616BA05E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -956,29 +944,29 @@
 /* Begin PBXNativeTarget section */
 		E5F5552F03B0D146395910BB4FCEE168 /* Pods-ARTVCDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C1F1EA8851E71933EA9211B3D483A3D /* Build configuration list for PBXNativeTarget "Pods-ARTVCDemo" */;
+			buildConfigurationList = 3E86E1C7AE6184483F12E1D3AD019101 /* Build configuration list for PBXNativeTarget "Pods-ARTVCDemo" */;
 			buildPhases = (
-				395EF687214FD0FA4924A558EACCB4BF /* Headers */,
-				046177BD05A655657DD4636646B6E548 /* Sources */,
-				D2B03B9553F579A1FEAAEE726F75CF5A /* Frameworks */,
+				D5F96AEC4DEB9B6439737708616BA05E /* Headers */,
+				3220A3BC55CCA737D68B3043D6417007 /* Sources */,
+				EF2140EA55426155CBB61761A9776748 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1FA945F0F5C140A4B57575A5039B0E14 /* PBXTargetDependency */,
-				6C3F84FDED85E355123B4B94A9239CC2 /* PBXTargetDependency */,
-				A843A49B2FD79E5055DB5AD6FD96378C /* PBXTargetDependency */,
-				40EE203E52B0C8BF9E1C17B8C5EB379E /* PBXTargetDependency */,
-				A7753880979597066D430188CCFE3C32 /* PBXTargetDependency */,
-				EF7DD32C2B0C7BF8C00CA4FB81231DAC /* PBXTargetDependency */,
-				7C5A7607A3741CDC06943724585E3045 /* PBXTargetDependency */,
-				64AF9C352E5BC739D2DB68D4364D4764 /* PBXTargetDependency */,
-				4747FCA2C47930CA71342612392F0AE2 /* PBXTargetDependency */,
-				C715967869D7B047BF49EA6193FC62AE /* PBXTargetDependency */,
-				183FD3326FFC8BC2D53A5DFB365B91C2 /* PBXTargetDependency */,
-				6CC509212AFA9F72D298230077DEC588 /* PBXTargetDependency */,
-				F7DEF720544AD9E3631C50F7FA57BCED /* PBXTargetDependency */,
-				7E190525BD8D25B95F5A378677C873DC /* PBXTargetDependency */,
+				1C40C629FF3EEE01CAF90B548B4D83EE /* PBXTargetDependency */,
+				BD714E1A7DE12C60E8092F7EEA14A78E /* PBXTargetDependency */,
+				9BD6A58C532F439C8FB4A23A72620443 /* PBXTargetDependency */,
+				D4FEB45559EFD0CCB663413DCF587135 /* PBXTargetDependency */,
+				D0A12CACFFE26FBE27C148CE5A699001 /* PBXTargetDependency */,
+				824DCD8E5E56EF0887B3313C158ED906 /* PBXTargetDependency */,
+				79FF9F7EF690CA42CD5849F8E7F015F2 /* PBXTargetDependency */,
+				EAB84FEA2FF4F842774A19E298F7DF0B /* PBXTargetDependency */,
+				AEACCC42AF57EC819379823212CA6591 /* PBXTargetDependency */,
+				B05191E030A3DD736B4492E407F4F41D /* PBXTargetDependency */,
+				8B1A8702801A810099F223590E823333 /* PBXTargetDependency */,
+				710004CF7D4201D1649F66ECA6201F8E /* PBXTargetDependency */,
+				77D678DA1FBF7E3631A183C33536F6A0 /* PBXTargetDependency */,
+				4CCF6C7430B10E5A1C686431E9384424 /* PBXTargetDependency */,
 			);
 			name = "Pods-ARTVCDemo";
 			productName = "Pods-ARTVCDemo";
@@ -995,11 +983,12 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = E7FD0380EC68E882B83BA1115725470F /* Products */;
@@ -1014,9 +1003,9 @@
 				39ECD579BA06A9D774BDFEB9D3378766 /* APOpenSSL */,
 				66EBE67085BF26D5B8C3FB1D37A9F63F /* APProtocolBuffers */,
 				C14DBE92CC5799BDD360618FAF1E0D4E /* APRemoteLogging */,
-				9E15CEBC5D012F3C10A0C64164AFE86D /* APSecurityUtility */,
 				5E3FB151716D87A4E86032D4B8B7CF8F /* ARTVC */,
 				BEECCE27D73ABE1213B8CEC95D941FBE /* mPaas */,
+				D86AE823E929439C922166100F704979 /* MPARTVCUpload */,
 				E5F5552F03B0D146395910BB4FCEE168 /* Pods-ARTVCDemo */,
 				94D1DDF6BCD57BDBE6A10ED5DA249091 /* SecurityGuardSDK */,
 				1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */,
@@ -1026,230 +1015,200 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		046177BD05A655657DD4636646B6E548 /* Sources */ = {
+		3220A3BC55CCA737D68B3043D6417007 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8309EF3B2CA845E4BEA927234E99E01A /* Pods-ARTVCDemo-dummy.m in Sources */,
+				3EF0C6C314B13BE233CA03CFC38215EF /* Pods-ARTVCDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1290D983BD2AFCC8B1F3FDB3F8F239EB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = APMUtils;
-			target = DD40110C494E672320E3E1029D7E84C2 /* APMUtils */;
-			targetProxy = 1DBE4E6CA1602A1AAB2751856184D5F0 /* PBXContainerItemProxy */;
-		};
-		183FD3326FFC8BC2D53A5DFB365B91C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SecurityGuardSDK;
-			target = 94D1DDF6BCD57BDBE6A10ED5DA249091 /* SecurityGuardSDK */;
-			targetProxy = 6944C5062EEFFA20CB3907BAECE97C09 /* PBXContainerItemProxy */;
-		};
-		18CE70CD4384E338AF08FDA48F3B7331 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = APMLogging;
-			target = CB015D9FA4F018CA9B9CA9877219C936 /* APMLogging */;
-			targetProxy = 3CDECF9E2E5DF60ACBDF0AF791D8CA1E /* PBXContainerItemProxy */;
-		};
-		1FA945F0F5C140A4B57575A5039B0E14 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = APLog;
-			target = 0ECFB72C0FD8D5CA63B11441F3F5DC28 /* APLog */;
-			targetProxy = 0FAB394BC1AE94B2E070818FB321971B /* PBXContainerItemProxy */;
-		};
-		351A761E4E4BBC9AD0E920D1E80F35B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = APSecurityUtility;
-			target = 9E15CEBC5D012F3C10A0C64164AFE86D /* APSecurityUtility */;
-			targetProxy = 1A34CE3EE817E7B3B01BF9D48707287A /* PBXContainerItemProxy */;
-		};
-		40EE203E52B0C8BF9E1C17B8C5EB379E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = APMobileFramework;
-			target = 9A02864533E64BC00D260DCE9A3D8907 /* APMobileFramework */;
-			targetProxy = 5A3078AE1457566329F02492132886A7 /* PBXContainerItemProxy */;
-		};
-		4747FCA2C47930CA71342612392F0AE2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = APSecurityUtility;
-			target = 9E15CEBC5D012F3C10A0C64164AFE86D /* APSecurityUtility */;
-			targetProxy = C0FCC336CF7E09BF97D335C6F4FC0FF6 /* PBXContainerItemProxy */;
-		};
-		4CE70E5B041A95E8A6EF2FBD4F6BDEA4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = APMobileNetwork;
-			target = 0F681679473EBD02A4B9B3EDFD8ABD7E /* APMobileNetwork */;
-			targetProxy = E67314EC8D9D98785F8BD765E2982F9F /* PBXContainerItemProxy */;
-		};
-		61B33B9EFE80D8D3954891AD7D713CB0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SocketRocket;
-			target = 1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */;
-			targetProxy = 95BEA1151E3C63765BDCA843CFF2CDED /* PBXContainerItemProxy */;
-		};
-		64AF9C352E5BC739D2DB68D4364D4764 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = APRemoteLogging;
-			target = C14DBE92CC5799BDD360618FAF1E0D4E /* APRemoteLogging */;
-			targetProxy = 005405900BD977B76B7E423BD69DF45D /* PBXContainerItemProxy */;
-		};
-		6C3F84FDED85E355123B4B94A9239CC2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = APMLogging;
-			target = CB015D9FA4F018CA9B9CA9877219C936 /* APMLogging */;
-			targetProxy = AB9D43467A939F01D65EE937833F0C7B /* PBXContainerItemProxy */;
-		};
-		6CC509212AFA9F72D298230077DEC588 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SocketRocket;
-			target = 1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */;
-			targetProxy = 5BA1122F3385C7096C2F0E3340F504BC /* PBXContainerItemProxy */;
-		};
-		6D6BE7D09EA19AD4BF704E744A9AD942 /* PBXTargetDependency */ = {
+		0EDD2215948CC6E40B405BB014B97974 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = mPaas;
 			target = BEECCE27D73ABE1213B8CEC95D941FBE /* mPaas */;
-			targetProxy = 2E73BE50FC496500A947741DCFAB8BE9 /* PBXContainerItemProxy */;
+			targetProxy = 4A5F4CCADD83600586F642B4595A7F72 /* PBXContainerItemProxy */;
 		};
-		749660594BDE32675E6638890F05B8C3 /* PBXTargetDependency */ = {
+		105B132A9539B5EE52FEF1F69FD31343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APLog;
+			target = 0ECFB72C0FD8D5CA63B11441F3F5DC28 /* APLog */;
+			targetProxy = EC27DB16446728EBADE4071D8CE78E56 /* PBXContainerItemProxy */;
+		};
+		1C40C629FF3EEE01CAF90B548B4D83EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APLog;
+			target = 0ECFB72C0FD8D5CA63B11441F3F5DC28 /* APLog */;
+			targetProxy = 465A31675FA91CA4E7F74FE267078595 /* PBXContainerItemProxy */;
+		};
+		1C5A237ACBF6FBC4A03C76C608225A86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APLog;
+			target = 0ECFB72C0FD8D5CA63B11441F3F5DC28 /* APLog */;
+			targetProxy = BB719B9E43C0B9F556BF9EBE1142AF9C /* PBXContainerItemProxy */;
+		};
+		202F3819F7041737ED0153498F3F937D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = APOpenSSL;
 			target = 39ECD579BA06A9D774BDFEB9D3378766 /* APOpenSSL */;
-			targetProxy = 8F29F5A72B90AB44F32B103CE57EB265 /* PBXContainerItemProxy */;
+			targetProxy = 5FAE2525707167192E1FC5B9B108F4DF /* PBXContainerItemProxy */;
 		};
-		7C5A7607A3741CDC06943724585E3045 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = APProtocolBuffers;
-			target = 66EBE67085BF26D5B8C3FB1D37A9F63F /* APProtocolBuffers */;
-			targetProxy = 7134BE72894B681B4265F6C2388C4344 /* PBXContainerItemProxy */;
-		};
-		7E190525BD8D25B95F5A378677C873DC /* PBXTargetDependency */ = {
+		3F3A1B94B11A7345F01F6F3067CFB61C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = mPaas;
 			target = BEECCE27D73ABE1213B8CEC95D941FBE /* mPaas */;
-			targetProxy = BE1333ADB7CDA10793F0FC583161BC76 /* PBXContainerItemProxy */;
+			targetProxy = 655D2E6D4E6CBF714861559755DCE8EC /* PBXContainerItemProxy */;
 		};
-		83888995B602C227617270131392D7AE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = APLog;
-			target = 0ECFB72C0FD8D5CA63B11441F3F5DC28 /* APLog */;
-			targetProxy = BB8555078A3F31C2BFB2FF1804F6DAF9 /* PBXContainerItemProxy */;
-		};
-		867A44E00FEF457DEAAC4292A1CF1591 /* PBXTargetDependency */ = {
+		4CCF6C7430B10E5A1C686431E9384424 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = mPaas;
 			target = BEECCE27D73ABE1213B8CEC95D941FBE /* mPaas */;
-			targetProxy = A921D952AFAE631085CE528A916D9383 /* PBXContainerItemProxy */;
+			targetProxy = CA1F20F6C2894110E53373FB400F0CB0 /* PBXContainerItemProxy */;
 		};
-		A1E7B22934857C2FE765E9690A9FA82E /* PBXTargetDependency */ = {
+		5570A7806F12AC053FFB03EAF00A5837 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = 1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */;
+			targetProxy = 79101C71607E8A73976980EF00422360 /* PBXContainerItemProxy */;
+		};
+		5CE6848D7CA3ED77D87FB03BD71A8563 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = APMUtils;
 			target = DD40110C494E672320E3E1029D7E84C2 /* APMUtils */;
-			targetProxy = E81C255A6656EBA311A46E40B41B1ACB /* PBXContainerItemProxy */;
+			targetProxy = 6341C80F5EB152065E589779949D6CE4 /* PBXContainerItemProxy */;
 		};
-		A7753880979597066D430188CCFE3C32 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = APMobileNetwork;
-			target = 0F681679473EBD02A4B9B3EDFD8ABD7E /* APMobileNetwork */;
-			targetProxy = 32601B56514E44A0E5954BEC1720559C /* PBXContainerItemProxy */;
-		};
-		A843A49B2FD79E5055DB5AD6FD96378C /* PBXTargetDependency */ = {
+		646A3A0DB07F765F90BED9D7BB7619F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = APMUtils;
 			target = DD40110C494E672320E3E1029D7E84C2 /* APMUtils */;
-			targetProxy = 8E95CDE118BCCB709857E96CACCDB765 /* PBXContainerItemProxy */;
+			targetProxy = 23E9DD0009673CFA6DE2B8870F57D17D /* PBXContainerItemProxy */;
 		};
-		B374AC03A6825CA46267AE01C5F006F9 /* PBXTargetDependency */ = {
+		69E9CADB51498836727E2F97F59B0561 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = APLog;
-			target = 0ECFB72C0FD8D5CA63B11441F3F5DC28 /* APLog */;
-			targetProxy = C519CDE1CF5240E378CEA8A0A4A46DE0 /* PBXContainerItemProxy */;
+			name = APRemoteLogging;
+			target = C14DBE92CC5799BDD360618FAF1E0D4E /* APRemoteLogging */;
+			targetProxy = DD5BC06D0C75850EA4CB96FDF55A5802 /* PBXContainerItemProxy */;
 		};
-		B586F427CF0CA01F40974116F0AFFC7B /* PBXTargetDependency */ = {
+		710004CF7D4201D1649F66ECA6201F8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = 1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */;
+			targetProxy = DE66C9891223FF3138D9AFE61E0D7F6E /* PBXContainerItemProxy */;
+		};
+		743121C4D78105372C5E51F440E45119 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mPaas;
+			target = BEECCE27D73ABE1213B8CEC95D941FBE /* mPaas */;
+			targetProxy = F82FADCF4ECB88F2421E60140BF57D6C /* PBXContainerItemProxy */;
+		};
+		77D678DA1FBF7E3631A183C33536F6A0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UTDID;
 			target = 4863D9B7AB289E489DD574863D709C93 /* UTDID */;
-			targetProxy = C0F13A6A673413008D0B939255945A6E /* PBXContainerItemProxy */;
+			targetProxy = 1F1FDEB0F9BB225A83F355D11B3633CD /* PBXContainerItemProxy */;
 		};
-		C58607B01B0CE48EEDC05F4E944208BE /* PBXTargetDependency */ = {
+		79FF9F7EF690CA42CD5849F8E7F015F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APProtocolBuffers;
+			target = 66EBE67085BF26D5B8C3FB1D37A9F63F /* APProtocolBuffers */;
+			targetProxy = B5F24A32634169EB066F52835F664BB1 /* PBXContainerItemProxy */;
+		};
+		824DCD8E5E56EF0887B3313C158ED906 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APOpenSSL;
+			target = 39ECD579BA06A9D774BDFEB9D3378766 /* APOpenSSL */;
+			targetProxy = 4CABD7592D827B837168F6D99E66BEA3 /* PBXContainerItemProxy */;
+		};
+		8B1A8702801A810099F223590E823333 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SecurityGuardSDK;
 			target = 94D1DDF6BCD57BDBE6A10ED5DA249091 /* SecurityGuardSDK */;
-			targetProxy = EBBEE8BB3720F15CC075C724107411A5 /* PBXContainerItemProxy */;
+			targetProxy = CBFAE733E3B91FA2CDE526141AF0734A /* PBXContainerItemProxy */;
 		};
-		C715967869D7B047BF49EA6193FC62AE /* PBXTargetDependency */ = {
+		8C5C25A210A6C390B685108935596ABB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APRemoteLogging;
+			target = C14DBE92CC5799BDD360618FAF1E0D4E /* APRemoteLogging */;
+			targetProxy = DB86B749059E2BBCF85E9FE92DD8EDD1 /* PBXContainerItemProxy */;
+		};
+		8EA6AD693B69585B5B1B210E6CE59066 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APLog;
+			target = 0ECFB72C0FD8D5CA63B11441F3F5DC28 /* APLog */;
+			targetProxy = 37F1206459BCC8482A23C1225286E6FE /* PBXContainerItemProxy */;
+		};
+		97809EBE06DE1E422DF3CAAA5BEAFB8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APMLogging;
+			target = CB015D9FA4F018CA9B9CA9877219C936 /* APMLogging */;
+			targetProxy = 324C09131CD4ACBA852ADAC8F9C9FCC1 /* PBXContainerItemProxy */;
+		};
+		9BD6A58C532F439C8FB4A23A72620443 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APMUtils;
+			target = DD40110C494E672320E3E1029D7E84C2 /* APMUtils */;
+			targetProxy = 99881A5437FD794D46FC3223CED400A6 /* PBXContainerItemProxy */;
+		};
+		AEACCC42AF57EC819379823212CA6591 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ARTVC;
 			target = 5E3FB151716D87A4E86032D4B8B7CF8F /* ARTVC */;
-			targetProxy = E7551004CA70702DBF612BA45560283F /* PBXContainerItemProxy */;
+			targetProxy = DB46ABEEFA86847742BC60C419D4E684 /* PBXContainerItemProxy */;
 		};
-		D64BB2A404A4BDAB447C172424E4A742 /* PBXTargetDependency */ = {
+		B05191E030A3DD736B4492E407F4F41D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = mPaas;
-			target = BEECCE27D73ABE1213B8CEC95D941FBE /* mPaas */;
-			targetProxy = 66BEF34DDA760BA76E8D87A2850521F5 /* PBXContainerItemProxy */;
+			name = MPARTVCUpload;
+			target = D86AE823E929439C922166100F704979 /* MPARTVCUpload */;
+			targetProxy = 065AB04B76631341AB212C3312B9D3D4 /* PBXContainerItemProxy */;
 		};
-		DA3EF1D0D134E1FD6106F62FAEFCF1EB /* PBXTargetDependency */ = {
+		BD714E1A7DE12C60E8092F7EEA14A78E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = APRemoteLogging;
-			target = C14DBE92CC5799BDD360618FAF1E0D4E /* APRemoteLogging */;
-			targetProxy = 78754482D5DC1677AB13AD3FAF0935F7 /* PBXContainerItemProxy */;
+			name = APMLogging;
+			target = CB015D9FA4F018CA9B9CA9877219C936 /* APMLogging */;
+			targetProxy = 2B851C3AEE7A68AD024C0507EA0F4DAF /* PBXContainerItemProxy */;
 		};
-		E100429949007334B7CFFD658AD4F16D /* PBXTargetDependency */ = {
+		D0A12CACFFE26FBE27C148CE5A699001 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = mPaas;
-			target = BEECCE27D73ABE1213B8CEC95D941FBE /* mPaas */;
-			targetProxy = 6A8D92EC22BA13B2C89B66EFCE276007 /* PBXContainerItemProxy */;
+			name = APMobileNetwork;
+			target = 0F681679473EBD02A4B9B3EDFD8ABD7E /* APMobileNetwork */;
+			targetProxy = B567C2211D93EB9491CF3D6F22C4DE82 /* PBXContainerItemProxy */;
 		};
-		E6CA096D5C9AC54A3C12F1971CD866B3 /* PBXTargetDependency */ = {
+		D4FEB45559EFD0CCB663413DCF587135 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = APMobileFramework;
 			target = 9A02864533E64BC00D260DCE9A3D8907 /* APMobileFramework */;
-			targetProxy = 44FA4B3F758B797251F228CA998910C8 /* PBXContainerItemProxy */;
+			targetProxy = 7FC99FCF567B22FB273BAD0BA10940F2 /* PBXContainerItemProxy */;
 		};
-		EB878F685B98914DCC889D2250471B49 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = APLog;
-			target = 0ECFB72C0FD8D5CA63B11441F3F5DC28 /* APLog */;
-			targetProxy = 0EC46AA9601CE543753941538D2BBCE6 /* PBXContainerItemProxy */;
-		};
-		EC28580683F9C1208C157E2CC0F7A82B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = APRemoteLogging;
-			target = C14DBE92CC5799BDD360618FAF1E0D4E /* APRemoteLogging */;
-			targetProxy = D6D636B0A352FA18901805E0D249C6DA /* PBXContainerItemProxy */;
-		};
-		EEF1B53D0414983BAFDB856B8A53245C /* PBXTargetDependency */ = {
+		EA219ECB89DBAAE239DB0F3A2102B2DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = APProtocolBuffers;
 			target = 66EBE67085BF26D5B8C3FB1D37A9F63F /* APProtocolBuffers */;
-			targetProxy = 7DB5E4780D773EA8FCEE7D59602B24FA /* PBXContainerItemProxy */;
+			targetProxy = DA01CC46F914B027A30DEEBBCAF97ADD /* PBXContainerItemProxy */;
 		};
-		EF7DD32C2B0C7BF8C00CA4FB81231DAC /* PBXTargetDependency */ = {
+		EAB84FEA2FF4F842774A19E298F7DF0B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = APOpenSSL;
-			target = 39ECD579BA06A9D774BDFEB9D3378766 /* APOpenSSL */;
-			targetProxy = 480846950DE0FD4FDC7F440805BF2D78 /* PBXContainerItemProxy */;
+			name = APRemoteLogging;
+			target = C14DBE92CC5799BDD360618FAF1E0D4E /* APRemoteLogging */;
+			targetProxy = A12F2BDB1624909541CE230897E750AF /* PBXContainerItemProxy */;
 		};
-		F7DEF720544AD9E3631C50F7FA57BCED /* PBXTargetDependency */ = {
+		F42B27FF2735AC3FC12DCC5B3B1326C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = UTDID;
-			target = 4863D9B7AB289E489DD574863D709C93 /* UTDID */;
-			targetProxy = 4FE8D8E732D16E34CB32E1074FE4210F /* PBXContainerItemProxy */;
+			name = mPaas;
+			target = BEECCE27D73ABE1213B8CEC95D941FBE /* mPaas */;
+			targetProxy = FE98724AD2B8BEC5AB247BF38EF81CB8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0A45B21AC6C6DA1B10621CC975FDD8AA /* Debug */ = {
+		087F1ECDF083CD5D0FF89B7FBC252FBC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8963AB2731BEB186F2EFDC3D6DF419BC /* APMLogging.xcconfig */;
+			baseConfigurationReference = 37841498ED051204DF20BCDB6D44EED7 /* APOpenSSL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1260,12 +1219,12 @@
 			};
 			name = Debug;
 		};
-		13B8E496B1C6920BA01987F3195AD167 /* Debug */ = {
+		132C222AE2DA91825282A3A542CF2E29 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BCE758611AC98599A91740D5A267E81 /* APMobileFramework.xcconfig */;
+			baseConfigurationReference = 05852EF13AD7C5BB7FA15EB42FCCC89A /* APMUtils.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1276,12 +1235,12 @@
 			};
 			name = Debug;
 		};
-		1B67F51296DAFAF808B64EA8B0A3449F /* Debug */ = {
+		1D01D90A7317BE4D44D0E479BBF111E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6693A7586B382694BEA590DB8B841AF8 /* APMobileNetwork.xcconfig */;
+			baseConfigurationReference = 633D0ACFAA50C92ABD6C6DC4F7FAB08E /* UTDID.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1292,34 +1251,28 @@
 			};
 			name = Debug;
 		};
-		284CB72D473A1EBCBE5210DC52543D87 /* Debug */ = {
+		210E5F0A73436F47F031086670945002 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79D217E5959808061DDB4A5715893EB2 /* Pods-ARTVCDemo.debug.xcconfig */;
+			baseConfigurationReference = 1936222BEF2F883732FA49F4E672E3EE /* APMobileNetwork.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2EB9D92CCB5DF6507EC5485F5C252156 /* Release */ = {
+		230F32B728242CB5E78DAB70D1EE3220 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BCE758611AC98599A91740D5A267E81 /* APMobileFramework.xcconfig */;
+			baseConfigurationReference = 257B3B23E89E327777471DC375EDF7A8 /* APRemoteLogging.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1331,230 +1284,11 @@
 			};
 			name = Release;
 		};
-		3D6A996ABFB308CFDFFE58839C6E8253 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDE8E44360509B245664AB53C6C5D512 /* mPaas.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		40FD0AECBD35D5D342FA7FF889C6A99C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D48B69A443C7273DA4D6E92BC9A4C959 /* SecurityGuardSDK.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4A4719A291A63F8B60B4C66B61044325 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBE20458DF1075B4336C5283EA79E2ED /* SocketRocket.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		4B3DB0A2E0C6F212F6A90BB3D9328CE0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04EC272B5F59E32CAE16A1F70E1BA3A8 /* APProtocolBuffers.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		4C821D14BA8FFB3D9808FD2D0FCEEABA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A51D7ECA543BACA9DE73467FFDCF40D6 /* APMUtils.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		5CB64BDD4EF12A295B271F5587A7A153 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E94AC553E61E13351B3925769534F28 /* ARTVC.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		68031F19141A60EE085B0EE453B5C8A0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FD7D2CEC4F23D3E4E1BA4529BA54607 /* APOpenSSL.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		6A2A99EF57A0AA7D09CE275CCF082609 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04EC272B5F59E32CAE16A1F70E1BA3A8 /* APProtocolBuffers.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		6CBEEC80AA69B02A73137960DFB45064 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D48B69A443C7273DA4D6E92BC9A4C959 /* SecurityGuardSDK.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		6CE236D77CDA9F926F4EB642FF671866 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAA3A236D79DC760D3D82E3F7413E0A9 /* Pods-ARTVCDemo.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		76BA882C2BB33E3844C58C6A39276692 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FC6437C4F31A2E505AD9930C4B9FC72 /* UTDID.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7912996E68D0B53CF059A8CD8E580DB3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF35A507C118FF33792E6C5CE5753534 /* APSecurityUtility.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7E56F801BBE2A02E0C63DD90F69884CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF35A507C118FF33792E6C5CE5753534 /* APSecurityUtility.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1577,6 +1311,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1602,7 +1337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1615,80 +1350,12 @@
 			};
 			name = Debug;
 		};
-		9B47C27A400D6FAF5A45C4AD82A99145 /* Release */ = {
+		269FFCA81E569ADFFEB932FAD5974F05 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A51D7ECA543BACA9DE73467FFDCF40D6 /* APMUtils.xcconfig */;
+			baseConfigurationReference = 061E2FE60B171D7AD25C957AF75870D6 /* APMobileFramework.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		9F0F16B9DEF139BF951ECC8969C12E9A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FBE0C7AEA089820EEC31FEAA03B6EE6 /* APRemoteLogging.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		A1129A88BEBA5009F42BBBCD59E5A2B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8963AB2731BEB186F2EFDC3D6DF419BC /* APMLogging.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		B04487521623B415B57A8B7AFD271009 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E94AC553E61E13351B3925769534F28 /* ARTVC.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C13BFCE181C884BF3D9501CCC924AAF8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBE20458DF1075B4336C5283EA79E2ED /* SocketRocket.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1699,12 +1366,44 @@
 			};
 			name = Debug;
 		};
-		CA80D6BEAEB38E549DB429F0C9EA6F1E /* Release */ = {
+		26FE586CBF177CC0A52128CE3A3AFDAD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FD7D2CEC4F23D3E4E1BA4529BA54607 /* APOpenSSL.xcconfig */;
+			baseConfigurationReference = 889907B98508130AD997C1ACD995407F /* SecurityGuardSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34958870EE141AD44CAC25D2ABC2EC54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E98B5DF4D6980F7AEA2B6D000EACBC3 /* APLog.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D6EF7A499FEBD4D0A08925CC607108E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AE79AEEBFA83C2174196C882B52B116 /* UTDID.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1716,12 +1415,12 @@
 			};
 			name = Release;
 		};
-		CC873010A8A70C63767534D3347F5893 /* Debug */ = {
+		53BC93B78DEB9232B43F0126FFB03109 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D9E9435493F7CBACFE9AF82F5761483 /* APLog.xcconfig */;
+			baseConfigurationReference = 0FA3A3EF7784F333426496134C3CAD34 /* mPaas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1732,12 +1431,12 @@
 			};
 			name = Debug;
 		};
-		CCE6603CC9558086CC23854EDF386ACC /* Debug */ = {
+		5ED058DC6854F5F12C6E16FFCEB5818E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDE8E44360509B245664AB53C6C5D512 /* mPaas.xcconfig */;
+			baseConfigurationReference = 5395064A362BE3C38C4CFD350835CA41 /* SocketRocket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1748,12 +1447,28 @@
 			};
 			name = Debug;
 		};
-		D2930ED9DD7BA6A5703EBC039849D84D /* Release */ = {
+		6144F9BF40BD0188CDF2235C8851E969 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D9E9435493F7CBACFE9AF82F5761483 /* APLog.xcconfig */;
+			baseConfigurationReference = 49F43538891A761EFFDB58FA5469917F /* ARTVC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63130B7738B897675F1D1C76CDEB5652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1034C705E1F523C4325E58A780B9208F /* mPaas.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1765,28 +1480,12 @@
 			};
 			name = Release;
 		};
-		D41283FDE7EA01B49DAA17068E2330AE /* Debug */ = {
+		64FB735FA7BEF099297153FB2C921000 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FBE0C7AEA089820EEC31FEAA03B6EE6 /* APRemoteLogging.xcconfig */;
+			baseConfigurationReference = CA49EFA8CD75BF55728E09D38D69FC94 /* MPARTVCUpload.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		E1CD4A719F636A3848A30E9BB0A0147B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FC6437C4F31A2E505AD9930C4B9FC72 /* UTDID.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1798,10 +1497,169 @@
 			};
 			name = Release;
 		};
-		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
+		6694F2345CFD3749BA2B8ED8B0E08691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EFAA481E9860247F68158DB35A9F3D2 /* APMUtils.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67152EF129FE359ADE219460699043A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAA3A236D79DC760D3D82E3F7413E0A9 /* Pods-ARTVCDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6884843EC76094275A721E01C7756A21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CBBBCAED65148C5215486ECBCAC5689 /* APMLogging.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A5D5FF7FC7D621CF7FB8411EFC75475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79D217E5959808061DDB4A5715893EB2 /* Pods-ARTVCDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BA45720E4162353AE09969C6A30C766 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F91A0E0DF677C6A7B2FA86EF1C08F3F /* MPARTVCUpload.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CC5434081E5CAAD1A1686928C61B077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3252C81CD1A90674CB41CA593CDB67F /* APProtocolBuffers.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3E2217C0F193FFB42202D4857AD2838 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92AC50F169A7D97225EDC49DC2396A2A /* APLog.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEB4A0F0ED0C475828B711FD38031C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4F2B8E7689079A4DD0F0DB7DBEF2066 /* APProtocolBuffers.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B190074BBAE5065191AD58877DE14923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A9B6D7D26CFDEC7F8A6C4D1702017A5 /* SocketRocket.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1824,6 +1682,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1846,7 +1705,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1858,12 +1717,12 @@
 			};
 			name = Release;
 		};
-		FA2BA2E95DD3B0E343AF5E6C7E14F7FB /* Release */ = {
+		D8FA006212AB09AB6EEF98F85BE33451 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6693A7586B382694BEA590DB8B841AF8 /* APMobileNetwork.xcconfig */;
+			baseConfigurationReference = CFE5D15B099B45EB5DAAAC4396A0EF5B /* APOpenSSL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1875,32 +1734,123 @@
 			};
 			name = Release;
 		};
+		DF7BF8D1D69C1BBA86AF0DDDE7290EBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D79E637C3E7119A7D409742685D3232 /* APMobileNetwork.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFD50C5BC823B362FAF210CD13E0FD6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32F296926BB685B5D6A017D11582D973 /* ARTVC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1766E75880EE710337357814E52B503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E999C23013019167788667DE6E2D5E7 /* SecurityGuardSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDB31F38DEBF331D2364117824834A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B51988DEFF1638C0F185D574495D03C /* APMobileFramework.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1FAEF6003BEE47AE844D3AE152E5A1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB595713532DBEB3FDC2C109A434FE1 /* APMLogging.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6B38C5419E70FCA7DA640CE37010FD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCFADE6BF320D0C762546E0681A424C7 /* APRemoteLogging.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C1F1EA8851E71933EA9211B3D483A3D /* Build configuration list for PBXNativeTarget "Pods-ARTVCDemo" */ = {
+		315D8B32304CA560333E3C5578AED913 /* Build configuration list for PBXAggregateTarget "APOpenSSL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				284CB72D473A1EBCBE5210DC52543D87 /* Debug */,
-				6CE236D77CDA9F926F4EB642FF671866 /* Release */,
+				087F1ECDF083CD5D0FF89B7FBC252FBC /* Debug */,
+				D8FA006212AB09AB6EEF98F85BE33451 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0FA1CE08D525B49001D68C769398EB49 /* Build configuration list for PBXAggregateTarget "ARTVC" */ = {
+		3E86E1C7AE6184483F12E1D3AD019101 /* Build configuration list for PBXNativeTarget "Pods-ARTVCDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5CB64BDD4EF12A295B271F5587A7A153 /* Debug */,
-				B04487521623B415B57A8B7AFD271009 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		10A7928339205F11074AA8252A236319 /* Build configuration list for PBXAggregateTarget "UTDID" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				76BA882C2BB33E3844C58C6A39276692 /* Debug */,
-				E1CD4A719F636A3848A30E9BB0A0147B /* Release */,
+				6A5D5FF7FC7D621CF7FB8411EFC75475 /* Debug */,
+				67152EF129FE359ADE219460699043A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1908,89 +1858,44 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
-				ECB437504DF805BD96CAABF97400B526 /* Release */,
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4DC4D71D00A6E10AE27AE052740527D6 /* Build configuration list for PBXAggregateTarget "SecurityGuardSDK" */ = {
+		741FD9470DD751814220BE3297A9AED0 /* Build configuration list for PBXAggregateTarget "mPaas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				40FD0AECBD35D5D342FA7FF889C6A99C /* Debug */,
-				6CBEEC80AA69B02A73137960DFB45064 /* Release */,
+				53BC93B78DEB9232B43F0126FFB03109 /* Debug */,
+				63130B7738B897675F1D1C76CDEB5652 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F9161407482B121DD83D3E10F9F39A0 /* Build configuration list for PBXAggregateTarget "APMobileNetwork" */ = {
+		79649A5867097A3B1815A39666515CFA /* Build configuration list for PBXAggregateTarget "APMLogging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1B67F51296DAFAF808B64EA8B0A3449F /* Debug */,
-				FA2BA2E95DD3B0E343AF5E6C7E14F7FB /* Release */,
+				F1FAEF6003BEE47AE844D3AE152E5A1D /* Debug */,
+				6884843EC76094275A721E01C7756A21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		552DBACFB583C59DF37F841687B61D9F /* Build configuration list for PBXAggregateTarget "APMobileFramework" */ = {
+		7A0DB5596E693546B4DD29133B609FD2 /* Build configuration list for PBXAggregateTarget "SocketRocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				13B8E496B1C6920BA01987F3195AD167 /* Debug */,
-				2EB9D92CCB5DF6507EC5485F5C252156 /* Release */,
+				5ED058DC6854F5F12C6E16FFCEB5818E /* Debug */,
+				B190074BBAE5065191AD58877DE14923 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		653EAACC1D86D91E75BDACFD0323AC46 /* Build configuration list for PBXAggregateTarget "APMUtils" */ = {
+		9EBD14120232E1A4CA87C3CC3E798DFD /* Build configuration list for PBXAggregateTarget "ARTVC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C821D14BA8FFB3D9808FD2D0FCEEABA /* Debug */,
-				9B47C27A400D6FAF5A45C4AD82A99145 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		70E0F6DFD4F3AB1E69A5F1F93A037DC6 /* Build configuration list for PBXAggregateTarget "SocketRocket" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C13BFCE181C884BF3D9501CCC924AAF8 /* Debug */,
-				4A4719A291A63F8B60B4C66B61044325 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		726275BAA13CB212FEEFF19CE3926D77 /* Build configuration list for PBXAggregateTarget "APSecurityUtility" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7912996E68D0B53CF059A8CD8E580DB3 /* Debug */,
-				7E56F801BBE2A02E0C63DD90F69884CF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7783FB57E758DAC78BFE45B9EAF79C26 /* Build configuration list for PBXAggregateTarget "APOpenSSL" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				68031F19141A60EE085B0EE453B5C8A0 /* Debug */,
-				CA80D6BEAEB38E549DB429F0C9EA6F1E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9629A78F92CBDC0DD890ECE95A5881E8 /* Build configuration list for PBXAggregateTarget "APRemoteLogging" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D41283FDE7EA01B49DAA17068E2330AE /* Debug */,
-				9F0F16B9DEF139BF951ECC8969C12E9A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9D427EE0550D4D6F45A05B5492E2BEBA /* Build configuration list for PBXAggregateTarget "mPaas" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CCE6603CC9558086CC23854EDF386ACC /* Debug */,
-				3D6A996ABFB308CFDFFE58839C6E8253 /* Release */,
+				6144F9BF40BD0188CDF2235C8851E969 /* Debug */,
+				DFD50C5BC823B362FAF210CD13E0FD6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1998,26 +1903,80 @@
 		AAFEE8CC844A7447E801FED3F53C526E /* Build configuration list for PBXAggregateTarget "APLog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC873010A8A70C63767534D3347F5893 /* Debug */,
-				D2930ED9DD7BA6A5703EBC039849D84D /* Release */,
+				34958870EE141AD44CAC25D2ABC2EC54 /* Debug */,
+				A3E2217C0F193FFB42202D4857AD2838 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F60DF63FC588DFBAD45467F6AD24117F /* Build configuration list for PBXAggregateTarget "APMLogging" */ = {
+		BE817ED4BFC1D40B1D22976F2749B711 /* Build configuration list for PBXAggregateTarget "SecurityGuardSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A45B21AC6C6DA1B10621CC975FDD8AA /* Debug */,
-				A1129A88BEBA5009F42BBBCD59E5A2B4 /* Release */,
+				26FE586CBF177CC0A52128CE3A3AFDAD /* Debug */,
+				E1766E75880EE710337357814E52B503 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FFE16DD5DCBBB1A5703D411DE3A69A0C /* Build configuration list for PBXAggregateTarget "APProtocolBuffers" */ = {
+		C09ECA5230DBBF8C7A41C00A68187DE9 /* Build configuration list for PBXAggregateTarget "APMUtils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6A2A99EF57A0AA7D09CE275CCF082609 /* Debug */,
-				4B3DB0A2E0C6F212F6A90BB3D9328CE0 /* Release */,
+				132C222AE2DA91825282A3A542CF2E29 /* Debug */,
+				6694F2345CFD3749BA2B8ED8B0E08691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0DC4233A651B8C85E7DB4DFFED3ECF8 /* Build configuration list for PBXAggregateTarget "UTDID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D01D90A7317BE4D44D0E479BBF111E1 /* Debug */,
+				3D6EF7A499FEBD4D0A08925CC607108E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDDCD06E5755E05CEE26DEAAF9CE3EA9 /* Build configuration list for PBXAggregateTarget "APMobileNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				210E5F0A73436F47F031086670945002 /* Debug */,
+				DF7BF8D1D69C1BBA86AF0DDDE7290EBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFA59209A6D5BDB6B8FA92B154991209 /* Build configuration list for PBXAggregateTarget "APMobileFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				269FFCA81E569ADFFEB932FAD5974F05 /* Debug */,
+				EDB31F38DEBF331D2364117824834A83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA86BB443790BD99577906DCB5D81B3F /* Build configuration list for PBXAggregateTarget "MPARTVCUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BA45720E4162353AE09969C6A30C766 /* Debug */,
+				64FB735FA7BEF099297153FB2C921000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBCC5FE967C878AE2B887D24A22BADCA /* Build configuration list for PBXAggregateTarget "APRemoteLogging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6B38C5419E70FCA7DA640CE37010FD6 /* Debug */,
+				230F32B728242CB5E78DAB70D1EE3220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCD8CA2A2E543C058A9A5E0B668C6B86 /* Build configuration list for PBXAggregateTarget "APProtocolBuffers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CC5434081E5CAAD1A1686928C61B077 /* Debug */,
+				AEB4A0F0ED0C475828B711FD38031C59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

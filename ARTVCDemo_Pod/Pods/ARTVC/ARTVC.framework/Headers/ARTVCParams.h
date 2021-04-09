@@ -34,6 +34,10 @@ XRTC_OBJC_EXPORT
  }
  */
 @property(nonatomic,strong) NSDictionary* extraInfo;
+#ifdef ARTVC_BUILD_FOR_MPAAS
+-(void)setWorkspaceIdManually:(NSString*)wokspaceId DEPRECATED_MSG_ATTRIBUTE("normally workspaceId is read from mPaaS framework automatically,don't need set here.");
+-(void)setAppIdManually:(NSString*)appId DEPRECATED_MSG_ATTRIBUTE("normally appId is read from mPaaS framework automatically,don't need set here.");
+#endif
 @end
 
 XRTC_OBJC_EXPORT
@@ -58,6 +62,10 @@ ARTVCParamsKey_DefaultRecord:@(YES),
 }
 */
 @property(nonatomic,strong) NSDictionary* extraInfo;
+#ifdef ARTVC_BUILD_FOR_MPAAS
+-(void)setWorkspaceIdManually:(NSString*)wokspaceId DEPRECATED_MSG_ATTRIBUTE("normally workspaceId is read from mPaaS framework automatically,don't need set here.");
+-(void)setAppIdManually:(NSString*)appId DEPRECATED_MSG_ATTRIBUTE("normally appId is read from mPaaS framework automatically,don't need set here.");
+#endif
 @end
 
 typedef NS_ENUM(int,ARTVCReplyType){
@@ -127,6 +135,10 @@ XRTC_OBJC_EXPORT
 @property(nonatomic,assign) BOOL videoEnable;
 @property(nonatomic,assign) int timeout;//s,default is 10s
 @property(nonatomic,strong) NSDictionary* extraInfo;
+#ifdef ARTVC_BUILD_FOR_MPAAS
+-(void)setWorkspaceIdManually:(NSString*)wokspaceId DEPRECATED_MSG_ATTRIBUTE("normally workspaceId is read from mPaaS framework automatically,don't need set here.");
+-(void)setAppIdManually:(NSString*)appId DEPRECATED_MSG_ATTRIBUTE("normally appId is read from mPaaS framework automatically,don't need set here.");
+#endif
 @end
 
 XRTC_OBJC_EXPORT
@@ -146,10 +158,10 @@ XRTC_OBJC_EXPORT
 @property(nonatomic,assign) ARTVCVideoSourceType videoSource;
 //default is ARTVCVideoProfileType_640x360_15Fps
 @property(nonatomic,assign) ARTVCVideoProfileType videoProfile;
-@property(nonatomic,assign) int videoCustomWidth;
-@property(nonatomic,assign) int videoCustomHeight;
-@property(nonatomic,assign) int videoCustomFps;
-@property(nonatomic,assign) int videoCustomBitrate;//kpbs
+@property(nonatomic,assign) int videoCustomWidth  DEPRECATED_MSG_ATTRIBUTE("it's not recommented to use custom define,please use videoProfile instead");
+@property(nonatomic,assign) int videoCustomHeight DEPRECATED_MSG_ATTRIBUTE("it's not recommented to use custom define,please use videoProfile instead");
+@property(nonatomic,assign) int videoCustomFps DEPRECATED_MSG_ATTRIBUTE("it's not recommented to use custom define,please use videoProfile instead");
+@property(nonatomic,assign) int videoCustomBitrate DEPRECATED_MSG_ATTRIBUTE("it's not recommented to use custom define,please use videoProfile instead");//kpbs
 //default is 60s
 @property(nonatomic,assign) int timeout;
 @end

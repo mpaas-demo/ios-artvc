@@ -205,6 +205,7 @@ typedef NS_ENUM(NSUInteger,ARTVCHangupReason){
     //通话未接通前连接异常
     ARTVCHangupReasonExceptionWhenConnecting       = 9,
     ARTVCHangupReasonRoomInvalid = 10,
+    ARTVCHangupReasonStartAudioDeviceFailed        = 101,
 };
 
 typedef NS_ENUM(NSInteger,ARTVCUserLeaveReason){
@@ -267,7 +268,15 @@ typedef NS_ENUM(NSUInteger,ARTVCVideoProfile){
     ARTVCVideoProfileIdleFish320x360 = 8,
     ARTVCVideoProfile640x360 = ARTVCVideoProfile360P,
     ARTVCVideoProfile960x540 = ARTVCVideoProfile540P,
-    ARTVCVideoProfile1280x720 = ARTVCVideoProfile720P
+    ARTVCVideoProfile1280x720 = ARTVCVideoProfile720P,
+    /**
+     * 输出画面分辨率320x180(16:9)
+     */
+    ARTVCVideoProfile320x180        = 12,
+    /**
+     * 输出画面分辨率160x90(16:9)
+     */
+    ARTVCVideoProfile160x90        = 13,
 };
 #endif
 // WebRTC 日志级别.

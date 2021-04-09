@@ -49,7 +49,7 @@ XRTC_OBJC_EXPORT
  * error code see ARTVCErrorCode
  */
 @required
-- (void)didEncounterError:(NSError *)error forFeed:(ARTVCFeed*)feed;
+- (void)didEncounterError:(NSError *)error forFeed:(ARTVCFeed*_Nullable)feed;
 /**
  * connection status has changed.
  *  under ARTVCConnectionStatusDisConnected status,it may be changed to ARTVCConnectionStatusConnected later,retrying is done automatically.
@@ -75,6 +75,10 @@ XRTC_OBJC_EXPORT
  * video size  changed for the given feed and relative rendering view.
 */
 - (void)didVideoSizeChangedTo:(CGSize)size renderView:(UIView*)renderView forFeed:(ARTVCFeed*)feed;
+/**
+ render frame callback, not in main queue
+ */
+//- (void)onRenderFrame:(CVPixelBufferRef)pixelBuffer videoView:(UIView*)videoView localCameraFrame:(BOOL)localCameraFrame;
 //notify from server about participant activity
 /**
    somebody(not yourself) has entered the room
@@ -157,16 +161,26 @@ normally,it's useless. though,you can handle it if it's interest to you .
 - (void)didParticipant:(NSString*)participant replyWith:(ARTVCReplyType)replyType roomId:(NSString*)roomId;
 /**
  export camera sample buffer
- callback at capture session's queue,not main-thread.
- */
+ callback at callback queue,not main-thread.
+  */
 - (void)didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer;
 /**
  receive this callback under these scenarios:
  1. cellular call connected
  2. dialing a cellular call
- 3. other audio session interruption happened(like alarm clock),and not receiving interruption end event after some time,for now ,it's configed to 8 seconds.
  */
 - (void)callWillBeClosedAsInterruptionHappened;
+/**
+ receive client event
+ */
+-(void)didReceiveClientEventNotify:(NSError*)error;
+/**
+ audio buffer callback,only callback local audio buffer
+ callback at capture session's queue,not main-thread.
+ 
+ attention, data should be released after using it.
+ */
+-(void)didOutputAudioBuffer:(ARTVCAudioData*)audioData;
 @end
 
 XRTC_OBJC_EXPORT
@@ -235,10 +249,61 @@ XRTC_OBJC_EXPORT
 //format is NV12,kCVPixelFormatType_420YpCbCr8BiPlanarFullRange
 //defualt is NO;
 @property(nonatomic,assign) BOOL enableCameraRawSampleOutput;
+/*
+ need to callback audio buffer
+ default is NO
+ */
+@property(nonatomic,assign) BOOL enableAudioBufferOutput;
+#ifndef ARTVC_BUILD_FOR_NOT_USEBLOX
+/**
+ +(BOOL)isSmartAVProcessingSupported must be called before setUseSmartAVProcessing
+ */
+@property(nonatomic,assign,getter=isUseSmartAVProcessing) BOOL useSmartAVProcessing;
+#endif
+
+/**
+ degradation_preference, default is ARTVCDegradationPreferenceMAINTAIN_RESOLUTION
+ */
+@property(nonatomic,assign) ARTVCDegradationPreference degradationPreference;
+/**
+ mocked cloud configs
+ */
+@property(nonatomic,copy) NSString *_Nullable mockedCloudConfigs;
 #pragma mark - view relative
 #ifdef ARTVC_ENABLE_STATS
 - (UIView*)debugView;
 #endif
+#pragma mark - init
+/**
+ options: extra params, for example:
+ options = @{
+    kARTVCBizName:@"bizName",
+    kARTVCSubbiz :@"subbiz"
+ };
+ */
+-(instancetype)initWithOptions:(NSDictionary *_Nullable)options;
+
+#pragma mark - smart audio video processing supported
+#ifndef ARTVC_BUILD_FOR_NOT_USEBLOX
+/**
+ beauty、virtual background only can be used if (isSmartAVProcessingSupported == YES && useSmartAVProcessing == YES)
+ */
++(BOOL)isSmartAVProcessingSupported;
+#pragma mark - beauty relative
+/**
+ isBeautySupportedForFeed: must be called before setBeautyLevel:forFeed:
+ */
+-(BOOL)isBeautySupportedForFeed:(ARTVCFeed*)feed;
+/**
+set beauty level for feed
+if level <= 0, disable beauty
+else enable beauty and set level
+
+default: disable beauty
+*/
+-(void)setBeautyLevel:(float)beautyLevel forFeed:(ARTVCFeed*)feed;
+#endif
+
 #pragma mark - room relative
 /**
  create a room for video-call or video-broadcast.
@@ -284,6 +349,7 @@ leave the room you created or joined.
  unpublish  from feed server ,with the specified config.
 */
 -(void)unpublish:(ARTVCUnpublishConfig*)config;
+-(void)unpublish:(ARTVCUnpublishConfig*)config complete:(__nullable ARTVCEventCallback)complete;
 /**
  subscribe feed from feed server ,with the specified config.
  if you have set autoSubscribe to YES,there is no need for calling this.SDK will subscribe automatically when there is new feed generated..
@@ -294,6 +360,7 @@ leave the room you created or joined.
  unsubscribe  from feed server ,with the specified config.
 */
 -(void)unsubscribe:(ARTVCUnsubscribeConfig*)config;
+-(void)unsubscribe:(ARTVCUnsubscribeConfig*)config complete:(__nullable ARTVCEventCallback)complete;
 
 #pragma mark - camera capture
 /**
@@ -327,6 +394,44 @@ leave the room you created or joined.
  check current camera position is  back  or not,if true,return YES.
  */
 -(BOOL)currentCameraPositionIsBack;
+
+#pragma mark - virtual background
+#ifndef ARTVC_BUILD_FOR_NOT_USEBLOX
+/**
+ isVirtualBackgroundSupportedForFeed: must be called before setVirtualBackgroundImage:forFeed:
+ only support remote feed now
+ */
+-(BOOL)isVirtualBackgroundSupportedForFeed:(ARTVCFeed*)feed;
+/**
+ set virtual background image for local camera
+ */
+-(void)setVirtualBackgroundImageForLocalCamera:(UIImage*)image;
+-(void)setVirtualBackgroundThresholdForLocalCamera:(float)threshold;
+-(void)setVirtualBackgroundSmoothingForLocalCamera:(float)smoothing;
+-(void)setVirtualBackgroundcolorForLocalCamera:(int)backgroundColor;
+/**
+ set virtual background image
+ default: disable virtual background
+ 
+ Attention: the width or height should not above 4096 !!!
+*/
+-(void)setVirtualBackgroundImage:(UIImage *)image forFeed:(ARTVCFeed*)feed;
+/**
+ The threshold sensitivity controls how similar pixels need to be colored to be replaced
+ The default value is 0.35
+*/
+-(void)setVirtualBackgroundThreshold:(float)threshold forFeed:(ARTVCFeed*)feed;
+/**
+ The degree of smoothing controls how gradually similar colors are replaced in the image
+ The default value is 0.09
+*/
+-(void)setVirtualBackgroundSmoothing:(float)smoothing forFeed:(ARTVCFeed*)feed;
+/**
+ The color to be cleaned
+ The default value is green, 0x00FF00
+*/
+-(void)setVirtualBackgroundcolor:(int)backgroundColor forFeed:(ARTVCFeed*)feed;
+#endif
 
 #pragma mark - Screen capture
 /**

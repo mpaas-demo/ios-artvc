@@ -22,9 +22,19 @@ RTC_EXTERN NSString * const XkRTCFieldTrialFlexFec03Key;
 RTC_EXTERN NSString * const XkRTCFieldTrialH264HighProfileKey;
 RTC_EXTERN NSString * const XkRTCFieldTrialMinimizeResamplingOnMobileKey;
 RTC_EXTERN NSString * const XkRTCFieldTrialBweLossExperimentKey;
+RTC_EXTERN NSString * const XkRTCFieldTrialPacingExperimentKey;
+RTC_EXTERN NSString * const XkRTCFieldTrialNackExperimentKey;
+RTC_EXTERN NSString * const XkRTCFieldTrialPlayoutDelayExperimentKey;
+RTC_EXTERN NSString * const XkRTCFieldTrialJitterEstimatorExperimentKey;
+RTC_EXTERN NSString * const XkRTCFieldTrialVideoSmoothRenderingExperimentKey;
+RTC_EXTERN NSString * const XkRTCFieldTrialVideoTimingExperimentKey;
+RTC_EXTERN NSString * const XkRTCFieldTrialICEExperimentKey;
+RTC_EXTERN NSString * const XkRTCFieldTrialDPExperimentKey;
+RTC_EXTERN NSString * const XkRTCFieldTrialAvSyncExperimentKey;
 
 /** The valid value for field trials above. */
 RTC_EXTERN NSString * const XkRTCFieldTrialEnabledValue;
+RTC_EXTERN NSString * const XkRTCFieldTrialDisabledValue;
 
 /** Initialize field trials using a dictionary mapping field trial keys to their
  * values. See above for valid keys and values. Must be called before any other

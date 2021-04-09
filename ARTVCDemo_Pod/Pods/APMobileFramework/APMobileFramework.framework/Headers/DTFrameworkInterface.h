@@ -15,14 +15,34 @@
 
 + (instancetype)sharedInstance;
 
+#pragma mark - 非框架托管
 /**
  *  非mPaaS框架托管接入时，启动 mPaaS 框架
  *  非mPaaS框架托管接入是指 main 方法中的delegate是您自定义的delegate，此方法必须在应用启动完成、navigationcontroller初始化之后调用
  *
- *  @param 当前应用 application
- *  @param 当前应用的启动参数
+ *  @param application 当前应用 application
+ *  @param launchOptions 当前应用的启动参数
  */
 - (void)manualInitMpaasFrameworkWithApplication:(UIApplication *)application launchOptions:(NSDictionary *)launchOptions;
+
+/**
+ *  非mPaaS框架托管接入时，启动 mPaaS 框架
+ *  非mPaaS框架托管接入是指 main 方法中的delegate是您自定义的delegate，此方法必须在应用启动完成、navigationcontroller初始化之后调用
+ *
+ *  @param application 当前应用 application
+ *  @param launchOptions 当前应用的启动参数
+ *  @param window       当前应用的keywindow。不可为空
+ *  @param navigationController  当前应用中，需要打开离线包或小程序页面所在的导航栈。不可为空，否则无法打开离线包或小程序
+ */
+- (void)manualInitMpaasFrameworkWithApplication:(UIApplication *)application launchOptions:(NSDictionary *)launchOptions window:(UIWindow * __nonnull)window navigationController:(UINavigationController * __nonnull)navigationController;
+
+// 当前应用的keywindow。不可为空
+// 此值会在调用上面的初始化方法时根据传入的参数设置，仅供内部方法调用，请不要重复set
+@property (nonatomic, strong) UIWindow *__nonnull mPaaSFrameworkWindow;
+
+// 当前应用中，需要打开离线包或小程序页面所在的导航栈。不可为空，否则无法打开离线包或小程序
+// 此值会在调用上面的初始化方法时根据传入的参数设置，仅供内部方法调用，请不要重复set
+@property (nonatomic, strong) UINavigationController *__nonnull mPaaSFrameworkNavigationController;
 
 #pragma mark - BootLoader
 
@@ -292,6 +312,19 @@ typedef NS_ENUM (NSInteger, DTNavigationBarBackTextStyle)
  * 返回 APBaseLoadingView 的子类类名
 */
 - (NSString *)baseloadViewClass;
+
+/**
+*  自定义导航栏类名。注意：必须是 UINavigationBar的子类
+ * 返回 APBaseLoadingView 的子类类名
+*/
+- (NSString *)customNavigationBarClass;
+
+/**
+*  导航栏控制器是否需要继承 DFNavigationController。
+*  默认为 YES，即默认需要继承，框架托管的应用，请勿修改此值！！！
+*  非框架托管应用，若无需继承 DFNavigationController，可重写此值，返回 NO
+*/
+- (BOOL)shouldInheritDFNavigationController;
 
 #pragma mark - UIApplication生命期回调，可以用Category覆盖
 
