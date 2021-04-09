@@ -2,8 +2,8 @@
 //  ARTVCDemo_Plugin-mPaaS-Headers.h
 //  ARTVCDemo_Plugin
 //
-//  Created by 阔悬 on 2020/07/29.
-//  Copyright © 2020 Alibaba. All rights reserved.
+//  Created by shaochangying on 2021/04/09.
+//  Copyright © 2021 Alibaba. All rights reserved.
 //
 
 // This part is maintained by MPaaS plugin automatically. Please don't modify.

@@ -11,6 +11,7 @@
 @property (nonatomic,copy) NSString* roomId;
 @property (nonatomic,copy) NSString* rtoken;
 @property (nonatomic,assign) BOOL audioOnly;
+@property (nonatomic,assign) BOOL publishVideoOnly;
 @property (nonatomic,assign) BOOL testAliyunSDK;
 @property (nonatomic,assign) BOOL testBroadcast;
 @property(nonatomic,assign) BOOL testCustomVideoCapture;

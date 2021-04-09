@@ -13,6 +13,9 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "ARTVCDemo_Plugin-mPaaS-Headers.h"
 #import <APMobileFramework/APMobileFramework.h>
 //#import <APCommonUI/APCommonUI.h>
 #define ARTVC_ENABLE_LOCAL_DEMO_TEST

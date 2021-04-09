@@ -17,6 +17,8 @@
 -(void)didSwithAudioPlaymodeTriggled:(ARTVCDemoControlView*)view;
 -(void)didSwithEncodeResolutionTriggled:(ARTVCDemoControlView*)view;
 -(void)didScreenshareTriggled:(ARTVCDemoControlView*)view;
+-(void)didDegradationPreferenceTriggled:(ARTVCDemoControlView*)view;
+-(void)didBroadCastTriggled:(ARTVCDemoControlView*)view;
 @end
 @interface ARTVCDemoControlView : UIView
 @property(nonatomic,weak) id<ARTVCDemoControlViewDelegate> delegate;

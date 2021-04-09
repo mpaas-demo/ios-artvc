@@ -24,9 +24,11 @@
 @property(nonatomic, strong)UIButton *snapshotBtn;
 @property(nonatomic, strong)UIButton *switchEncodeResoBtn;
 @property(nonatomic, strong)UIButton *screenshareBtn;
+@property(nonatomic, strong)UIButton *degradationPreferenceBtn;
 @property(nonatomic, strong)UILabel *info;
 @property(nonatomic, assign)BOOL cameraStopped;
 @property(nonatomic, assign)BOOL muted;
+@property(nonatomic, strong)UIButton *broadcastBtn;
 @end
 @implementation ARTVCDemoControlView
 
@@ -111,15 +113,31 @@
         [self.screenshareBtn setBackgroundImage:image forState:UIControlStateNormal];
         [self.screenshareBtn addTarget:self action:@selector(screenshare:) forControlEvents:UIControlEventTouchUpInside];
         
+        self.degradationPreferenceBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        frame = CGRectMake(0, 0, ButtonWidth, ButtonHeight);
+        self.degradationPreferenceBtn.frame = frame;
+        image = ARTVCShowImageResource(@"up.png");
+        [self.degradationPreferenceBtn setBackgroundImage:image forState:UIControlStateNormal];
+        [self.degradationPreferenceBtn addTarget:self action:@selector(switchDegradationPreference:) forControlEvents:UIControlEventTouchUpInside];
+        //"应用间录屏"
+        self.broadcastBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        frame = CGRectMake(0, 0, ButtonWidth + 40, ButtonHeight + 20);
+        self.broadcastBtn.frame = frame;
+        image = ARTVCShowImageResource(@"screenshare.png");
+        [self.broadcastBtn setImage:image forState:UIControlStateNormal];
+        self.broadcastBtn.titleLabel.font = [UIFont systemFontOfSize:10];
+        [self.broadcastBtn addTarget:self action:@selector(broadcastBtn:) forControlEvents:UIControlEventTouchUpInside];
+
         _cameraStopped = NO;
         
-        _switchCameraBtn.center = CGPointMake(_hangupBtn.center.x-HangupButtonWidth/2-ButtonWidth/2-ButtonsMargin/2, _hangupBtn.center.y);
-        _enableCameraBtn.center = CGPointMake(_switchCameraBtn.center.x-ButtonWidth-ButtonsMargin, _switchCameraBtn.center.y);
-        _snapshotBtn.center = CGPointMake(_enableCameraBtn.center.x-ButtonWidth-ButtonsMargin, _enableCameraBtn.center.y);
-        _muteMicrophoneBtn.center = CGPointMake(_hangupBtn.center.x+HangupButtonWidth/2+ButtonWidth/2+ButtonsMargin, _hangupBtn.center.y);
-        _audioPlaymodeBtn.center = CGPointMake(_muteMicrophoneBtn.center.x+ButtonWidth+ButtonsMargin, _muteMicrophoneBtn.center.y);
-        _switchEncodeResoBtn.center = CGPointMake(_audioPlaymodeBtn.center.x+ButtonWidth+ButtonsMargin, _audioPlaymodeBtn.center.y);
-        _screenshareBtn.center = CGPointMake(_switchEncodeResoBtn.center.x+ButtonWidth+ButtonsMargin, _switchEncodeResoBtn.center.y);
+//        _switchCameraBtn.center = CGPointMake(_hangupBtn.center.x-HangupButtonWidth/2-ButtonWidth/2-ButtonsMargin/2, _hangupBtn.center.y);
+//        _enableCameraBtn.center = CGPointMake(_switchCameraBtn.center.x-ButtonWidth-ButtonsMargin, _switchCameraBtn.center.y);
+//        _snapshotBtn.center = CGPointMake(_enableCameraBtn.center.x-ButtonWidth-ButtonsMargin, _enableCameraBtn.center.y);
+//        _degradationPreferenceBtn.center = CGPointMake(_snapshotBtn.center.x-ButtonWidth-ButtonsMargin, _snapshotBtn.center.y);
+//        _muteMicrophoneBtn.center = CGPointMake(_hangupBtn.center.x+HangupButtonWidth/2+ButtonWidth/2+ButtonsMargin, _hangupBtn.center.y);
+//        _audioPlaymodeBtn.center = CGPointMake(_muteMicrophoneBtn.center.x+ButtonWidth+ButtonsMargin, _muteMicrophoneBtn.center.y);
+//        _switchEncodeResoBtn.center = CGPointMake(_audioPlaymodeBtn.center.x+ButtonWidth+ButtonsMargin, _audioPlaymodeBtn.center.y);
+//        _screenshareBtn.center = CGPointMake(_switchEncodeResoBtn.center.x+ButtonWidth+ButtonsMargin, _switchEncodeResoBtn.center.y);
         
         [self addSubview:_info];
         [self addSubview:_switchCameraBtn];
@@ -130,10 +148,29 @@
         [self addSubview:_snapshotBtn];
         [self addSubview:_switchEncodeResoBtn];
         [self addSubview:_screenshareBtn];
-        
+        [self addSubview:_degradationPreferenceBtn];
+        [self addSubview:_broadcastBtn];
     }
     return self;
 }
+
+-(void)layoutSubviews {
+    [super layoutSubviews];
+    CGFloat width = self.frame.size.width;
+    CGFloat height = self.frame.size.height;
+    _hangupBtn.frame = CGRectMake(width/2-HangupButtonWidth/2, height-BottomMargin, HangupButtonWidth, HangupButtonHeight);
+    _switchCameraBtn.center = CGPointMake(_hangupBtn.center.x-HangupButtonWidth/2-ButtonWidth/2-ButtonsMargin/2, _hangupBtn.center.y);
+    _enableCameraBtn.center = CGPointMake(_switchCameraBtn.center.x-ButtonWidth-ButtonsMargin, _switchCameraBtn.center.y);
+    _snapshotBtn.center = CGPointMake(_enableCameraBtn.center.x-ButtonWidth-ButtonsMargin, _enableCameraBtn.center.y);
+    _degradationPreferenceBtn.center = CGPointMake(_snapshotBtn.center.x-ButtonWidth-ButtonsMargin, _snapshotBtn.center.y);
+    _muteMicrophoneBtn.center = CGPointMake(_hangupBtn.center.x+HangupButtonWidth/2+ButtonWidth/2+ButtonsMargin, _hangupBtn.center.y);
+    _audioPlaymodeBtn.center = CGPointMake(_muteMicrophoneBtn.center.x+ButtonWidth+ButtonsMargin, _muteMicrophoneBtn.center.y);
+    _switchEncodeResoBtn.center = CGPointMake(_audioPlaymodeBtn.center.x+ButtonWidth+ButtonsMargin, _audioPlaymodeBtn.center.y);
+    _screenshareBtn.center = CGPointMake(_switchEncodeResoBtn.center.x+ButtonWidth+ButtonsMargin, _switchEncodeResoBtn.center.y);
+    _broadcastBtn.center = CGPointMake(_switchEncodeResoBtn.center.x, _switchEncodeResoBtn.center.y + HangupButtonHeight);
+}
+
+
 -(void)dealloc{
     APM_INFO(@"ARTVCDemoControlView dealloc");
 }
@@ -173,6 +210,7 @@
         [self.switchEncodeResoBtn setBackgroundImage:image forState:UIControlStateNormal];
     }
 }
+
 #pragma mark - UI Event handlers
 -(void)switchCamera:(id)sender{
     UIButton *bt = (UIButton*)sender;
@@ -249,6 +287,22 @@
     }
     [self.delegate didScreenshareTriggled:self];
 }
+- (void)switchDegradationPreference:(id)sender{
+    UIButton *bt = (UIButton*)sender;
+    if (bt != _degradationPreferenceBtn) {
+        return;
+    }
+    [self.delegate didDegradationPreferenceTriggled:self];
+}
+- (void)broadcastBtn:(id)sender {
+    UIButton *bt = (UIButton*)sender;
+    if (bt != _broadcastBtn) {
+        return;
+    }
+    [self.delegate didBroadCastTriggled:self];
+}
+
+
 @end
 #endif
 #endif

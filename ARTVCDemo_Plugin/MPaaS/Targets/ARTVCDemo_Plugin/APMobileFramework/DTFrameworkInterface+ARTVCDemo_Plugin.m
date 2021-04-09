@@ -2,8 +2,8 @@
 //  DTFrameworkInterface+ARTVCDemo_Plugin.m
 //  ARTVCDemo_Plugin
 //
-//  Created by 阔悬 on 2020/07/29.
-//  Copyright © 2020 Alibaba. All rights reserved.
+//  Created by shaochangying on 2021/04/09.
+//  Copyright © 2021 Alibaba. All rights reserved.
 //
 
 #import "DTFrameworkInterface+ARTVCDemo_Plugin.h"

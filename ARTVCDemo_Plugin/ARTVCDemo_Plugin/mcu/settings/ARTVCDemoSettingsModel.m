@@ -27,7 +27,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 static NSArray<NSString *> *videoResolutionsStaticValues() {
-  return @[ @"480x360" ,@"640x360",@"960x540",@"1280x720"];
+  return @[ @"160x90",@"320x180",@"640x480" ,@"640x360",@"960x540",@"1280x720"];
 }
 
 @interface ARTVCDemoSettingsModel () {
@@ -182,9 +182,19 @@ static NSArray<NSString *> *videoResolutionsStaticValues() {
     [[self settingsStore] setEnableSubscribe:value];
 }
 
+-(BOOL)eanbleFlexFEC{
+    return [[self settingsStore] eanbleFlexFEC];
+}
+-(void)setEnableFlexFEC:(BOOL)value{
+    [[self settingsStore] setEnableFlexFEC:value];
+}
 
-
-
+-(NSString*)bweExperimentFlag{
+    return [[self settingsStore] bweExperimentFlag];
+}
+-(void)setBweExperimentFlag:(NSString*)value{
+     [[self settingsStore] setBweExperimentFlag:value];
+}
 
 -(BOOL)eanbleInviteAfterCreateRoom{
     return [[self settingsStore] eanbleInviteAfterCreateRoom];
@@ -220,14 +230,93 @@ static NSArray<NSString *> *videoResolutionsStaticValues() {
 -(void)setBizname:(NSString*)value{
     [[self settingsStore] setBizname:value];
 }
-
+-(NSString*)subbiz{
+    return [[self settingsStore] subbiz];
+}
+-(void)setSubbiz:(NSString*)value{
+    [[self settingsStore] setSubbiz:value];
+}
 -(NSString*)signature{
     return [[self settingsStore] signature];
 }
 -(void)setSignature:(NSString*)value{
     [[self settingsStore] setSignature:value];
 }
+-(NSString*)customServerUrl{
+    return [[self settingsStore] customServerUrl];
+}
+-(void)setCustomServerUrl:(NSString*)value{
+    [[self settingsStore] setCustomServerUrl:value];
+}
 
+-(BOOL)enableUseBloxWay{
+    return [[self settingsStore] enableUseBloxWay];
+}
+-(void)setUseBloxWayChanged:(BOOL)value{
+    [[self settingsStore] setUseBloxWayChanged:value];
+}
+-(NSString*)beautyLevel{
+    return [[self settingsStore] beautyLevel];
+}
+-(void)setBeautyLevel:(float)level{
+    [[self settingsStore] setBeautyLevel:level];
+}
+-(BOOL)enableVirtualBG{
+    return [[self settingsStore] enableVirtualBG];
+}
+-(void)setVirtualBG:(BOOL)value{
+    [[self settingsStore] setVirtualBG:value];
+}
+-(NSString*)pacingExperiment{
+    return [[self settingsStore] pacingExperiment];
+}
+-(void)setPacingExperiment:(NSString*)value{
+    [[self settingsStore] setPacingExperiment:value];
+}
+-(NSString*)nackExperiment{
+    return [[self settingsStore] nackExperiment];
+}
+-(void)setNackExperiment:(NSString*)value{
+    [[self settingsStore] setNackExperiment:value];
+}
+-(NSString*)playoutDelayExperiment{
+    return [[self settingsStore] playoutDelayExperiment];
+}
+-(void)setPlayoutDelayExperiment:(NSString*)value{
+    [[self settingsStore] setPlayoutDelayExperiment:value];
+}
+-(NSString*)jitterExperiment{
+    return [[self settingsStore] jitterExperiment];
+}
+-(void)setJitterExperiment:(NSString*)value{
+    [[self settingsStore] setJitterExperiment:value];
+}
+-(NSString*)mockedConfigs{
+    return [[self settingsStore] mockedConfigs];
+}
+-(void)setMockedConfigs:(NSString*)value{
+    [[self settingsStore] setMockedConfigs:value];
+}
+-(BOOL)isVideoSmoothRenderingDisabled{
+    return [[self settingsStore] isVideoSmoothRenderingDisabled];
+}
+-(void)disableVideoSmoothRendering:(BOOL)value{
+    [[self settingsStore] disableVideoSmoothRendering:value];
+}
+-(BOOL)isLoopbackTestEnabled{
+    return [[self settingsStore] isLoopbackTestEnabled];
+}
+-(void)enableLoopbackTest:(BOOL)value{
+    [[self settingsStore] enableLoopbackTest:value];
+}
+#ifdef ARTVC_BUILD_FOR_MPAAS
+-(void)setWorkspaceId:(NSString*)workspaceId{
+    [[self settingsStore] setWorkspaceId:workspaceId];
+}
+-(NSString*)workspaceId{
+    return [[self settingsStore] workspaceId];
+}
+#endif
 @end
 NS_ASSUME_NONNULL_END
 #endif
