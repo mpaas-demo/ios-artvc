@@ -1,7 +1,7 @@
 ## 功能介绍
 本 Demo 主要配合官网 [音视频通话](https://help.aliyun.com/document_detail/169434.html?spm=a2c4g.11186623.6.1225.2a832b50fQ6YbX)，介绍 iOS 音视频通话使用。
 
-本 Demo 支持的基线范围：>= 10.1.68
+本 Demo 支持的定制基线： cp_change_26792
 
 <a name="jFPNB"></a>
 ## 运行Demo
@@ -23,7 +23,7 @@
 
 3. 直接打开 .workspace 文件，您就可以运行此 demo了
 4.  此 demo 默认连接 mPaaS 公有云的 Demo应用，若您需切换到您自己的 App，请替换 [meta.config 文件](https://tech.antfin.com/docs/2/87321#h2-u4E0Bu8F7Du914Du7F6Eu6587u4EF63)后，重新 pod update
-5.  此 demo 默认为 10.1.60基线，若您需要切换基线，打开 Podfile文件，修改 mPaaS_baseline 基线号，支持设置为 10.1.60、10.1.68-beta
+5.  此 demo 默认为 cp_change_26792基线，若您需要切换基线，打开 Podfile文件，修改 mPaaS_baseline 基线号.
 
 
 <br />
@@ -43,5 +43,5 @@
 4. 此 demo 默认连接 mPaaS 公有云的 Demo应用，若您需切换到您自己的 App，请重新导入您的 [meta.config 文件](https://tech.antfin.com/docs/2/87321#h2-u4E0Bu8F7Du914Du7F6Eu6587u4EF63)。
 ![image.png](http://mpaas-demo.oss-cn-hangzhou.aliyuncs.com/readme_images/meta_config.png)<br />
 
-5. 此 demo 默认为 10.1.60基线，您可以切换到 “升级基线” Tab，选择需要的基线
+5. 此 demo 默认为 cp_change_26792基线，您可以切换到 “升级基线” Tab，选择需要的基线
 ![image.png](http://mpaas-demo.oss-cn-hangzhou.aliyuncs.com/readme_images/update_baseline.png)
