@@ -769,7 +769,7 @@
 					"$(SDKROOT)//Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks",
 				);
 				INFOPLIST_FILE = broadcastUploadSetupUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mpaas.demo.broadcastUploadSetupUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -793,7 +793,7 @@
 					"$(SDKROOT)//Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks",
 				);
 				INFOPLIST_FILE = broadcastUploadSetupUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mpaas.demo.broadcastUploadSetupUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -818,7 +818,7 @@
 					/Users/Shared/.mpaaskit_sdk/repo/frameworks/MPARTVCUpload/1.0.0.210407101246,
 				);
 				INFOPLIST_FILE = broadcastUpload/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				OTHER_LDFLAGS = (
 					"-lc++",
@@ -850,7 +850,7 @@
 					/Users/Shared/.mpaaskit_sdk/repo/frameworks/MPARTVCUpload/1.0.0.210407101246,
 				);
 				INFOPLIST_FILE = broadcastUpload/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				OTHER_LDFLAGS = (
 					"-lc++",
