@@ -867,7 +867,7 @@
 				DEVELOPMENT_TEAM = 8MG9V6T29S;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = broadcastUploadSetupUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -889,7 +889,7 @@
 				DEVELOPMENT_TEAM = 8MG9V6T29S;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = broadcastUploadSetupUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -915,7 +915,7 @@
 					"$(PROJECT_DIR)/Pods/MPARTVCUpload",
 				);
 				INFOPLIST_FILE = broadcastUpload/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -948,7 +948,7 @@
 					"$(PROJECT_DIR)/Pods/MPARTVCUpload",
 				);
 				INFOPLIST_FILE = broadcastUpload/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
