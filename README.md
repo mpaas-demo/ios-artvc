@@ -17,11 +17,11 @@
 2. 进入 ARTVCDemo_pod 目录，执行以下命令，拉取依赖库
 
 	```shell
-	1、pod mpaas update --all
+	1、pod mpaas update cp_change_26792
 	2、pod update
 	```
 
-3. 直接打开 .workspace 文件，您就可以运行此 demo了
+3. 直接打开 .workspace 文件，您就可以运行此 demo了，demo页面右上角进入设置页面填写Uid（6位数字即可）以及workspaceid（default）
 4.  此 demo 默认连接 mPaaS 公有云的 Demo应用，若您需切换到您自己的 App，请替换 [meta.config 文件](https://tech.antfin.com/docs/2/87321#h2-u4E0Bu8F7Du914Du7F6Eu6587u4EF63)后，重新 pod update
 5.  此 demo 默认为 cp_change_26792基线，若您需要切换基线，打开 Podfile文件，修改 mPaaS_baseline 基线号.
 
